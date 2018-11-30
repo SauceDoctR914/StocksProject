@@ -7,8 +7,16 @@ import SearchBar from "./components/SearchBar";
 import StockContainer from "./components/StockContainer";
 import StockDetail from "./components/StockDetail";
 import { Route, Switch } from "react-router-dom";
+import Moment from "moment";
+import Date from "./components/Date";
+import { withRouter } from "react-router-dom";
 
 class App extends Component {
+  // componentDidMount() {
+  //   setInterval(() => {
+  //     this.props.fetchStocks();
+  //   }, 1000000);
+  // }
   componentDidMount() {
     this.props.fetchStocks();
   }
@@ -35,19 +43,26 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.props.stocks);
     return (
       <div>
-        <StockContainer stocks={this.filterSearch()} />
         <SearchBar
           searchChange={this.onSearchChange}
           searchTerm={this.state.searchTerm}
         />
         <Switch>
-          
           <Route
-            exact path="/stockdetail/:symbol"
+            path="/stocks/:symbol"
             render={routerProps => <StockDetail {...routerProps} />}
+          />
+          <Route
+            exact
+            path="/stocks"
+            render={routerProps => (
+              <React.Fragment>
+                <StockContainer {...routerProps} stocks={this.filterSearch()} />
+                <Date />
+              </React.Fragment>
+            )}
           />
         </Switch>
       </div>
@@ -65,7 +80,9 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(App);
+export default withRouter(
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(App)
+);

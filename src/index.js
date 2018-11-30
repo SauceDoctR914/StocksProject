@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import stockReducer from "./reducer/stockReducer";
@@ -12,11 +12,9 @@ const store = createStore(stockReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
   <Provider store={store}>
-  <Router>
-    <React.Fragment>
-        <App />
-    </React.Fragment>
-  </Router>
-    </Provider>,
+    <Router>
+      <App />
+    </Router>
+  </Provider>,
   document.getElementById("root")
 );

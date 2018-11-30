@@ -9,8 +9,7 @@ const stockReducer = (state = initialState, action) => {
       return { ...state, stocks: action.stocks };
     }
     case "SELECT_STOCK": {
-      
-      return {...state, selectedStock: action.payload}
+      return { ...state, selectedStock: action.payload };
     }
     default:
       return state;
