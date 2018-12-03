@@ -3,12 +3,14 @@ import StockNews from "./StockNews";
 import { connect } from "react-redux";
 import { fetchStocks } from "../action/stockAction";
 import { withRouter } from "react-router-dom";
-
+import ChartComponent from "../chartfolder/index.js";
+import { Link } from "react-router-dom";
 class StockDetail extends React.Component {
   render() {
     const stock = this.props.stocks.find(stockObj => {
       return stockObj.quote.symbol == this.props.match.params.symbol;
     });
+    const symbol = this.props.match.params.symbol;
     return (
       <div>
         <h2 />
@@ -22,6 +24,10 @@ class StockDetail extends React.Component {
         ) : (
           "loading news.."
         )}
+        <ChartComponent symbol={symbol} />
+        <Link to="/stocks/">
+          <button>Main Page</button>
+        </Link>
       </div>
     );
   }

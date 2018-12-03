@@ -10,7 +10,7 @@ import { Route, Switch } from "react-router-dom";
 import Moment from "moment";
 import Date from "./components/Date";
 import { withRouter } from "react-router-dom";
-
+// import StockAlgo from "./components/StockAlgo";
 class App extends Component {
   // componentDidMount() {
   //   setInterval(() => {
@@ -45,10 +45,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <SearchBar
-          searchChange={this.onSearchChange}
-          searchTerm={this.state.searchTerm}
-        />
         <Switch>
           <Route
             path="/stocks/:symbol"
@@ -59,8 +55,15 @@ class App extends Component {
             path="/stocks"
             render={routerProps => (
               <React.Fragment>
-                <StockContainer {...routerProps} stocks={this.filterSearch()} />
-                <Date />
+                <StockContainer
+                  {...routerProps}
+                  stocks={this.filterSearch()}
+                  onSearchChange={this.onSearchChange}
+                  searchTerm={this.state.searchTerm}
+                />
+                <div className="time">
+                  <Date />
+                </div>
               </React.Fragment>
             )}
           />
