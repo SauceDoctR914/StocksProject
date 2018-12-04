@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { connect } from "react-redux";
 import { fetchStocks } from "./action/stockAction";
-import SearchBar from "./components/SearchBar";
+// import SearchBar from "./components/SearchBar";
 import StockContainer from "./components/StockContainer";
 import StockDetail from "./components/StockDetail";
 import { Route, Switch } from "react-router-dom";
-import Moment from "moment";
+// import Moment from "moment";
 import Date from "./components/Date";
 import { withRouter } from "react-router-dom";
 // import StockAlgo from "./components/StockAlgo";

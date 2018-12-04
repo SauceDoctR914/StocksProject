@@ -2,15 +2,15 @@ body {
   height: auto;
 }
 
- .StockContainer{
-   margin-top: 40px;
-   position: absolute;
-   left: 15%;
-   width: 70%;
-   height:100%;
+.StockContainer {
+  margin-top: 40px;
+  position: absolute;
+  left: 15%;
+  width: 70%;
+  height: 100%;
   text-align: center;
 }
-.formClass{
+.formClass {
   position: sticky;
   top: 0;
   left: 35%;
@@ -18,8 +18,7 @@ body {
   margin: auto;
 }
 
-
-.StockCard{
+.StockCard {
   position: relative;
   align: center;
   left: 20%;
@@ -30,5 +29,36 @@ body {
   border-color: black;
   box-shadow: 0 0 4px 2px grey;
   flex: grid;
-  border-width: 2px 5px 2px 3px
+  border-width: 2px 5px 2px 3px;
+}
+
+.renderNews {
+  display: flex;
+  align: left;
+  left: 20%;
+  margin: 10%;
+  border-style: outset;
+  border-color: black;
+  width: 500px;
+  height: 205px;
+  flex: grid;
+}
+
+.imageDiv {
+  align-self: flex-start;
+}
+.positiveChange {
+  color: green;
+}
+.negativeChange {
+  color: red;
+}
+
+.images {
+  height: 180px;
+  width: 150px;
+}
+
+.titleDiv {
+  position: right;
 }

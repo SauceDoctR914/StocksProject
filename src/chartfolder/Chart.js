@@ -32,13 +32,9 @@ class CandleStickChart extends React.Component {
   };
 
   render() {
-    console.log(this.props.symbol);
     const { type, width, data, ratio } = this.props;
     const xAccessor = d => d.date;
-    const xExtents = [
-      xAccessor(last(data)),
-      xAccessor(data[data.length - 100])
-    ];
+    const xExtents = [xAccessor(last(data)), xAccessor(data[data.length - 50])];
     return (
       <ChartCanvas
         height={400}
