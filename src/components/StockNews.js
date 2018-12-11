@@ -9,7 +9,7 @@ class StockNews extends React.Component {
     let stockName = this.props.stock.companyName.split(" ")[0];
     if (stockName) {
       fetch(
-        `https://www.accunewsapp.com/api/v1/articles/?keyword=${stockName}&apiKey=979ba529eeb8dabd3e2ed5f93dd012c807b38c09&limit=15`
+        `https://www.accunewsapp.com/api/v1/articles/?keyword=${stockName}&apiKey=6e75924676fedef09899d849df0d2947120eb7ec&limit=10`
       )
         .then(res => res.json())
         .then(res => Object.values(res))

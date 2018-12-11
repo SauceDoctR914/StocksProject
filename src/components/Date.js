@@ -18,8 +18,14 @@ class Date extends Component {
     intervalId: ""
   };
   render() {
-    return <div>{this.state.currentTime} </div>;
+    return (
+      <div className="dateTime">
+        <div className="date">{Moment().format("dddd, MMMM Do YYYY")}</div>
+        <div className="thetime">{this.state.currentTime} PM</div>
+      </div>
+    );
   }
 }
 
 export default Date;
+//

@@ -10,12 +10,13 @@ import { Route, Switch } from "react-router-dom";
 import Date from "./components/Date";
 import { withRouter } from "react-router-dom";
 // import StockAlgo from "./components/StockAlgo";
+import FetchNews from "./components/FetchNews";
 class App extends Component {
-  // componentDidMount() {
-  //   setInterval(() => {
-  //     this.props.fetchStocks();
-  //   }, 1000000);
-  // }
+  componentDidMount() {
+    setInterval(() => {
+      this.props.fetchStocks();
+    }, 1000000);
+  }
   componentDidMount() {
     this.props.fetchStocks();
   }
@@ -43,7 +44,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="app">
         <Switch>
           <Route
             path="/stocks/:symbol"
@@ -54,6 +55,8 @@ class App extends Component {
             path="/stocks"
             render={routerProps => (
               <React.Fragment>
+                <h1 className="theTitle">2Stoc</h1>
+                <Date />
                 <StockContainer
                   {...routerProps}
                   stocks={this.filterSearch()}
@@ -61,7 +64,7 @@ class App extends Component {
                   searchTerm={this.state.searchTerm}
                 />
                 <div className="time">
-                  <Date />
+                  <FetchNews />
                 </div>
               </React.Fragment>
             )}

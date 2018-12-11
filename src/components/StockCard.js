@@ -4,32 +4,37 @@ import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import Numeral from "numeral";
+import MiniChart from "../chartfolder/MiniIndex";
+
 class StockCard extends React.Component {
   render() {
     let change = this.props.stock.quote.changePercent * 100;
-    let pctChange = Numeral(change).format('0.00');
+    let pctChange = Numeral(change).format("0.00");
     let positiveInt = pctChange - pctChange - pctChange;
 
     return (
-      <div className="StockCard">
-        <h3>{this.props.stock.quote.symbol}</h3>
-        <p>
-          ${this.props.stock.quote.latestPrice}{" "}
-          {change > 0 ? (
-            <div className="positiveChange">%{pctChange}</div>
-          ) : (
-            <div className="negativeChange">%{positiveInt}</div>
-          )}
-        </p>
-        <h4>P/E: {this.props.stock.quote.peRatio}</h4>
-        <Link to={`/stocks/${this.props.stock.quote.symbol}`}>
-          <button>Stock Page</button>
-        </Link>
-      </div>
+      <Link
+        to={`/stocks/${this.props.stock.quote.symbol}`}
+        style={{ textDecoration: "none" }}
+      >
+        <div className="StockCard">
+          <p className="symbol">{this.props.stock.quote.symbol}</p>
+          <div className="priceDiv">
+            ${Numeral(this.props.stock.quote.latestPrice).format("0.00")}
+          </div>
+          <div className="changeDiv">
+            {change > 0 ? (
+              <button className="positiveChange">%{pctChange}</button>
+            ) : (
+              <button className="negativeChange">%{positiveInt}</button>
+            )}
+          </div>
+        </div>
+      </Link>
     );
   }
 }
-
+// <button className="stockPageButton">Stock Page</button>
 const mapStateToProps = state => {
   return { stocks: state.stocks };
 };

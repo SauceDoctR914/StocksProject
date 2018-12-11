@@ -1,8 +1,8 @@
 import React from "react";
 // import { render } from "react-dom";
 import Chart from "./Chart";
-// import VolumeChart from "./VolumeChart"
-import { getData } from "./utils";
+import MiniChart from "./MiniChart"
+import { getData } from "./MiniUtils";
 
 // import { TypeChooser } from "react-stockcharts/lib/helper";
 
@@ -18,7 +18,7 @@ export default class ChartComponent extends React.Component {
     }
     return (
       <div>
-        <Chart symbol={this.props.symbol} data={this.state.data} />
+        <MiniChart symbol={this.props.symbol} data={this.state.data} />
       </div>
     );
   }

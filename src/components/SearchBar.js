@@ -12,8 +12,8 @@ class SearchBar extends Component {
       <div>
         <form className="formClass">
           <p>
-            
             <input
+            className="inputClass"
               type="text"
               placeholder="Search TickR"
               value={this.props.searchTerm}

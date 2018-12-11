@@ -1,64 +1,461 @@
 body {
   height: auto;
+  /* background-image: url("https://images.unsplash.com/photo-1475650522725-015d35677789?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60");
+background-size: cover;
+background-attachment: fixed; */
+
+  background-color: #212121;
+  /* background-image: linear-gradient(to right, #00ff00 , black); */
+}
+/* // #00ff00
+// #bf00ff */
+.app {
+  display: row;
+}
+.theTitle {
+  background-image: -webkit-linear-gradient(#00ff00, #bf00ff);
+  font-family: "Big Caslon", sans-serif;
+  color: transparent;
+  background-clip: text;
+  font-size: 70px;
+  text-align: center;
+  font-weight: bold;
+  -webkit-background-clip: text;
+}
+.dateTime {
+  /* margin-left: 400px; */
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5%;
+}
+.thetime {
+  height: 50px;
+  font-size: 25px;
+  margin-bottom: 100px;
+  text-align: center;
+  margin: 10px;
+  color: white;
+}
+.date {
+  font-size: 25px;
+  color: white;
+  text-align: center;
 }
 
+.frontNews {
+  margin-right: 5px;
+
+  /* justify-content: flex-start; */
+}
+.frontPage {
+  float: left;
+  left: 20%;
+  margin: 0%;
+  font-family: Helvetica, sans-serif;
+  box-shadow: 0 0 3px 3px #161616;
+  width: 65%;
+  height: 25%;
+  flex: grid;
+  color: white;
+}
 .StockContainer {
+  float: right;
   margin-top: 40px;
-  position: absolute;
-  left: 15%;
-  width: 70%;
-  height: 100%;
+  left: 60%;
+  width: 34%;
+  /* background: -webkit-linear-gradient(top, #292828 1%, #1a1a1a 60%); */
+  /* box-shadow: 0 0 2px 1px #303030; */
   text-align: center;
+  /* float: right; */
+}
+.StockCard {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: 5%;
+  box-shadow: 0 0 1px 2px #090909;
+  margin: 1%;
+  width: 97%;
+  height: 8%;
+  color: #e5e5e5;
+  font-family: Sans-Serif;
+}
+.symbol {
+  justify-content: flex-start;
+  margin-left: 1%;
+}
+.priceDiv {
+  justify-content: center;
+}
+.changeDiv {
+  justify-content: flex-end;
+}
+.miniChartDiv {
+  position: relative;
+  align: left;
+  background: #303030;
 }
 .formClass {
   position: sticky;
   top: 0;
   left: 35%;
-  /* width: 10%; */
+  border-radius: 4px;
   margin: auto;
+  border-color: #171718;
+}
+input:hover::-webkit-input-placeholder {
+  color: white;
+  /* box-shadow: 0 0 3px 3px #13001a; */
+}
+input:focus {
+  outline: none;
+  /* outline-width: 0; */
+}
+.inputClass {
+  width: 300px;
+  height: 27px;
+  /* background-image: linear-gradient(#292828, black); */
+  background-color: #292828;
+  border-style: outset;
+  border-color: #171718;
+  color: #00ff00;
+  font: sans-serif;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+}
+.inputClass:hover {
+  /* background-image: linear-gradient(#cc33ff, #260033); */
+  box-shadow: 0 0 3px 3px #161616;
+}
+.companyTitle {
+  color: white;
+}
+.companyDiv {
+  font-family: Helvetica, sans-serif;
+  margin-bottom: 50px;
+  /* color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 500px;
+  width: 600px;
+  border-color: white;
+  border: 1px;
+  */
 }
 
-.StockCard {
-  position: relative;
-  align: center;
-  left: 20%;
-  margin: 10%;
-  width: 400px;
-  height: 205px;
+.about {
+  /* flex-direction: column; */
+  justify-content: space-around;
+  height: 200px;
+  font-family: Helvetica, sans-serif;
+  margin-left: 150px;
+  width: 590px;
+  color: white;
+  margin-right: 5%;
+  /* border: 1px solid; */
+  box-shadow: 0 0 3px 3px #161616;
+}
+.aboutWord {
+  font-size: 20px;
+  margin-left: 5px;
+  text-align: left;
+  font-weight: bold;
+}
+.companyDescription {
+  margin-left: 5px;
+  text-wrap: ;
+  /* justify-content: space-between; */
+}
+.innerCompany {
+  margin-left: 5px;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 150px;
+  flex-wrap: wrap;
+  width: 590px;
+  height: 300px;
+  box-shadow: 0 0 3px 3px #161616;
+  /* flex-direction: row; */
+}
+.ceoWord {
+  font-size: 16px;
+  font-weight: bold;
+  /* margin-left: 20%; */
+}
+.ceo {
+  color: white;
+  margin-left: 5%;
+}
+.ceoName {
+  color: white;
+  margin-left: 5%;
+}
+.PE {
+  color: white;
+  margin-left: 5%;
+}
+.peWords {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+}
+.peNum {
+  font-size: 14px;
+}
+
+.volume {
+  color: white;
+  margin-left: 10%;
+}
+.volumeWords {
+  font-size: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
+
+.yearweeklow {
+  color: white;
+  margin-left: 5%;
+}
+.yearlowName {
+  font-size: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
+.yearweekhigh {
+  margin-left: 10%;
+  color: white;
+}
+.yearhighName {
+  font-size: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  margin-left: 5%;
+}
+.yearlowNum {
+  margin-left: 5%;
+}
+.marketCap {
+  color: white;
+  margin-left: 10%;
+}
+.marketCapWords {
+  font-size: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
+.marketCapaNum {
+  margin-left: 5%;
+}
+.stockPageButton {
+  background-image: linear-gradient(#bf00ff, black);
+  box-shadow: 0 0 4px 2px #bf00ff;
+  border: black;
+  font-weight: 500;
+  width: 130px;
+  color: white;
+}
+.StockCard:hover {
   border-style: outset;
-  border-color: black;
-  box-shadow: 0 0 4px 2px grey;
+  background-color: #292828;
+  border-color: #bf00ff;
+  box-shadow: 0 0 4px 2px #bf00ff;
   flex: grid;
   border-width: 2px 5px 2px 3px;
 }
 
 .renderNews {
   display: flex;
-  align: left;
   left: 20%;
-  margin: 10%;
-  border-style: outset;
-  border-color: black;
-  width: 500px;
-  height: 205px;
+  margin: 0%;
+  font-family: Helvetica, sans-serif;
+  box-shadow: 0 0 3px 3px #161616;
+  width: 65%;
+  height: 25%;
   flex: grid;
+  color: white;
+}
+.renderNews:hover {
+  box-shadow: 0 0 5px 5px #0d0d0d;
+  background-color: #212121;
 }
 
 .imageDiv {
   align-self: flex-start;
 }
 .positiveChange {
-  color: green;
+  outline: none;
+  background-color: #00b300;
+  box-shadow: 0 0 1px 1px #008000;
+  border-radius: 3px;
+  font-weight: bold;
+  margin-right: 20px;
+  width: 55px;
+  opacity: 0.86;
+  color: white;
 }
 .negativeChange {
-  color: red;
+  background-color: #f52c2c;
+  outline: none;
+  color: white;
+  opacity: 0.86;
+  border-radius: 3px;
+  width: 55px;
+  font-weight: bold;
+  margin-right: 20px;
+  box-shadow: 0 0 1px 1px #ff0000;
 }
 
 .images {
-  height: 180px;
-  width: 150px;
+  height: 200px;
+  width: 230px;
+}
+.headline {
+  flex-wrap: wrap;
+  width: 400px;
+  margin-right: 5%;
+  margin-top: 4%;
 }
 
 .titleDiv {
   position: right;
+  font-size: 17px;
+  margin-left: 5%;
+}
+
+.sourceDiv {
+  margin-left: 5%;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex-end;
+  margin-bottom: 5px;
+}
+.publishDate {
+  font-size: 16px;
+  margin-top: 29%;
+}
+.frontPage {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  /* width: 98%; */
+}
+.frontPage:hover {
+  box-shadow: 0 0 6px 6px #0d0d0d;
+  background-color: #212121;
+}
+.renderFront {
+  width: 85%;
+}
+.frontimageDiv {
+  display: flex;
+  /* height: 920px;
+  width: 430px; */
+}
+.imageInfoRow {
+  display: flex;
+}
+.frontimage {
+  height: 100%;
+  width: 100%;
+}
+.frontheadline {
+  flex-wrap: wrap;
+  width: 50%;
+  margin-right: 5%;
+  margin-top: 4%;
+}
+.frontsourceDiv {
+  /* margin-left: 5%;
+  font-weight: bold;
+  display: flex-end;
+  margin-bottom: 5px; */
+  font-size: 24px;
+  margin-left: 10px;
+}
+.content {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 18px;
+  width: 90%;
+}
+.fronttitleDiv {
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.frontpublishDate {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.back {
+  width: 8%;
+  height: 6%;
+  font-weight: bold;
+  margin-left: 0.3%;
+  margin-bottom: 0.5%;
+
+  background-color: #bf00ff;
+  border-color: #bf00ff;
+  border-radius: 5px;
+}
+.back:hover {
+  box-shadow: 0 0 4px 2px #bf00ff;
+}
+.price {
+  font-size: 26px;
+  color: white;
+}
+.detailTop {
+}
+
+.red {
+  color: black;
+  width: 8%;
+  height: 6%;
+  background-color: #e60000;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  border: none;
+  margin-left: 0.3%;
+}
+.red:focus {
+  outline: none;
+}
+.yellow {
+  background: #a6a6a6;
+  width: 8%;
+  height: 6%;
+  border-radius: 5px;
+  margin-left: 0.3%;
+}
+.green {
+  background-color: #53ff1a;
+  border-radius: 5px;
+  width: 8%;
+  height: 6%;
+  margin-left: 0.3%;
+}
+.StockNewsWords {
+  margin: 20px;
+  margin-left: 25%;
+  color: white;
+}
+.StockNewsWords:hover {
+  color: #bf00ff;
+  font-weight: bold;
 }

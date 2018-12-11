@@ -7,6 +7,8 @@ import ChartComponent from "../chartfolder/index.js";
 import { Link } from "react-router-dom";
 import StockAlgo from "./StockAlgo";
 import Numeral from "numeral";
+import MiniChart from "../chartfolder/MiniIndex";
+import CompanyInfo from "./CompanyInfo";
 class StockDetail extends React.Component {
   render() {
     const stock = this.props.stocks.find(stockObj => {
@@ -18,32 +20,37 @@ class StockDetail extends React.Component {
     return (
       <div>
         <h2 />
-
         {stock ? (
           <div className="infoDiv">
-            <h2 className="companyTitle">{stock.quote.companyName}</h2>
-            {stock.quote.latestPrice}{" "}
+            <div className="detailTop">
+              <h1 className="companyTitle">{stock.quote.companyName}</h1>
+              <div className="price">
+                $ {Numeral(stock.quote.latestPrice).format("0,0.00")}
+              </div>
+            </div>
+            <Link to="/stocks/">
+              <button className="back">Main Page</button>
+            </Link>
+            <StockAlgo symbol={this.props.match.params.symbol} stock={stock} />
           </div>
         ) : (
           "getting data..."
         )}
         <div className="chartDiv">
           <ChartComponent symbol={symbol} />
+          <div className="miniChartDiv">
+            <MiniChart symbol={symbol} />
+          </div>
         </div>
         {stock ? (
           <div>
+            <CompanyInfo stock={stock} />
+            <h2 className="StockNewsWords">{symbol} News</h2>
             <StockNews stock={stock.quote} />
-            <StockAlgo symbol={this.props.match.params.symbol} stock={stock} />
-            <button>
-              Average Vol. {Numeral(stock.quote.avgTotalVolume).format()}
-            </button>
           </div>
         ) : (
           "loading news.."
         )}
-        <Link to="/stocks/">
-          <button>Main Page</button>
-        </Link>
       </div>
     );
   }

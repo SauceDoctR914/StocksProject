@@ -14,23 +14,6 @@ import { fitWidth } from "react-stockcharts/lib/helper";
 import { last, timeIntervalBarWidth } from "react-stockcharts/lib/utils";
 
 class CandleStickChart extends React.Component {
-  setDate = arg => {
-    return arg.map(obj => {
-      const timeParser = timeFormat("%a %b %d %Y");
-      const date = new Date(Moment(obj.date).format("ddd MMM D YYYY"));
-      return { ...obj, date };
-    });
-  };
-
-  getData = symbol => {
-    const promiseMSFT = fetch(
-      `https://api.iextrading.com/1.0/stock/${symbol}/chart/6m`
-    )
-      .then(response => response.json())
-      .then(res => this.setDate(res));
-    return promiseMSFT;
-  };
-
   render() {
     const { type, width, data, ratio } = this.props;
     const xAccessor = d => d.date;
@@ -49,14 +32,33 @@ class CandleStickChart extends React.Component {
         xExtents={xExtents}
       >
         <Chart id={1} yExtents={d => [d.high, d.low]}>
-          <XAxis axisAt="bottom" orient="bottom" ticks={6} />
-          <YAxis axisAt="left" orient="left" ticks={5} />
-          <CandlestickSeries width={timeIntervalBarWidth(utcDay)} />
+          <XAxis
+            axisAt="bottom"
+            orient="bottom"
+            ticks={6}
+            tickStroke="#FFFFFF"
+            stroke="#FFFFFF"
+          />
+          <YAxis
+            axisAt="left"
+            orient="left"
+            ticks={5}
+            tickStroke="#FFFFFF"
+            stroke="#FFFFFF"
+          />
+          <CandlestickSeries
+            width={timeIntervalBarWidth(utcDay)}
+            stroke={d => (d.close > d.open ? "#00ff00" : "#FFFFFF")}
+            wickStroke={d => (d.close > d.open ? "#00ff00" : "#FFFFFF")}
+            fill={d => (d.close > d.open ? "#00ff00" : "#bf00ff")}
+          />
         </Chart>
       </ChartCanvas>
     );
   }
 }
+// #00ff00
+// #bf00ff
 
 CandleStickChart.propTypes = {
   data: PropTypes.array.isRequired,
