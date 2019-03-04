@@ -60,15 +60,12 @@ const mapStateToProps = state => {
   return { stocks: state.stocks };
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    selectStock: stock => dispatch({ type: "SELECT_STOCK", payload: stock })
-  };
-};
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(StockDetail);
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     selectStock: stock => dispatch({ type: "SELECT_STOCK", payload: stock })
+//   };
+// };
+export default connect(mapStateToProps)(StockDetail);
 
 //{stock.news.map(newsObj => {
 //   return <StockNews key={newsObj.headline} newsObj={newsObj} />;

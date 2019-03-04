@@ -12,6 +12,8 @@ import { withRouter } from "react-router-dom";
 // import StockAlgo from "./components/StockAlgo";
 import FetchNews from "./components/FetchNews";
 class App extends Component {
+  // add div with sliding ticker info on sector performance
+  //'https://cloud.iexapis.com/beta/stock/market/sector-performance?token=pk_ce5287b13658456797045a3c1a6c1472'
   componentDidMount() {
     setInterval(() => {
       this.props.fetchStocks();
