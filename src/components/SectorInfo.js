@@ -1,6 +1,6 @@
 import React from "react";
 
 const SectorInfo = props => {
-  return ();
+  return;
 };
 export default SectorInfo;

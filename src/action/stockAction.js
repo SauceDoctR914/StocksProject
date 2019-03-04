@@ -11,3 +11,13 @@ export const fetchStocks = () => {
       .catch(console.error);
   };
 };
+
+export const fetchSectorData = () => {
+  return async dispatch => {
+    let response = await fetch(
+      "https://cloud.iexapis.com/beta/stock/market/sector-performance?token=pk_ce5287b13658456797045a3c1a6c1472"
+    );
+    let sectorData = await response.json();
+    console.log(sectorData);
+  };
+};
