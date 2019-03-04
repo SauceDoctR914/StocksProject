@@ -13,11 +13,27 @@ export const fetchStocks = () => {
 };
 
 export const fetchSectorData = () => {
-  return async dispatch => {
-    let response = await fetch(
+  return dispatch => {
+    return fetch(
       "https://cloud.iexapis.com/beta/stock/market/sector-performance?token=pk_ce5287b13658456797045a3c1a6c1472"
-    );
-    let sectorData = await response.json();
-    console.log(sectorData);
+    )
+      .then(response => response.json())
+      .then(sectorData => ({ type: GET_SECTORDATA, sectorData }))
+      .catch(console.error("Error Fetching SectorData"));
   };
 };
+
+// export const fetchSectorData = () => {
+//   return async dispatch => {
+//     try {
+//       let response = await fetch(
+//         "https://cloud.iexapis.com/beta/stock/market/sector-performance?token=pk_ce5287b13658456797045a3c1a6c1472"
+//       );
+//       let sectorData = await response.json();
+//       console.log(sectorData);
+//       dispatch({ type: GET_SECTORDATA, sectorData });
+//     } catch (error) {
+//       console.error("Error Fetching SectorData");
+//     }
+//   };
+// };
