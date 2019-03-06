@@ -11,6 +11,9 @@ const stockReducer = (state = initialState, action) => {
     case "SELECT_STOCK": {
       return { ...state, selectedStock: action.payload };
     }
+    case "GET_SECTORDATA": {
+      return { ...state, sectorData: action.payoad };
+    }
     default:
       return state;
   }

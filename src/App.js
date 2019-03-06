@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 import "./App.css";
 import { connect } from "react-redux";
-import { fetchStocks } from "./action/stockAction";
-// import SearchBar from "./components/SearchBar";
+import { fetchStocks } from "./Redux/action/stockAction";
+import SectorInfo from "./components/SectorInfo";
 import StockContainer from "./components/StockContainer";
 import StockDetail from "./components/StockDetail";
 import { Route, Switch } from "react-router-dom";
-// import Moment from "moment";
 import Date from "./components/Date";
 import { withRouter } from "react-router-dom";
-// import StockAlgo from "./components/StockAlgo";
 import FetchNews from "./components/FetchNews";
 class App extends Component {
   // add div with sliding ticker info on sector performance
@@ -58,14 +56,18 @@ class App extends Component {
             render={routerProps => (
               <React.Fragment>
                 <h1 className="theTitle">2Stoc</h1>
-                <Date />
-                <StockContainer
-                  {...routerProps}
-                  stocks={this.filterSearch()}
-                  onSearchChange={this.onSearchChange}
-                  searchTerm={this.state.searchTerm}
-                />
                 <div className="time">
+                  <Date />
+                </div>
+                <div className="stocksectornews">
+                  <StockContainer
+                    {...routerProps}
+                    stocks={this.filterSearch()}
+                    onSearchChange={this.onSearchChange}
+                    searchTerm={this.state.searchTerm}
+                  />
+                  <SectorInfo />
+
                   <FetchNews />
                 </div>
               </React.Fragment>

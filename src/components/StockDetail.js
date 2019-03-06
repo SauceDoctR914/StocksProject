@@ -1,7 +1,7 @@
 import React from "react";
 import StockNews from "./StockNews";
 import { connect } from "react-redux";
-import { fetchStocks } from "../action/stockAction";
+import { fetchStocks } from "../Redux/action/stockAction";
 import { withRouter } from "react-router-dom";
 import ChartComponent from "../chartfolder/index.js";
 import { Link } from "react-router-dom";

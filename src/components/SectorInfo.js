@@ -1,13 +1,23 @@
-import React from "react";
 import { connect } from "react-redux";
-import { fetchSectorData } from "../action/stockAction";
-const SectorInfo = props => {
-  return;
-};
+import { fetchSectorData } from "../Redux/action/stockAction";
+import { withRouter } from "react-router-dom";
+
+import React, { Component } from "react";
+
+class SectorInfo extends Component {
+  componentDidMount() {
+    this.props.fetchSectorData();
+  }
+
+  render() {
+    return <div />;
+  }
+}
 
 const mapStateToProps = state => {
-  return {};
+  return { sectorData: state.sectorData };
 };
+
 const mapDispatchToProps = dispatch => {
   return {
     fetchSectorData: () => dispatch(fetchSectorData())

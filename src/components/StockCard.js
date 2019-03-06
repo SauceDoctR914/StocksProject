@@ -18,7 +18,7 @@ class StockCard extends React.Component {
         style={{ textDecoration: "none" }}
       >
         <div className="StockCard">
-          <p className="symbol">{this.props.stock.quote.symbol}</p>
+          <div className="symbol">{this.props.stock.quote.symbol}</div>
           <div className="priceDiv">
             ${Numeral(this.props.stock.quote.latestPrice).format("0.00")}
           </div>

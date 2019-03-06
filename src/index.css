@@ -11,6 +11,8 @@ background-attachment: fixed; */
 // #bf00ff */
 .app {
   display: row;
+  width: 100%;
+  height: 100%;
 }
 .theTitle {
   font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -49,8 +51,8 @@ background-attachment: fixed; */
 }
 
 .frontNews {
-  margin-right: 5px;
-
+  margin-right: 1vh;
+  width: 125vh;
   /* justify-content: flex-start; */
 }
 .frontPage {
@@ -59,16 +61,16 @@ background-attachment: fixed; */
   margin: 0%;
   font-family: Helvetica, sans-serif;
   box-shadow: 0 0 3px 3px #161616;
-  width: 65%;
+  width: 125vh;
   height: 25%;
   flex: grid;
   color: white;
 }
 .StockContainer {
-  float: right;
-  margin-top: 40px;
-  left: 60%;
-  width: 34%;
+  margin-top: 10vh;
+  margin-left: 185vh;
+  left: 155vh;
+  width: 90vh;
   /* background: -webkit-linear-gradient(top, #292828 1%, #1a1a1a 60%); */
   /* box-shadow: 0 0 2px 1px #303030; */
   text-align: center;
@@ -79,23 +81,54 @@ background-attachment: fixed; */
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-left: 5%;
+  margin-left: 1vh;
   box-shadow: 0 0 1px 2px #090909;
-  margin: 1%;
-  width: 97%;
-  height: 8%;
+  margin: 0.5vh;
+  width: 80vh;
+  height: 6vh;
   color: #e5e5e5;
-  font-family: Sans-Serif;
+  font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+  text-align: left;
 }
 .symbol {
+  font-size: 16px;
+  font-weight: bold;
   justify-content: flex-start;
-  margin-left: 1%;
+  margin-left: 1vh;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  width: 10vh;
 }
 .priceDiv {
   justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 1vh;
+  margin-bottom: 1vh;
+  width: 10vh;
+  text-align: left;
 }
-.changeDiv {
-  justify-content: flex-end;
+.positiveChange {
+  outline: none;
+  background-color: #00b300;
+  box-shadow: 0 0 1px 1px #008000;
+  border-radius: 3px;
+  font-weight: bold;
+  margin-right: 20px;
+  width: 55px;
+  opacity: 0.86;
+  color: white;
+}
+.negativeChange {
+  background-color: #f52c2c;
+  outline: none;
+  color: white;
+  opacity: 0.86;
+  border-radius: 3px;
+  width: 55px;
+  font-weight: bold;
+  margin-right: 20px;
+  box-shadow: 0 0 1px 1px #ff0000;
 }
 .miniChartDiv {
   position: relative;
@@ -105,10 +138,13 @@ background-attachment: fixed; */
 .formClass {
   position: sticky;
   top: 0;
-  left: 35%;
+  left: 5vh;
   border-radius: 4px;
-  margin: auto;
+
   border-color: #171718;
+}
+.inputDiv {
+  align-items: center;
 }
 input:hover::-webkit-input-placeholder {
   color: white;
@@ -127,6 +163,7 @@ input:focus {
   border-color: #171718;
   color: #00ff00;
   font: sans-serif;
+
   border-radius: 8px;
   font-size: 18px;
   text-align: center;
@@ -331,28 +368,6 @@ input:focus {
 }
 .imageDiv {
   align-self: flex-start;
-}
-.positiveChange {
-  outline: none;
-  background-color: #00b300;
-  box-shadow: 0 0 1px 1px #008000;
-  border-radius: 3px;
-  font-weight: bold;
-  margin-right: 20px;
-  width: 55px;
-  opacity: 0.86;
-  color: white;
-}
-.negativeChange {
-  background-color: #f52c2c;
-  outline: none;
-  color: white;
-  opacity: 0.86;
-  border-radius: 3px;
-  width: 55px;
-  font-weight: bold;
-  margin-right: 20px;
-  box-shadow: 0 0 1px 1px #ff0000;
 }
 
 .headline {

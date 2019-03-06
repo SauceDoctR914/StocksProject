@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { fetchStocks } from "../action/stockAction";
+import { fetchStocks } from "../Redux/action/stockAction";
 
 class SearchBar extends Component {
   handleSearchChange = e => {
@@ -11,15 +11,15 @@ class SearchBar extends Component {
     return (
       <div>
         <form className="formClass">
-          <p>
+          <div className="inputDiv">
             <input
-            className="inputClass"
+              className="inputClass"
               type="text"
               placeholder="Search TickR"
               value={this.props.searchTerm}
               onChange={this.handleSearchChange}
             />
-          </p>
+          </div>
         </form>
       </div>
     );

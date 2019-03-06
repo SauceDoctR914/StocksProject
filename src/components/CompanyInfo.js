@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Numeral from "numeral";
-import React from "react";
 
 const CompanyInfo = props => {
   const { stock } = props;
