@@ -1,8 +1,9 @@
 ## 2Stoc
 2Stoc is a note Stock Information App. On the homepage the user can view general world news and the headlining news story, stock prices, stock ticker symbols, percent change, and the current time and date. Individual stock pages show specific information, charts, and news pertaining to that particular stock.
 
+<img width="996" alt="screen shot 2019-03-06 at 7 20 30 pm" src="https://user-images.githubusercontent.com/32119313/53923099-f8584900-4044-11e9-820e-ce36a46f3898.png">
 
-Available Scripts
+# Available Scripts
 
 Frontend built with React.Js and Redux for state management. User Interface designed with custom CSS styling.
 
@@ -16,7 +17,6 @@ npm install
 npm start
 
 # Usage Example
-<img width="996" alt="screen shot 2019-03-06 at 7 20 30 pm" src="https://user-images.githubusercontent.com/32119313/53923099-f8584900-4044-11e9-820e-ce36a46f3898.png">
 
 A user can click anywhere on the news boxes on the front page and will be redirected to the financial times news website. On the top of the front page the current time and date is displayed along with the app title. On the right of the page are the stock ticker symbols, along with their current prices and change percentages. The percentage change is listed in green if it is positive, and red for negative. At the top of the column of stock tickers, you can search for a particular stock/company by its symbol. 
 
