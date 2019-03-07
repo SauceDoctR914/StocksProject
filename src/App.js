@@ -62,18 +62,20 @@ class App extends Component {
                 </div>
                 <div className="stocksectornews">
                   <FetchNews />
-                  <div className="searchDiv">
-                    <SearchBar
-                      searchChange={this.props.onSearchChange}
-                      searchTerm={this.props.searchTerm}
+                  <div id="searchnstock">
+                    <div className="searchDiv">
+                      <SearchBar
+                        searchChange={this.props.onSearchChange}
+                        searchTerm={this.props.searchTerm}
+                      />
+                    </div>
+                    <StockContainer
+                      {...routerProps}
+                      stocks={this.filterSearch()}
+                      onSearchChange={this.onSearchChange}
+                      searchTerm={this.state.searchTerm}
                     />
                   </div>
-                  <StockContainer
-                    {...routerProps}
-                    stocks={this.filterSearch()}
-                    onSearchChange={this.onSearchChange}
-                    searchTerm={this.state.searchTerm}
-                  />
                   <SectorInfo />
                 </div>
               </React.Fragment>

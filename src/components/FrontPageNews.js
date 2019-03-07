@@ -5,6 +5,7 @@ import Moment from "moment";
 
 const FrontPageNews = props => {
   const { news } = props;
+  console.log(news.time, news, "gavin");
   return (
     <a href={news.url} target="_blank" style={{ textDecoration: "none" }}>
       {news ? (
@@ -20,7 +21,9 @@ const FrontPageNews = props => {
               <div className="titleDiv">{news.title}</div>
             </div>
             <div className="newsInfo">
-              <div className="publishDate">{Moment(news.time).calendar()}</div>
+              <div className="publishDate">
+                {Moment(news.publishedAt).calendar()}
+              </div>
             </div>
           </div>
         </div>

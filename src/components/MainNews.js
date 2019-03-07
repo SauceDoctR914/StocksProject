@@ -4,7 +4,7 @@ import Moment from "moment";
 
 const MainNews = props => {
   const { frontPage } = props;
-  console.log(props.frontPage);
+  console.log(props.frontPage); //regex to remove [+chars]
   return (
     <div>
       {frontPage ? (
@@ -15,19 +15,18 @@ const MainNews = props => {
         >
           <div className="frontPage">
             <div className="fronttitleDiv">{frontPage.title}</div>
-            <div className="imageInfoRow">
-              {frontPage.urlToImage ? (
-                <div className="frontimageDiv">
+            <div className="content">{frontPage.content}</div>
+            <div className="renderFront">
+              <div className="imageInfoRow">
+                {frontPage.urlToImage ? (
                   <img className="frontimage" src={frontPage.urlToImage} />
-                </div>
-              ) : null}
-              <div className="renderFront">
+                ) : null}
+
                 <div className="frontheadline">
                   <div className="frontsourceDiv">{frontPage.source.name}</div>
                   <div className="frontpublishDate">
                     {Moment(frontPage.time).calendar()}
                   </div>
-                  <div className="content">{frontPage.content}</div>
                 </div>
                 <div className="frontPageInfo" />
               </div>

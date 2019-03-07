@@ -52,29 +52,34 @@ background-attachment: fixed; */
 
 .frontNews {
   margin-right: 1vh;
-  width: 125vh;
+  width: 85em;
   /* justify-content: flex-start; */
 }
 .stocksectornews {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
 }
 .frontPage {
-  justify-content: flex-start;
-  left: 20%;
+  /* justify-content: flex-start; */
   margin: 0%;
   font-family: Helvetica, sans-serif;
   box-shadow: 0 0 3px 3px #161616;
-  width: 125vh;
-  height: 25%;
+  width: 85em;
+  max-height: 25%;
+  min-height: 15em;
+  text-align: center;
   /* flex: grid; */
   color: white;
 }
 #search {
-  align-items: baseline;
+  margin-left: 20em;
+  /* align-items: baseline; */
+}
+#searchnstock {
+  /* align-items: flex-end; */
 }
 .StockContainer {
-  align-items: flex-end;
+  /* align-items: flex-end; */
   margin-top: 10vh;
   margin-left: 5em;
   /* left: 55em; */
@@ -357,14 +362,13 @@ input:focus {
 
 .renderNews {
   display: flex;
-  left: 20%;
   margin: 0%;
   font-family: Helvetica, sans-serif;
   box-shadow: 0 0 3px 3px #161616;
-  width: 125vh;
-  height: 25vh;
+  width: 85em;
+  height: 13em;
   overflow: hidden;
-  flex: grid;
+  /* flex: grid; */
   color: white;
 }
 .renderNews:hover {
@@ -372,9 +376,9 @@ input:focus {
   background-color: #212121;
 }
 .images {
-  height: 24.5vh;
+  height: 13em;
   margin-top: 1%;
-  width: 25vh;
+  width: 15em;
 }
 .imageDiv {
   align-self: flex-start;
@@ -401,11 +405,12 @@ input:focus {
   margin-bottom: 5px;
 }
 .newsInfo {
-  margin-left: 26vh;
+  margin-left: 30em;
+  right: 0%;
 }
 .publishDate {
   font-size: 16px;
-  margin-top: 10vh;
+  margin-top: 5em;
 }
 .frontPage {
   float: left;
@@ -429,8 +434,9 @@ input:focus {
   display: flex;
 }
 .frontimage {
-  height: 100%;
-  width: 100%;
+  margin-left: 25em;
+  height: 35em;
+  width: 45em;
 }
 .frontheadline {
   flex-wrap: wrap;
@@ -439,28 +445,26 @@ input:focus {
   margin-top: 4%;
 }
 .frontsourceDiv {
-  /* margin-left: 5%;
-  font-weight: bold;
-  display: flex-end;
-  margin-bottom: 5px; */
   font-size: 24px;
   margin-left: 10px;
 }
 .content {
-  margin-top: 20px;
+  margin-top: 0px;
   margin-left: 10px;
-  font-size: 18px;
+  font-size: 22px;
   width: 90%;
 }
 .fronttitleDiv {
   font-size: 27px;
   font-weight: bold;
   text-align: center;
+  flex-wrap: wrap;
   margin-bottom: 5%;
 }
 
 .frontpublishDate {
-  margin-left: 10px;
+  margin-left: 33em;
+  width: 10em;
   font-size: 18px;
 }
 
@@ -470,7 +474,6 @@ input:focus {
   font-weight: bold;
   margin-left: 0.3%;
   margin-bottom: 0.5%;
-
   background-color: #bf00ff;
   border-color: #bf00ff;
   border-radius: 5px;
