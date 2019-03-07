@@ -1,5 +1,5 @@
 ## 2Stoc
-2Stoc is a note Stock Information App. On the homepage the user can view general world news and the headlining news story, stock prices, stock ticker symbols, percent change, and the current time and date. 
+2Stoc is a note Stock Information App. On the homepage the user can view general world news and the headlining news story, stock prices, stock ticker symbols, percent change, and the current time and date. Individual stock pages show specific information, charts, and news pertaining to that particular stock.
 
 
 Available Scripts
