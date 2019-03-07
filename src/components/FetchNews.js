@@ -28,17 +28,15 @@ class FetchNews extends Component {
   render() {
     console.log(this.state.frontPage);
     return (
-      <div>
-        <div>
-          {this.state.frontPage !== null && this.state.frontPage ? (
-            <div className="topNews">
-              <MainNews frontPage={this.state.frontPage} />
-            </div>
-          ) : (
-            "Getting Data..."
-          )}
-          {this.mapFrontNews()}
-        </div>
+      <div className="frontNews">
+        {this.state.frontPage !== null && this.state.frontPage ? (
+          <div className="topNews">
+            <MainNews frontPage={this.state.frontPage} />
+          </div>
+        ) : (
+          "Getting Data..."
+        )}
+        {this.mapFrontNews()}
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import SearchBar from "./components/SearchBar";
 import { connect } from "react-redux";
 import { fetchStocks } from "./Redux/action/stockAction";
 import SectorInfo from "./components/SectorInfo";
@@ -60,6 +61,13 @@ class App extends Component {
                   <Date />
                 </div>
                 <div className="stocksectornews">
+                  <FetchNews />
+                  <div className="searchDiv">
+                    <SearchBar
+                      searchChange={this.props.onSearchChange}
+                      searchTerm={this.props.searchTerm}
+                    />
+                  </div>
                   <StockContainer
                     {...routerProps}
                     stocks={this.filterSearch()}
@@ -67,8 +75,6 @@ class App extends Component {
                     searchTerm={this.state.searchTerm}
                   />
                   <SectorInfo />
-
-                  <FetchNews />
                 </div>
               </React.Fragment>
             )}

@@ -14,17 +14,7 @@ class StockContainer extends Component {
   };
 
   render() {
-    return (
-      <div className="StockContainer">
-        <div className="searchDiv">
-          <SearchBar
-            searchChange={this.props.onSearchChange}
-            searchTerm={this.props.searchTerm}
-          />
-        </div>
-        {this.mapData()}
-      </div>
-    );
+    return <div className="StockContainer">{this.mapData()}</div>;
   }
 }
 

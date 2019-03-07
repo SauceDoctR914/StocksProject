@@ -55,22 +55,32 @@ background-attachment: fixed; */
   width: 125vh;
   /* justify-content: flex-start; */
 }
+.stocksectornews {
+  display: flex;
+  align-items: baseline;
+}
 .frontPage {
-  float: left;
+  justify-content: flex-start;
   left: 20%;
   margin: 0%;
   font-family: Helvetica, sans-serif;
   box-shadow: 0 0 3px 3px #161616;
   width: 125vh;
   height: 25%;
-  flex: grid;
+  /* flex: grid; */
   color: white;
 }
+#search {
+  align-items: baseline;
+}
 .StockContainer {
+  align-items: flex-end;
   margin-top: 10vh;
-  margin-left: 185vh;
-  left: 155vh;
+  margin-left: 5em;
+  /* left: 55em; */
   width: 90vh;
+  height: 55em;
+  overflow-y: scroll;
   /* background: -webkit-linear-gradient(top, #292828 1%, #1a1a1a 60%); */
   /* box-shadow: 0 0 2px 1px #303030; */
   text-align: center;
@@ -81,9 +91,9 @@ background-attachment: fixed; */
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-left: 1vh;
+  margin-left: 1em;
   box-shadow: 0 0 1px 2px #090909;
-  margin: 0.5vh;
+  margin: 0.35em;
   width: 80vh;
   height: 6vh;
   color: #e5e5e5;
