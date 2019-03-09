@@ -51,7 +51,7 @@ background-attachment: fixed; */
 }
 
 .frontNews {
-  margin-right: 1vh;
+  margin-right: 1em;
   width: 65em;
   /* justify-content: flex-start; */
 }
@@ -149,7 +149,7 @@ background-attachment: fixed; */
 .miniChartDiv {
   position: relative;
   align: left;
-  background: #303030;
+  /* background: #303030; */
 }
 .formClass {
   position: sticky;
@@ -205,11 +205,11 @@ input:focus {
 .about {
   /* flex-direction: column; */
   justify-content: space-around;
-  margin-top: 5vh;
-  height: 30vh;
+  margin-top: 5em;
+  min-height: 13em;
   font-family: Helvetica, sans-serif;
-  margin-left: 20vh;
-  width: 80vh;
+  margin-left: 10em;
+  width: 40em;
   color: white;
   margin-right: 5%;
   /* border: 1px solid; */
@@ -217,44 +217,44 @@ input:focus {
 }
 .aboutWord {
   font-size: 22px;
-  margin-left: 2vh;
+  margin-left: 1em;
   text-align: left;
   font-weight: bold;
 }
 .companyDescription {
-  margin-top: 1vh;
+  margin-top: 1em;
   font-size: 17px;
-  margin-left: 2vh;
+  margin-left: 1.5em;
   text-wrap: ;
   /* justify-content: space-between; */
 }
 .innerCompany {
-  margin-left: 5vh;
+  margin-left: 3em;
   display: flex;
-  margin-top: 2vh;
-  margin-left: 20vh;
+  margin-top: 1.4em;
+  margin-left: 10em;
   flex-wrap: wrap;
   /* align-content: space-between; */
-  width: 80vh;
-  height: 40vh;
+  width: 40em;
+  min-height: 20em;
   box-shadow: 0 0 3px 3px #161616;
   /* flex-direction: row; */
 }
 .ceoWord {
   font-size: 16px;
   font-weight: bold;
-  margin-left: 3vh;
-  margin-top: 3vh;
+  margin-left: 2em;
+  margin-top: 2em;
   /* margin-left: 20%; */
 }
 .ceo {
   color: white;
-  margin-left: 3vh;
+  margin-left: 2em;
 }
 .ceoName {
   color: white;
-  margin-top: 1vh;
-  margin-left: 3vh;
+  margin-top: 1em;
+  margin-left: 2em;
 }
 .PE {
   color: white;

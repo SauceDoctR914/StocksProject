@@ -122,7 +122,7 @@ class CandleStickChartWithMACDIndicator extends React.Component {
           id={1}
           height={400}
           yExtents={[d => [d.high, d.low], ema26.accessor(), ema12.accessor()]}
-          padding={{ top: 10, bottom: 20 }}
+          padding={{ top: 70, bottom: 20 }}
         >
           <XAxis
             axisAt="bottom"
