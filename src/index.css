@@ -573,7 +573,7 @@ $duration: 30s;
   bottom: 0;
   width: 100%;
   overflow: hidden;
-  height: 4rem;
+  height: 10em;
   background-color: rgba(#000, 0.9);
   padding-left: 80%;
   box-sizing: content-box;
@@ -585,6 +585,7 @@ $duration: 30s;
   white-space: nowrap;
   padding-right: 40%;
   margin-right: 5%;
+  font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
   box-sizing: content-box;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
@@ -598,6 +599,41 @@ $duration: 30s;
 .ticker__item {
   display: inline-block;
   padding: 0 2rem;
-  font-size: 2rem;
+  font-size: 14px;
+  height: 4em;
+  width: 25em;
+  margin-left: 3em;
+  text-align: center;
   color: white;
+}
+.sector {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 9em;
+}
+.priceChange {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.tickerPositiveChange {
+  outline: none;
+  text-shadow: 0 0 3px 4px white;
+  font-weight: bold;
+  margin-right: 1.5em;
+  margin-bottom: 2em;
+  width: 5em;
+  opacity: 0.86;
+  color: #21ce99;
+}
+.tickerNegativeChange {
+  outline: none;
+  color: #fe456a;
+  opacity: 0.86;
+  border-radius: 3px;
+  margin-right: 1.5em;
+  width: 5em;
+  font-weight: bold;
+  text-shadow: 0 0 1px 1px #000000;
 }
