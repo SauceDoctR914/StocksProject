@@ -7,7 +7,7 @@ const SectorCard = props => {
   let positiveInt = pctChange - pctChange - pctChange;
 
   return (
-    <div className="ticker">
+    <span className="ticker__item">
       <div className="symbol">{sectorData.name}</div>:
       <div className="priceChange">
         {pctChange > 0 ? (
@@ -16,7 +16,7 @@ const SectorCard = props => {
           <p className="negativeChange">%{positiveInt}</p>
         )}
       </div>
-    </div>
+    </span>
   );
 };
 

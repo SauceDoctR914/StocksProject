@@ -7,7 +7,7 @@ const FrontPageNews = props => {
   const { news } = props;
   return (
     <a href={news.url} target="_blank" style={{ textDecoration: "none" }}>
-      {news ? (
+      {news && news.urlToImage !== null ? (
         <div className="frontNews">
           <div className="renderNews">
             {news.urlToImage ? (
@@ -26,9 +26,7 @@ const FrontPageNews = props => {
             </div>
           </div>
         </div>
-      ) : (
-        "Loading..."
-      )}
+      ) : null}
     </a>
   );
 };

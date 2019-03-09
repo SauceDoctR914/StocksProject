@@ -59,7 +59,9 @@ class App extends Component {
                 <div className="time">
                   <Date />
                 </div>
-                <SectorInfo />
+                <div className="tickerContainer">
+                  <SectorInfo />
+                </div>
                 <div className="stocksectornews">
                   <FetchNews />
                   <div id="searchnstock">

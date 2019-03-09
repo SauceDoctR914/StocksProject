@@ -15,7 +15,7 @@ class SectorInfo extends Component {
   };
   render() {
     console.log(this.props, "123", this.props.sectorData);
-    return <div className="sectorContainer">{this.mapData()}</div>;
+    return <div className="ticker">{this.mapData()}</div>;
   }
 }
 
