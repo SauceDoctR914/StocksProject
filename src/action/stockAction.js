@@ -18,7 +18,7 @@ export const fetchSectorData = () => {
       "https://cloud.iexapis.com/beta/stock/market/sector-performance?token=pk_ce5287b13658456797045a3c1a6c1472"
     )
       .then(response => response.json())
-      .then(sectorData => dispatch({ type: "GET_SECTORDATA", sectorData }))
+      .then(sectorData => ({ type: "GET_SECTORDATA", sectorData }))
       .catch(console.error);
   };
 };

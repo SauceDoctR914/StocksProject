@@ -1,6 +1,7 @@
 const initialState = {
   stocks: [],
-  selectedStock: {}
+  selectedStock: {},
+  sectorData: []
 };
 
 const stockReducer = (state = initialState, action) => {
@@ -12,7 +13,7 @@ const stockReducer = (state = initialState, action) => {
       return { ...state, selectedStock: action.payload };
     }
     case "GET_SECTORDATA": {
-      return { ...state, sectorData: action.payoad };
+      return { ...state, sectorData: action.sectorData };
     }
     default:
       return state;

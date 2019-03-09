@@ -8,6 +8,7 @@ class SearchBar extends Component {
   };
 
   render() {
+    console.log(this.props, "gg");
     return (
       <div id="search">
         <form className="formClass">
@@ -26,10 +27,4 @@ class SearchBar extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    stocks: state.stocks
-  };
-};
-
-export default connect(mapStateToProps)(SearchBar);
+export default SearchBar;

@@ -5,7 +5,6 @@ import Moment from "moment";
 
 const FrontPageNews = props => {
   const { news } = props;
-  console.log(news.time, news, "gavin");
   return (
     <a href={news.url} target="_blank" style={{ textDecoration: "none" }}>
       {news ? (

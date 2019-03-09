@@ -52,7 +52,7 @@ background-attachment: fixed; */
 
 .frontNews {
   margin-right: 1vh;
-  width: 85em;
+  width: 65em;
   /* justify-content: flex-start; */
 }
 .stocksectornews {
@@ -60,7 +60,6 @@ background-attachment: fixed; */
   align-items: flex-start;
 }
 .frontPage {
-  /* justify-content: flex-start; */
   margin: 0%;
   font-family: Helvetica, sans-serif;
   box-shadow: 0 0 3px 3px #161616;
@@ -68,23 +67,24 @@ background-attachment: fixed; */
   max-height: 25%;
   min-height: 15em;
   text-align: center;
-  /* flex: grid; */
   color: white;
 }
 #search {
-  margin-left: 20em;
+  margin-left: 21.5%;
   /* align-items: baseline; */
 }
 #searchnstock {
+  position: sticky;
+  top: 0;
   /* align-items: flex-end; */
 }
 .StockContainer {
   /* align-items: flex-end; */
-  margin-top: 10vh;
-  margin-left: 5em;
+  margin-top: 1em;
+  margin-left: 0em;
   /* left: 55em; */
-  width: 90vh;
-  height: 55em;
+  width: 36em;
+  height: 65em;
   overflow-y: scroll;
   /* background: -webkit-linear-gradient(top, #292828 1%, #1a1a1a 60%); */
   /* box-shadow: 0 0 2px 1px #303030; */
@@ -92,35 +92,35 @@ background-attachment: fixed; */
   /* float: right; */
 }
 .StockCard {
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   margin-left: 1em;
   box-shadow: 0 0 1px 2px #090909;
   margin: 0.35em;
-  width: 80vh;
-  height: 6vh;
+  width: 35em;
+  height: 2.5em;
   color: #e5e5e5;
   font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
   text-align: left;
+  padding-bottom: 0.5em;
 }
 .symbol {
   font-size: 16px;
   font-weight: bold;
   justify-content: flex-start;
-  margin-left: 1vh;
-  margin-top: 2vh;
-  margin-bottom: 1vh;
-  width: 10vh;
+  margin-left: 0.5em;
+  margin-top: 0.85em;
+  width: 2em;
 }
 .priceDiv {
   justify-content: center;
   font-size: 16px;
   font-weight: bold;
-  margin-left: 1vh;
-  margin-bottom: 1vh;
-  width: 10vh;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  width: 5em;
   text-align: left;
 }
 .positiveChange {
@@ -129,8 +129,9 @@ background-attachment: fixed; */
   box-shadow: 0 0 1px 1px #008000;
   border-radius: 3px;
   font-weight: bold;
-  margin-right: 20px;
-  width: 55px;
+  margin-right: 1.5em;
+  margin-bottom: 2em;
+  width: 5em;
   opacity: 0.86;
   color: white;
 }
@@ -140,9 +141,9 @@ background-attachment: fixed; */
   color: white;
   opacity: 0.86;
   border-radius: 3px;
-  width: 55px;
+  margin-right: 1.5em;
+  width: 5em;
   font-weight: bold;
-  margin-right: 20px;
   box-shadow: 0 0 1px 1px #ff0000;
 }
 .miniChartDiv {
@@ -152,10 +153,7 @@ background-attachment: fixed; */
 }
 .formClass {
   position: sticky;
-  top: 0;
-  left: 5vh;
   border-radius: 4px;
-
   border-color: #171718;
 }
 .inputDiv {
@@ -350,8 +348,8 @@ input:focus {
 .StockCard:hover {
   border-style: outset;
   background-color: #292828;
-  border-color: #bf00ff;
-  box-shadow: 0 0 4px 2px #bf00ff;
+  border-color: #0d0d0d;
+  box-shadow: 0 0 4px 2px #0d0d0d;
   flex: grid;
   border-width: 2px 5px 2px 3px;
 }
@@ -362,10 +360,10 @@ input:focus {
 
 .renderNews {
   display: flex;
-  margin: 0%;
+  margin: 0.3%;
   font-family: Helvetica, sans-serif;
   box-shadow: 0 0 3px 3px #161616;
-  width: 85em;
+  width: 60em;
   height: 13em;
   overflow: hidden;
   /* flex: grid; */
@@ -376,8 +374,8 @@ input:focus {
   background-color: #212121;
 }
 .images {
-  height: 13em;
-  margin-top: 1%;
+  height: 12.7em;
+  margin: 1%;
   width: 15em;
 }
 .imageDiv {
@@ -386,7 +384,7 @@ input:focus {
 
 .headline {
   flex-wrap: wrap;
-  width: 400px;
+  width: 40em;
   margin-right: 5%;
   margin-top: 4%;
 }
@@ -399,21 +397,23 @@ input:focus {
 
 .sourceDiv {
   margin-left: 5%;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
   display: flex-end;
   margin-bottom: 5px;
 }
 .newsInfo {
-  margin-left: 30em;
+  margin-left: 10em;
   right: 0%;
 }
 .publishDate {
   font-size: 16px;
   margin-top: 5em;
+  width: 5em;
+  text-align: left;
 }
 .frontPage {
-  float: left;
+  /* float: left; */
   display: flex;
   flex-direction: column;
   /* width: 98%; */
@@ -524,4 +524,28 @@ input:focus {
 .StockNewsWords:hover {
   color: #bf00ff;
   font-weight: bold;
+}
+
+.sectorContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  font-weight: bold;
+  color: white;
+  /* margin: 0 auto; */
+  overflow: hidden;
+}
+
+.ticker {
+  padding-left: 100%;
+  animation: ticker 25s linear infinite;
+}
+
+/* Make it move */
+@keyframes ticker {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
 }

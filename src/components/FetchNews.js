@@ -11,7 +11,7 @@ class FetchNews extends Component {
   };
   componentDidMount() {
     fetch(
-      "https://newsapi.org/v2/top-headlines?sources=financial-times&apiKey=b5a13a28236741d8ac279cf07232d1c4"
+      "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=b5a13a28236741d8ac279cf07232d1c4"
     )
       .then(res => res.json())
       .then(response => Object.values(response)[2])
@@ -26,20 +26,15 @@ class FetchNews extends Component {
     });
   };
   render() {
-    console.log(this.state.frontPage);
-    return (
-      <div className="frontNews">
-        {this.state.frontPage !== null && this.state.frontPage ? (
-          <div className="topNews">
-            <MainNews frontPage={this.state.frontPage} />
-          </div>
-        ) : (
-          "Getting Data..."
-        )}
-        {this.mapFrontNews()}
-      </div>
-    );
+    return <div className="frontNews">{this.mapFrontNews()}</div>;
   }
 }
 
 export default withRouter(FetchNews);
+// {this.state.frontPage !== null && this.state.frontPage ? (
+//   <div className="topNews">
+//     <MainNews frontPage={this.state.frontPage} />
+//   </div>
+// ) : (
+//   "Getting Data..."
+// )}

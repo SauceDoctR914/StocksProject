@@ -14,12 +14,10 @@ class App extends Component {
   // add div with sliding ticker info on sector performance
   //'https://cloud.iexapis.com/beta/stock/market/sector-performance?token=pk_ce5287b13658456797045a3c1a6c1472'
   componentDidMount() {
+    this.props.fetchStocks();
     setInterval(() => {
       this.props.fetchStocks();
-    }, 1000000);
-  }
-  componentDidMount() {
-    this.props.fetchStocks();
+    }, 10000);
   }
   state = {
     searchTerm: ""
@@ -44,6 +42,7 @@ class App extends Component {
   };
 
   render() {
+    console.log(this.onSearchChange);
     return (
       <div className="app">
         <Switch>
@@ -60,13 +59,14 @@ class App extends Component {
                 <div className="time">
                   <Date />
                 </div>
+                <SectorInfo />
                 <div className="stocksectornews">
                   <FetchNews />
                   <div id="searchnstock">
                     <div className="searchDiv">
                       <SearchBar
-                        searchChange={this.props.onSearchChange}
-                        searchTerm={this.props.searchTerm}
+                        searchChange={this.onSearchChange}
+                        searchTerm={this.searchTerm}
                       />
                     </div>
                     <StockContainer
@@ -76,7 +76,6 @@ class App extends Component {
                       searchTerm={this.state.searchTerm}
                     />
                   </div>
-                  <SectorInfo />
                 </div>
               </React.Fragment>
             )}
