@@ -1,14 +1,639 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  /* background-image: url("https://images.unsplash.com/photo-1475650522725-015d35677789?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60");
+background-size: cover;
+background-attachment: fixed; */
+
+  background-color: #212121;
+  /* background-image: linear-gradient(to right, #00ff00 , black); */
+}
+/* // #00ff00
+// #bf00ff */
+.app {
+  display: row;
+  width: 100%;
+  height: 100%;
+}
+.theTitle {
+  font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+  text-shadow: 0 1px 0 white, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+  color: transparent;
+  background-clip: text;
+  font-size: 70px;
+  text-align: center;
+  font-weight: bold;
+  -webkit-background-clip: text;
+}
+.dateTime {
+  /* margin-left: 400px; */
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5%;
+}
+.thetime {
+  height: 50px;
+  font-size: 25px;
+  margin-bottom: 100px;
+  text-align: center;
+  margin: 10px;
+  color: white;
+}
+.date {
+  font-size: 25px;
+  color: white;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.frontNews {
+  margin-right: 1em;
+  width: 65em;
+  /* justify-content: flex-start; */
+}
+.stocksectornews {
+  display: flex;
+  align-items: flex-start;
+}
+.frontPage {
+  margin: 0%;
+  font-family: Helvetica, sans-serif;
+  box-shadow: 0 0 3px 3px #161616;
+  width: 85em;
+  max-height: 25%;
+  min-height: 15em;
+  text-align: center;
+  color: white;
+}
+#search {
+  margin-left: 21.5%;
+  /* align-items: baseline; */
+}
+#searchnstock {
+  position: sticky;
+  top: 0;
+  margin-left: 5em;
+  /* align-items: flex-end; */
+}
+.StockContainer {
+  /* align-items: flex-end; */
+  margin-top: 1em;
+  margin-left: 0em;
+  /* left: 55em; */
+  width: 36em;
+  height: 65em;
+  overflow-y: scroll;
+  /* background: -webkit-linear-gradient(top, #292828 1%, #1a1a1a 60%); */
+  /* box-shadow: 0 0 2px 1px #303030; */
+  text-align: center;
+  /* float: right; */
+}
+.StockCard {
+  /* position: relative; */
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: 1em;
+  box-shadow: 0 0 1px 2px #090909;
+  margin: 0.35em;
+  width: 35em;
+  height: 2.5em;
+  color: #e5e5e5;
+  font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+  text-align: left;
+  padding-bottom: 0.5em;
+}
+.symbol {
+  font-size: 16px;
+  font-weight: bold;
+  justify-content: flex-start;
+  margin-left: 0.5em;
+  margin-top: 0.85em;
+  width: 2em;
+}
+.priceDiv {
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  width: 5em;
+  text-align: left;
+}
+.positiveChange {
+  outline: none;
+  background-color: #00b300;
+  box-shadow: 0 0 1px 1px #008000;
+  border-radius: 3px;
+  font-weight: bold;
+  margin-right: 1.5em;
+  margin-bottom: 2em;
+  width: 5em;
+  opacity: 0.86;
+  color: white;
+}
+.negativeChange {
+  background-color: #f52c2c;
+  outline: none;
+  color: white;
+  opacity: 0.86;
+  border-radius: 3px;
+  margin-right: 1.5em;
+  width: 5em;
+  font-weight: bold;
+  box-shadow: 0 0 1px 1px #ff0000;
+}
+.miniChartDiv {
+  position: relative;
+  align: left;
+  /* background: #303030; */
+}
+.formClass {
+  position: sticky;
+  border-radius: 4px;
+  border-color: #171718;
+}
+.inputDiv {
+  align-items: center;
+}
+input:hover::-webkit-input-placeholder {
+  color: white;
+  /* box-shadow: 0 0 3px 3px #13001a; */
+}
+input:focus {
+  outline: none;
+  /* outline-width: 0; */
+}
+.inputClass {
+  width: 300px;
+  height: 27px;
+  /* background-image: linear-gradient(#292828, black); */
+  background-color: #292828;
+  border-style: outset;
+  border-color: #171718;
+  color: #00ff00;
+  font: sans-serif;
+
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+}
+.inputClass:hover {
+  /* background-image: linear-gradient(#cc33ff, #260033); */
+  box-shadow: 0 0 3px 3px #161616;
+}
+.companyTitle {
+  color: white;
+}
+.companyDiv {
+  font-family: Helvetica, sans-serif;
+  margin-bottom: 50px;
+  /* color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 500px;
+  width: 600px;
+  border-color: white;
+  border: 1px;
+  */
+}
+
+.about {
+  /* flex-direction: column; */
+  justify-content: space-around;
+  margin-top: 5em;
+  min-height: 13em;
+  font-family: Helvetica, sans-serif;
+  margin-left: 10em;
+  width: 40em;
+  color: white;
+  margin-right: 5%;
+  /* border: 1px solid; */
+  box-shadow: 0 0 3px 3px #161616;
+}
+.aboutWord {
+  font-size: 22px;
+  margin-left: 1em;
+  text-align: left;
+  font-weight: bold;
+}
+.companyDescription {
+  margin-top: 1em;
+  font-size: 17px;
+  margin-left: 1.5em;
+  text-wrap: ;
+  /* justify-content: space-between; */
+}
+.innerCompany {
+  margin-left: 3em;
+  display: flex;
+  margin-top: 1.4em;
+  margin-left: 10em;
+  flex-wrap: wrap;
+  /* align-content: space-between; */
+  width: 40em;
+  min-height: 20em;
+  box-shadow: 0 0 3px 3px #161616;
+  /* flex-direction: row; */
+}
+.ceoWord {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 2em;
+  margin-top: 2em;
+  /* margin-left: 20%; */
+}
+.ceo {
+  color: white;
+  margin-left: 2em;
+}
+.ceoName {
+  color: white;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+.PE {
+  color: white;
+  margin-top: 3vh;
+  margin-left: 3vh;
+}
+.peWords {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  margin-left: 3vh;
+}
+.peNum {
+  font-size: 16px;
+  margin-top: 1vh;
+  margin-left: 3vh;
+}
+
+.volume {
+  color: white;
+  margin-left: 10%;
+  margin-left: 3vh;
+}
+.volumeWords {
+  font-size: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  margin-left: 3vh;
+}
+.volumeNum {
+  margin-top: 1vh;
+  margin-left: 3vh;
+}
+
+.yearweeklow {
+  color: white;
+  margin-left: 3vh;
+}
+.yearlowName {
+  font-size: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  margin-left: 3vh;
+}
+.yearweekhigh {
+  margin-top: 3vh;
+  margin-left: 3vh;
+  color: white;
+}
+.yearhighName {
+  font-size: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  margin-left: 3vh;
+}
+.yearlowNum {
+  margin-top: 1vh;
+  margin-left: 3vh;
+}
+.yearhighNum {
+  margin-top: 1vh;
+  margin-left: 3vh;
+}
+.marketCap {
+  color: white;
+  margin-left: 3vh;
+}
+.marketCapWords {
+  font-size: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  margin-left: 3vh;
+}
+.marketCapNum {
+  margin-top: 1vh;
+  margin-left: 3vh;
+}
+.stockPageButton {
+  background-image: linear-gradient(#bf00ff, black);
+  box-shadow: 0 0 4px 2px #bf00ff;
+  border: black;
+  font-weight: 500;
+  width: 130px;
+  color: white;
+}
+.StockCard:hover {
+  border-style: outset;
+  background-color: #292828;
+  border-color: #0d0d0d;
+  box-shadow: 0 0 4px 2px #0d0d0d;
+  flex: grid;
+  border-width: 2px 5px 2px 3px;
+}
+.newsDiv {
+  width: 100%;
+  height: 100%;
+}
+
+.renderNews {
+  display: flex;
+  margin: 0.3%;
+  font-family: Helvetica, sans-serif;
+  box-shadow: 0 0 3px 3px #161616;
+  width: 65em;
+  height: 13em;
+  overflow: hidden;
+  /* flex: grid; */
+  color: white;
+}
+.renderNews:hover {
+  box-shadow: 0 0 5px 5px #0d0d0d;
+  background-color: #212121;
+}
+.images {
+  height: 12.7em;
+  margin: 1%;
+  width: 15em;
+}
+.imageDiv {
+  align-self: flex-start;
+}
+
+.headline {
+  flex-wrap: wrap;
+  width: 40em;
+  margin-right: 5%;
+  margin-top: 4%;
+}
+
+.titleDiv {
+  position: right;
+  font-size: 17px;
+  margin-left: 5%;
+}
+
+.sourceDiv {
+  margin-left: 5%;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex-end;
+  margin-bottom: 5px;
+}
+.newsInfo {
+  margin-left: 10em;
+  right: 0%;
+  min-width: 15em;
+}
+.publishDate {
+  font-size: 16px;
+  margin-top: 5em;
+  width: 15em;
+  text-align: left;
+}
+.frontPage {
+  /* float: left; */
+  display: flex;
+  flex-direction: column;
+  /* width: 98%; */
+}
+.frontPage:hover {
+  box-shadow: 0 0 6px 6px #0d0d0d;
+  background-color: #212121;
+}
+.renderFront {
+  width: 85%;
+}
+.frontimageDiv {
+  display: flex;
+  /* height: 920px;
+  width: 430px; */
+}
+.imageInfoRow {
+  display: flex;
+}
+.frontimage {
+  margin-left: 25em;
+  height: 35em;
+  width: 45em;
+}
+.frontheadline {
+  flex-wrap: wrap;
+  width: 50%;
+  margin-right: 5%;
+  margin-top: 4%;
+}
+.frontsourceDiv {
+  font-size: 24px;
+  margin-left: 10px;
+}
+.content {
+  margin-top: 0px;
+  margin-left: 10px;
+  font-size: 22px;
+  width: 90%;
+}
+.fronttitleDiv {
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+}
+
+.frontpublishDate {
+  margin-left: 33em;
+  width: 10em;
+  font-size: 18px;
+}
+
+.back {
+  width: 8%;
+  height: 6%;
+  font-weight: bold;
+  margin-left: 0.3%;
+  margin-bottom: 0.5%;
+  background-color: #bf00ff;
+  border-color: #bf00ff;
+  border-radius: 5px;
+}
+.back:hover {
+  box-shadow: 0 0 4px 2px #bf00ff;
+}
+.price {
+  font-size: 26px;
+  color: white;
+}
+.detailTop {
+}
+
+.red {
+  color: black;
+  width: 8%;
+  height: 6%;
+  background-color: #e60000;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  border: none;
+  margin-left: 0.3%;
+}
+.red:focus {
+  outline: none;
+}
+.yellow {
+  background: #a6a6a6;
+  width: 8%;
+  height: 6%;
+  border-radius: 5px;
+  margin-left: 0.3%;
+}
+.green {
+  background-color: #53ff1a;
+  border-radius: 5px;
+  width: 8%;
+  height: 6%;
+  margin-left: 0.3%;
+}
+.StockNewsWords {
+  margin: 8vh;
+  margin-left: 45vh;
+  color: white;
+}
+.StockNewsWords:hover {
+  color: #bf00ff;
+  font-weight: bold;
+}
+
+.sectorContainer {
+  min-width: 100%;
+  background-color: #292828;
+  height: 4em;
+  display: flex;
+  box-sizing: border-box;
+  align-items: row;
+  font-weight: bold;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  overflow: hidden;
+}
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.tickerContainer {
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 10em;
+  background-color: rgba(#000, 0.9);
+  padding-left: 80%;
+  box-sizing: content-box;
+}
+.ticker {
+  display: inline-block;
+  height: 4rem;
+  line-height: 4rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  margin-right: 5%;
+  font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+  box-sizing: content-box;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+}
+.ticker__item {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 14px;
+  height: 4em;
+  width: 25em;
+  margin-left: 3em;
+  text-align: center;
+  color: white;
+}
+.sector {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 9em;
+}
+.priceChange {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.tickerPositiveChange {
+  outline: none;
+  text-shadow: 0 0 3px 4px white;
+  font-weight: bold;
+  margin-right: 1.5em;
+  margin-bottom: 2em;
+  width: 5em;
+  opacity: 0.86;
+  color: #21ce99;
+}
+.tickerNegativeChange {
+  outline: none;
+  color: #fe456a;
+  opacity: 0.86;
+  border-radius: 3px;
+  margin-right: 1.5em;
+  width: 5em;
+  font-weight: bold;
+  text-shadow: 0 0 1px 1px #000000;
 }
