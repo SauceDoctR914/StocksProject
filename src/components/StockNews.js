@@ -21,6 +21,7 @@ class StockNews extends React.Component {
         );
     }
   }
+  // switch this api to stockNewsapi *check email*
   renderNews = () => {
     let ourNews = this.state.news;
     return ourNews.map(newsObj => {

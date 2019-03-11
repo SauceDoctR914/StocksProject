@@ -76,6 +76,7 @@ background-attachment: fixed; */
 #searchnstock {
   position: sticky;
   top: 0;
+  margin-left: 5em;
   /* align-items: flex-end; */
 }
 .StockContainer {
@@ -363,7 +364,7 @@ input:focus {
   margin: 0.3%;
   font-family: Helvetica, sans-serif;
   box-shadow: 0 0 3px 3px #161616;
-  width: 60em;
+  width: 65em;
   height: 13em;
   overflow: hidden;
   /* flex: grid; */
@@ -405,11 +406,12 @@ input:focus {
 .newsInfo {
   margin-left: 10em;
   right: 0%;
+  min-width: 15em;
 }
 .publishDate {
   font-size: 16px;
   margin-top: 5em;
-  width: 5em;
+  width: 15em;
   text-align: left;
 }
 .frontPage {
@@ -540,8 +542,6 @@ input:focus {
   overflow: hidden;
 }
 
-$duration: 30s;
-
 @-webkit-keyframes ticker {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -583,7 +583,7 @@ $duration: 30s;
   height: 4rem;
   line-height: 4rem;
   white-space: nowrap;
-  padding-right: 40%;
+  padding-right: 100%;
   margin-right: 5%;
   font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
   box-sizing: content-box;

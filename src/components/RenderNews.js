@@ -10,22 +10,24 @@ class RenderNews extends Component {
         target="_blank"
         style={{ textDecoration: "none" }}
       >
-        <div className="renderNews">
-          {this.props.news.image ? (
-            <div className="imageDiv">
-              <img className="images" src={this.props.news.image} />
+        {this.props.news.image !== null ? (
+          <div className="renderNews">
+            {this.props.news.image ? (
+              <div className="imageDiv">
+                <img className="images" src={this.props.news.image} />
+              </div>
+            ) : null}
+            <div className="headline">
+              <div className="sourceDiv">{this.props.news.source.name}</div>
+              <div className="titleDiv">{this.props.news.title}</div>
             </div>
-          ) : null}
-          <div className="headline">
-            <div className="sourceDiv">{this.props.news.source.name}</div>
-            <div className="titleDiv">{this.props.news.title}</div>
-          </div>
-          <div className="newsInfo">
-            <div className="publishDate">
-              {Moment(this.props.news.time).calendar()}
+            <div className="newsInfo">
+              <div className="publishDate">
+                {Moment(this.props.news.time).calendar()}
+              </div>
             </div>
           </div>
-        </div>
+        ) : null}
       </a>
     );
   }
