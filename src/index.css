@@ -1,5 +1,10 @@
+html,
 body {
   height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  /* overflow-x: auto; */
   /* background-image: url("https://images.unsplash.com/photo-1475650522725-015d35677789?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60");
 background-size: cover;
 background-attachment: fixed; */
@@ -55,28 +60,33 @@ background-attachment: fixed; */
   width: 65em;
   /* justify-content: flex-start; */
 }
+
 .stocksectornews {
   display: flex;
+  width: 100%;
   align-items: flex-start;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 .frontPage {
   margin: 0%;
   font-family: Helvetica, sans-serif;
   box-shadow: 0 0 3px 3px #161616;
-  width: 85em;
+  width: 40%;
   max-height: 25%;
   min-height: 15em;
   text-align: center;
   color: white;
 }
 #search {
-  margin-left: 21.5%;
+  margin-left: 8em;
   /* align-items: baseline; */
 }
 #searchnstock {
   position: sticky;
   top: 0;
-  margin-left: 5em;
+  margin-left: 6em;
+  width: 65em;
   /* align-items: flex-end; */
 }
 .StockContainer {
@@ -84,7 +94,7 @@ background-attachment: fixed; */
   margin-top: 1em;
   margin-left: 0em;
   /* left: 55em; */
-  width: 36em;
+  width: 37em;
   height: 65em;
   overflow-y: scroll;
   /* background: -webkit-linear-gradient(top, #292828 1%, #1a1a1a 60%); */
@@ -571,7 +581,7 @@ input:focus {
 .tickerContainer {
   display: flex;
   bottom: 0;
-  width: 100%;
+  width: 70%;
   overflow: hidden;
   height: 10em;
   background-color: rgba(#000, 0.9);
@@ -585,6 +595,7 @@ input:focus {
   white-space: nowrap;
   padding-right: 100%;
   margin-right: 5%;
+  margin-left: 15em;
   font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
   box-sizing: content-box;
   -webkit-animation-iteration-count: infinite;
@@ -602,7 +613,7 @@ input:focus {
   font-size: 14px;
   height: 4em;
   width: 25em;
-  margin-left: 3em;
+  /* margin-left: 3em; */
   text-align: center;
   color: white;
 }
@@ -610,7 +621,7 @@ input:focus {
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
-  margin-left: 9em;
+  /* margin-left: 9em; */
 }
 .priceChange {
   display: inline-block;
