@@ -7,6 +7,9 @@ import React, { Component } from "react";
 class SectorInfo extends Component {
   componentDidMount() {
     this.props.fetchSectorData();
+    setInterval(() => {
+      this.props.fetchSectorData();
+    }, 100000);
   }
   mapData = () => {
     return this.props.sectorData.map(sector => {
@@ -14,7 +17,6 @@ class SectorInfo extends Component {
     });
   };
   render() {
-    console.log(this.props, "123", this.props.sectorData);
     return <div className="ticker">{this.mapData()}</div>;
   }
 }

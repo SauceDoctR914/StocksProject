@@ -8,7 +8,6 @@ class SearchBar extends Component {
   };
 
   render() {
-    console.log(this.props, "gg");
     return (
       <div id="search">
         <form className="formClass">

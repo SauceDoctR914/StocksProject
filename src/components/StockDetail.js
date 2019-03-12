@@ -18,8 +18,7 @@ class StockDetail extends React.Component {
     if (stock) {
     }
     return (
-      <div>
-        <h2 />
+      <div id="stockdetail">
         {stock ? (
           <div className="infoDiv">
             <div className="detailTop">

@@ -1,5 +1,10 @@
+html,
 body {
   height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  /* overflow-x: auto; */
   /* background-image: url("https://images.unsplash.com/photo-1475650522725-015d35677789?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60");
 background-size: cover;
 background-attachment: fixed; */
@@ -11,8 +16,13 @@ background-attachment: fixed; */
 // #bf00ff */
 .app {
   display: row;
-  width: 100%;
+  width: 100vw;
   height: 100%;
+}
+#titledate {
+  width: 20em;
+  margin-left: 50%;
+  margin-right: 50%;
 }
 .theTitle {
   font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -51,32 +61,36 @@ background-attachment: fixed; */
 }
 
 .frontNews {
-  margin-right: 1em;
-  width: 65em;
+  margin-right: 10em;
+  width: 55em;
   /* justify-content: flex-start; */
 }
+
 .stocksectornews {
   display: flex;
+  width: 100vh;
   align-items: flex-start;
+  margin: 0 5% 0 5%;
 }
-.frontPage {
+/* .frontPage {
   margin: 0%;
   font-family: Helvetica, sans-serif;
   box-shadow: 0 0 3px 3px #161616;
-  width: 85em;
+  width: 40%;
   max-height: 25%;
   min-height: 15em;
   text-align: center;
   color: white;
-}
+} */
 #search {
-  margin-left: 21.5%;
-  /* align-items: baseline; */
+  margin-left: 8em;
+  /* align-items: center; */
 }
 #searchnstock {
   position: sticky;
   top: 0;
-  margin-left: 5em;
+  margin-left: 1em;
+  width: 65em;
   /* align-items: flex-end; */
 }
 .StockContainer {
@@ -84,13 +98,10 @@ background-attachment: fixed; */
   margin-top: 1em;
   margin-left: 0em;
   /* left: 55em; */
-  width: 36em;
+  width: 37em;
   height: 65em;
   overflow-y: scroll;
-  /* background: -webkit-linear-gradient(top, #292828 1%, #1a1a1a 60%); */
-  /* box-shadow: 0 0 2px 1px #303030; */
   text-align: center;
-  /* float: right; */
 }
 .StockCard {
   /* position: relative; */
@@ -166,12 +177,10 @@ input:hover::-webkit-input-placeholder {
 }
 input:focus {
   outline: none;
-  /* outline-width: 0; */
 }
 .inputClass {
   width: 300px;
   height: 27px;
-  /* background-image: linear-gradient(#292828, black); */
   background-color: #292828;
   border-style: outset;
   border-color: #171718;
@@ -183,7 +192,6 @@ input:focus {
   text-align: center;
 }
 .inputClass:hover {
-  /* background-image: linear-gradient(#cc33ff, #260033); */
   box-shadow: 0 0 3px 3px #161616;
 }
 .companyTitle {
@@ -192,15 +200,6 @@ input:focus {
 .companyDiv {
   font-family: Helvetica, sans-serif;
   margin-bottom: 50px;
-  /* color: white;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  height: 500px;
-  width: 600px;
-  border-color: white;
-  border: 1px;
-  */
 }
 
 .about {
@@ -355,16 +354,21 @@ input:focus {
   border-width: 2px 5px 2px 3px;
 }
 .newsDiv {
-  width: 100%;
+  position: absolute;
+  width: 55em;
   height: 100%;
+  margin-left: 10%;
 }
-
+a {
+  width: 55em;
+}
 .renderNews {
+  position: relative;
   display: flex;
-  margin: 0.3%;
+  margin: 1em;
   font-family: Helvetica, sans-serif;
   box-shadow: 0 0 3px 3px #161616;
-  width: 65em;
+  width: 55em;
   height: 13em;
   overflow: hidden;
   /* flex: grid; */
@@ -404,7 +408,8 @@ input:focus {
   margin-bottom: 5px;
 }
 .newsInfo {
-  margin-left: 10em;
+  margin-left: 0em;
+  margin-right: 1em;
   right: 0%;
   min-width: 15em;
 }
@@ -412,7 +417,7 @@ input:focus {
   font-size: 16px;
   margin-top: 5em;
   width: 15em;
-  text-align: left;
+  text-align: right;
 }
 .frontPage {
   /* float: left; */
@@ -567,24 +572,33 @@ input:focus {
     transform: translate3d(-100%, 0, 0);
   }
 }
+.ticker:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
 
 .tickerContainer {
+  position: relative;
   display: flex;
   bottom: 0;
-  width: 100%;
+  min-width: 150vh;
   overflow: hidden;
   height: 10em;
   background-color: rgba(#000, 0.9);
-  padding-left: 80%;
+  padding-left: 100%;
   box-sizing: content-box;
 }
 .ticker {
+  position: absolute;
   display: inline-block;
   height: 4rem;
   line-height: 4rem;
   white-space: nowrap;
   padding-right: 100%;
   margin-right: 5%;
+  margin-left: 15em;
   font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
   box-sizing: content-box;
   -webkit-animation-iteration-count: infinite;
@@ -596,13 +610,14 @@ input:focus {
   -webkit-animation-duration: 30s;
   animation-duration: 30s;
 }
+
 .ticker__item {
   display: inline-block;
   padding: 0 2rem;
   font-size: 14px;
   height: 4em;
   width: 25em;
-  margin-left: 3em;
+  /* margin-left: 3em; */
   text-align: center;
   color: white;
 }
@@ -610,7 +625,7 @@ input:focus {
   display: inline-block;
   font-size: 16px;
   font-weight: bold;
-  margin-left: 9em;
+  /* margin-left: 9em; */
 }
 .priceChange {
   display: inline-block;
