@@ -19,6 +19,11 @@ background-attachment: fixed; */
   width: 100vw;
   height: 100%;
 }
+#titledate {
+  width: 20em;
+  margin-left: 50%;
+  margin-right: 50%;
+}
 .theTitle {
   font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
   text-shadow: 0 1px 0 white, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
@@ -84,7 +89,7 @@ background-attachment: fixed; */
 #searchnstock {
   position: sticky;
   top: 0;
-  margin-left: 6em;
+  margin-left: 1em;
   width: 65em;
   /* align-items: flex-end; */
 }
@@ -172,12 +177,10 @@ input:hover::-webkit-input-placeholder {
 }
 input:focus {
   outline: none;
-  /* outline-width: 0; */
 }
 .inputClass {
   width: 300px;
   height: 27px;
-  /* background-image: linear-gradient(#292828, black); */
   background-color: #292828;
   border-style: outset;
   border-color: #171718;
@@ -189,7 +192,6 @@ input:focus {
   text-align: center;
 }
 .inputClass:hover {
-  /* background-image: linear-gradient(#cc33ff, #260033); */
   box-shadow: 0 0 3px 3px #161616;
 }
 .companyTitle {
@@ -198,15 +200,6 @@ input:focus {
 .companyDiv {
   font-family: Helvetica, sans-serif;
   margin-bottom: 50px;
-  /* color: white;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  height: 500px;
-  width: 600px;
-  border-color: white;
-  border: 1px;
-  */
 }
 
 .about {
@@ -361,16 +354,21 @@ input:focus {
   border-width: 2px 5px 2px 3px;
 }
 .newsDiv {
-  width: 100%;
+  position: absolute;
+  width: 55em;
   height: 100%;
+  margin-left: 10%;
 }
-
+a {
+  width: 55em;
+}
 .renderNews {
+  position: relative;
   display: flex;
-  margin: 0.3%;
+  margin: 1em;
   font-family: Helvetica, sans-serif;
   box-shadow: 0 0 3px 3px #161616;
-  width: 65em;
+  width: 55em;
   height: 13em;
   overflow: hidden;
   /* flex: grid; */
@@ -410,7 +408,7 @@ input:focus {
   margin-bottom: 5px;
 }
 .newsInfo {
-  margin-left: 8em;
+  margin-left: 0em;
   margin-right: 1em;
   right: 0%;
   min-width: 15em;
@@ -574,15 +572,22 @@ input:focus {
     transform: translate3d(-100%, 0, 0);
   }
 }
+.ticker:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
 
 .tickerContainer {
   position: relative;
   display: flex;
   bottom: 0;
+  min-width: 150vh;
   overflow: hidden;
   height: 10em;
   background-color: rgba(#000, 0.9);
-  padding-left: 80%;
+  padding-left: 100%;
   box-sizing: content-box;
 }
 .ticker {
@@ -605,6 +610,7 @@ input:focus {
   -webkit-animation-duration: 30s;
   animation-duration: 30s;
 }
+
 .ticker__item {
   display: inline-block;
   padding: 0 2rem;
