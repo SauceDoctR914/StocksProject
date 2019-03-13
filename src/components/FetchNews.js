@@ -26,7 +26,12 @@ class FetchNews extends Component {
     });
   };
   render() {
-    return <div className="frontNews">{this.mapFrontNews()}</div>;
+    return (
+      <div className="frontNews">
+        <h2 id="newstitle">Business Headlines</h2>
+        {this.mapFrontNews()}
+      </div>
+    );
   }
 }
 
