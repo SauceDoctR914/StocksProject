@@ -16,7 +16,7 @@ class RenderNews extends Component {
               <div className="imageDiv">
                 <img
                   className="images"
-                  alt="News Image"
+                  alt="News"
                   src={this.props.news.image}
                 />
               </div>

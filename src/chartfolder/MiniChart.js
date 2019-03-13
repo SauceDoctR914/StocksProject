@@ -269,7 +269,7 @@ class CandleStickChartWithMACDIndicator extends React.Component {
             origin={[-38, 15]}
             yAccessor={d => d.macd}
             options={macdCalculator.options()}
-            appearance={macdAppearance}
+            appearance={{ ...macdAppearance }}
           />
         </Chart>
         <CrossHairCursor />

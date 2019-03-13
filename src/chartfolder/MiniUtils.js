@@ -1,4 +1,3 @@
-import { timeFormat } from "d3-time-format";
 import Moment from "moment";
 
 export function setDate(arg) {

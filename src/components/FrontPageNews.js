@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import Moment from "moment";
 
@@ -16,11 +16,7 @@ const FrontPageNews = props => {
           <div className="renderNews">
             {news.urlToImage ? (
               <div className="imageDiv">
-                <img
-                  className="images"
-                  alt="News Image"
-                  src={news.urlToImage}
-                />
+                <img className="images" alt="News" src={news.urlToImage} />
               </div>
             ) : null}
             <div className="headline">

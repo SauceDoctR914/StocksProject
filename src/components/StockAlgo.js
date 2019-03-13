@@ -52,11 +52,11 @@ class StockAlgo extends Component {
     let result = this.peAlgo() + this.rsiAlgo();
     // smallest possible is zero - 10
     if (result <= 4) {
-      return <button class="red">No Good</button>;
+      return <button className="red">No Good</button>;
     } else if (result <= 6 && result > 4) {
-      return <button class="yellow">Netural</button>;
+      return <button className="yellow">Netural</button>;
     } else {
-      return <button class="green">Confident Buy</button>;
+      return <button className="green">Confident Buy</button>;
     }
   };
 
