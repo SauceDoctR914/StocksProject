@@ -17,7 +17,8 @@ class StockNews extends React.Component {
           this.setState({
             news: news
           })
-        );
+        )
+        .catch(err => console.log(err));
     }
   }
   // switch this api to stockNewsapi *check email*

@@ -16,7 +16,8 @@ class StockAlgo extends Component {
         this.setState({
           stockRSI: stock
         })
-      );
+      )
+      .catch(err => console.log(err));
   }
   rsiAlgo = () => {
     let total = 0;
