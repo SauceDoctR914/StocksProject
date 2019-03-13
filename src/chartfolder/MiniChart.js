@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 import { format } from "d3-format";
 import { timeFormat } from "d3-time-format";
-
 import { ChartCanvas, Chart } from "react-stockcharts";
 import {
   BarSeries,
@@ -23,7 +22,6 @@ import {
 
 import { discontinuousTimeScaleProvider } from "react-stockcharts/lib/scale";
 import {
-  OHLCTooltip,
   MovingAverageTooltip,
   MACDTooltip
 } from "react-stockcharts/lib/tooltip";
@@ -180,7 +178,6 @@ class CandleStickChartWithMACDIndicator extends React.Component {
             strokeWidth={3}
             arrowWidth={2}
           />
-          // #00ff00 // #bf00ff
           <MovingAverageTooltip
             onClick={e => console.log(e)}
             origin={[-38, 15]}

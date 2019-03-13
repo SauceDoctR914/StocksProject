@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
-import { Link } from "react-router-dom";
 import Moment from "moment";
 class RenderNews extends Component {
   render() {
     return (
       <a
         href={this.props.news.link}
+        rel="noopener noreferrer"
         target="_blank"
         style={{ textDecoration: "none" }}
       >
@@ -14,7 +14,11 @@ class RenderNews extends Component {
           <div className="renderNews">
             {this.props.news.image ? (
               <div className="imageDiv">
-                <img className="images" src={this.props.news.image} />
+                <img
+                  className="images"
+                  alt="News Image"
+                  src={this.props.news.image}
+                />
               </div>
             ) : null}
             <div className="headline">

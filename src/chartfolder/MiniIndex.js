@@ -1,7 +1,6 @@
 import React from "react";
 // import { render } from "react-dom";
-import Chart from "./Chart";
-import MiniChart from "./MiniChart"
+import MiniChart from "./MiniChart";
 import { getData } from "./MiniUtils";
 
 // import { TypeChooser } from "react-stockcharts/lib/helper";

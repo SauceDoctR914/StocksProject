@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
-import { fetchStocks } from "../Redux/action/stockAction";
-
 class SearchBar extends Component {
   handleSearchChange = e => {
     this.props.searchChange(e.target.value);

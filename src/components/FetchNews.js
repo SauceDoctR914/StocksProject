@@ -1,9 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import { withRouter } from "react-router-dom";
-import { Link } from "react-router-dom";
-import Moment from "moment";
 import FrontPageNews from "./FrontPageNews";
-import MainNews from "./MainNews";
 class FetchNews extends Component {
   state = {
     frontNews: [],

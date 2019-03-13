@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Numeral from "numeral";
 const SectorCard = props => {
   const { sectorData } = props;

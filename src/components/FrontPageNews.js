@@ -1,18 +1,26 @@
-import React, { Component } from "react";
+import React from "react";
 import { withRouter } from "react-router-dom";
-import { Link } from "react-router-dom";
 import Moment from "moment";
 
 const FrontPageNews = props => {
   const { news } = props;
   return (
-    <a href={news.url} target="_blank" style={{ textDecoration: "none" }}>
+    <a
+      href={news.url}
+      rel="noopener noreferrer"
+      target="_blank"
+      style={{ textDecoration: "none" }}
+    >
       {news && news.urlToImage !== null ? (
         <div className="frontNews">
           <div className="renderNews">
             {news.urlToImage ? (
               <div className="imageDiv">
-                <img className="images" src={news.urlToImage} />
+                <img
+                  className="images"
+                  alt="News Image"
+                  src={news.urlToImage}
+                />
               </div>
             ) : null}
             <div className="headline">

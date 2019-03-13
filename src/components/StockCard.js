@@ -1,10 +1,8 @@
 import React from "react";
-// import StockDetail from "./StockDetail";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import Numeral from "numeral";
-import MiniChart from "../chartfolder/MiniIndex";
 
 class StockCard extends React.Component {
   render() {

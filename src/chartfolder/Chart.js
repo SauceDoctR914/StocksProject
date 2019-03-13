@@ -3,10 +3,6 @@ import PropTypes from "prop-types";
 
 import { scaleTime } from "d3-scale";
 import { utcDay } from "d3-time";
-import { tsvParse, csvParse } from "d3-dsv";
-import { timeParse, timeFormat } from "d3-time-format";
-import Moment from "moment";
-
 import { ChartCanvas, Chart } from "react-stockcharts";
 import { CandlestickSeries } from "react-stockcharts/lib/series";
 import { XAxis, YAxis } from "react-stockcharts/lib/axes";
