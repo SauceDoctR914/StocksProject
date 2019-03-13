@@ -15,7 +15,7 @@
     "node": "^11.11.0",
     "numeral": "^2.0.6",
     "prop-types": "^15.6.2",
-    "react": "^16.6.3",
+    "react": "^16.8.4",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.6.3",
     "react-localization": "^1.0.13",
