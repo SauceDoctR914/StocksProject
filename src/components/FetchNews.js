@@ -15,7 +15,8 @@ class FetchNews extends Component {
       .then(news => {
         let frontPage = news.splice(0, 1)[0];
         this.setState({ frontNews: news, frontPage: frontPage });
-      });
+      })
+      .catch(err => console.log(err));
   }
   mapFrontNews = () => {
     return this.state.frontNews.map(newsObj => {
