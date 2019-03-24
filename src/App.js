@@ -47,9 +47,9 @@ class App extends Component {
             path="/stocks/:symbol"
             render={routerProps => <StockDetail {...routerProps} />}
           />
-          <IndexRoute
+          <Route
             exact
-            path="/stocks"
+            path="/"
             render={routerProps => (
               <React.Fragment>
                 <div id="titledate">
