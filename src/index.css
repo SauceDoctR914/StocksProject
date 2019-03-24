@@ -602,7 +602,7 @@ a {
   position: relative;
   display: flex;
   bottom: 0;
-  width: 100vw;
+  width: 10vw;
   overflow: hidden;
   height: 10em;
   background-color: rgba(#000, 0.9);
