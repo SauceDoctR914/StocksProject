@@ -222,13 +222,15 @@ input:focus {
   box-shadow: 0 0 3px 3px #161616;
 }
 .aboutWord {
-  font-size: 22px;
+  font-size: 24px;
+  padding-top: 1em;
   margin-left: 1em;
-  text-align: left;
+  text-align: center;
   font-weight: bold;
 }
 .companyDescription {
   margin-top: 1em;
+  padding-right: 0.5em;
   font-size: 17px;
   margin-left: 1.5em;
   text-wrap: ;
@@ -256,6 +258,8 @@ input:focus {
 .ceo {
   color: white;
   margin-left: 2em;
+  width: 12em;
+  margin-left: 1.5em;
 }
 .ceoName {
   color: white;
@@ -264,84 +268,92 @@ input:focus {
 }
 .PE {
   color: white;
-  margin-top: 3vh;
-  margin-left: 3vh;
+  margin-top: 2em;
+  width: 12em;
 }
 .peWords {
   font-size: 16px;
   font-weight: bold;
   color: white;
   font-size: 16px;
-  margin-left: 3vh;
+  margin-left: 2em;
 }
 .peNum {
   font-size: 16px;
-  margin-top: 1vh;
-  margin-left: 3vh;
-}
-
-.volume {
-  color: white;
-  margin-left: 10%;
-  margin-left: 3vh;
-}
-.volumeWords {
-  font-size: 16px;
-  font-weight: bold;
-  font-size: 16px;
-  color: white;
-  margin-left: 3vh;
-}
-.volumeNum {
-  margin-top: 1vh;
-  margin-left: 3vh;
-}
-
-.yearweeklow {
-  color: white;
-  margin-left: 3vh;
-}
-.yearlowName {
-  font-size: 16px;
-  font-weight: bold;
-  font-size: 16px;
-  color: white;
-  margin-left: 3vh;
+  margin-top: 1em;
+  margin-left: 2em;
 }
 .yearweekhigh {
-  margin-top: 3vh;
-  margin-left: 3vh;
+  margin-top: 2em;
+  width: 12em;
   color: white;
+  margin-left: 2em;
 }
 .yearhighName {
   font-size: 16px;
   font-weight: bold;
   font-size: 16px;
   color: white;
-  margin-left: 3vh;
-}
-.yearlowNum {
-  margin-top: 1vh;
-  margin-left: 3vh;
+  margin-left: 2em;
 }
 .yearhighNum {
-  margin-top: 1vh;
-  margin-left: 3vh;
+  margin-top: 1em;
+  margin-left: 2em;
 }
+
+.yearweeklow {
+  color: white;
+  margin-left: 1.5em;
+  width: 12em;
+}
+.yearlowName {
+  font-size: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+.yearlowNum {
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
 .marketCap {
   color: white;
-  margin-left: 3vh;
+  width: 12em;
 }
 .marketCapWords {
   font-size: 16px;
   font-weight: bold;
   font-size: 16px;
   color: white;
-  margin-left: 3vh;
+  margin-top: 1em;
+  margin-left: 2em;
 }
 .marketCapNum {
-  margin-top: 1vh;
-  margin-left: 3vh;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+.volume {
+  color: white;
+  margin-top: 1em;
+  width: 12em;
+  margin-left: 2em;
+}
+.volumeWords {
+  font-size: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  /* margin-top: 1em; */
+  margin-left: 2em;
+}
+.volumeNum {
+  margin-top: 1em;
+  margin-left: 2em;
 }
 .stockPageButton {
   background-image: linear-gradient(#bf00ff, black);
@@ -530,8 +542,9 @@ a {
   margin-left: 0.3%;
 }
 .StockNewsWords {
-  margin: 8vh;
-  margin-left: 45vh;
+  margin-top: 2em;
+  padding-left: 17em;
+  margin-left: 10%;
   color: white;
 }
 .StockNewsWords:hover {
@@ -589,7 +602,7 @@ a {
   position: relative;
   display: flex;
   bottom: 0;
-  width: 10vw;
+  width: 100vw;
   overflow: hidden;
   height: 10em;
   background-color: rgba(#000, 0.9);

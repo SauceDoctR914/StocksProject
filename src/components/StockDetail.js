@@ -25,7 +25,7 @@ class StockDetail extends React.Component {
                 $ {Numeral(stock.quote.latestPrice).format("0,0.00")}
               </div>
             </div>
-            <Link to="/stocks/">
+            <Link to="/">
               <button className="back">Main Page</button>
             </Link>
             <StockAlgo symbol={this.props.match.params.symbol} stock={stock} />
