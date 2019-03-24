@@ -5,7 +5,7 @@ class StockNews extends React.Component {
     news: []
   };
   componentDidMount() {
-    let stockName = this.props.stock.companyName.split(" ")[0];
+    let stockName = this.props.stock.quote.companyName.split(" ")[0];
     if (stockName) {
       fetch(
         `https://www.accunewsapp.com/api/v1/articles/?keyword=${stockName}&apiKey=6e75924676fedef09899d849df0d2947120eb7ec&limit=10`
@@ -29,6 +29,7 @@ class StockNews extends React.Component {
     });
   };
   render() {
+    console.log(this.props.stock.quote.companyName, "gaaavz", this.state.news);
     return (
       <div className="newsDiv">
         {this.state.news ? this.renderNews() : "Loading data.."}

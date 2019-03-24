@@ -43,7 +43,7 @@ class StockDetail extends React.Component {
           <div>
             <CompanyInfo stock={stock} />
             <h2 className="StockNewsWords">{symbol} News</h2>
-            <StockNews stock={stock.quote} />
+            <StockNews stock={stock} />
           </div>
         ) : (
           "loading news.."
