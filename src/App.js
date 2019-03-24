@@ -47,7 +47,7 @@ class App extends Component {
             path="/stocks/:symbol"
             render={routerProps => <StockDetail {...routerProps} />}
           />
-          <Route
+          <IndexRoute
             exact
             path="/stocks"
             render={routerProps => (
