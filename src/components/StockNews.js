@@ -15,7 +15,12 @@ class StockNews extends React.Component {
         .then(respArray => respArray[1])
         .then(news =>
           this.setState({
-            news: news
+            news: Object.values(
+              news.reduce((c, e) => {
+                if (!c[e.title]) c[e.title] = e;
+                return c;
+              }, {})
+            )
           })
         )
         .catch(err => console.log(err));
