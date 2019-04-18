@@ -9,40 +9,30 @@ const CompanyInfo = props => {
         <div className="aboutWord">ABOUT</div>
         <div className="companyDescription">{stock.company.description}</div>
       </div>
-      <div className="innerCompany">
-        <div className="ceo">
-          <div className="ceoWord">CEO</div>
-          <div className="ceoName">{stock.company.CEO}</div>
+      <div className="CompanyDetail">
+        <div className="detail-section">
+          <h4>CEO</h4>
+          <p className="ceoName">{stock.company.CEO}</p>
         </div>
-        <div className="PE">
-          <div className="peWords">Price-Earnings Ratio</div>
-          <div className="peNum">
-            {stock.quote.peRatio ? stock.quote.peRatio : "--"}
-          </div>
+        <div className="detail-section">
+          <h4>Price-Earnings Ratio</h4>
+          <p>{stock.quote.peRatio ? stock.quote.peRatio : "--"}</p>
         </div>
-        <div className="yearweekhigh">
-          <div className="yearhighName">52 Week High</div>
-          <div className="yearhighNum">
-            ${Numeral(stock.quote.week52High).format("0.00")}
-          </div>
+        <div className="detail-section">
+          <h4>52 Week High</h4>
+          <p>${Numeral(stock.quote.week52High).format("0.00")}</p>
         </div>
-        <div className="yearweeklow">
-          <div className="yearlowName">52 Week Low</div>
-          <div className="yearlowNum">
-            ${Numeral(stock.quote.week52Low).format("0.00")}
-          </div>
+        <div className="detail-section">
+          <h4>52 Week Low</h4>
+          <p>${Numeral(stock.quote.week52Low).format("0.00")}</p>
         </div>
-        <div className="marketCap">
-          <div className="marketCapWords">Market Cap</div>
-          <div className="marketCapNum">
-            ${Numeral(stock.quote.marketCap).format("0,0")}
-          </div>
+        <div className="detail-section">
+          <h4>Market Cap</h4>
+          <p>${Numeral(stock.quote.marketCap).format("0,0")}</p>
         </div>
-        <div className="volume">
-          <div className="volumeWords">Average Volume</div>
-          <div className="volumeNum">
-            {Numeral(stock.quote.avgTotalVolume).format("0,0")}
-          </div>
+        <div className="detail-section">
+          <h4>Average Volume</h4>
+          <p>{Numeral(stock.quote.avgTotalVolume).format("0,0")}</p>
         </div>
       </div>
     </div>

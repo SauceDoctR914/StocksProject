@@ -4,10 +4,6 @@ body {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  /* overflow-x: auto; */
-  /* background-image: url("https://images.unsplash.com/photo-1475650522725-015d35677789?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60");
-background-size: cover;
-background-attachment: fixed; */
 
   background-color: #212121;
   /* background-image: linear-gradient(to right, #00ff00 , black); */
@@ -18,9 +14,10 @@ background-attachment: fixed; */
   display: row;
   width: 100vw;
   height: 100%;
+  overflow-x: hidden;
 }
 #titledate {
-  width: 20em;
+  width: 500px;
   margin-left: 50%;
   margin-right: 50%;
 }
@@ -62,11 +59,11 @@ background-attachment: fixed; */
 #newstitle {
   font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
   color: white;
-  margin-left: 1em;
+  margin-left: 30px;
   font-size: 32px;
 }
 .frontNews {
-  margin-right: 10em;
+  margin-right: 60px;
   width: 55em;
   /* justify-content: flex-start; */
 }
@@ -90,6 +87,10 @@ background-attachment: fixed; */
 #search {
   margin-left: 8em;
   /* align-items: center; */
+}
+svg {
+  margin: auto;
+  width: 100% !important;
 }
 #searchnstock {
   position: sticky;
@@ -123,6 +124,7 @@ background-attachment: fixed; */
   text-align: left;
   padding-bottom: 0.5em;
 }
+
 .symbol {
   font-size: 16px;
   font-weight: bold;
@@ -163,6 +165,18 @@ background-attachment: fixed; */
   font-weight: bold;
   box-shadow: 0 0 1px 1px #ff0000;
 }
+.chart-company-div {
+  display: flex;
+}
+.chartDiv {
+  display: inline-block;
+  margin-left: 70px;
+  width: 50%;
+}
+.chartHolder {
+  display: block;
+}
+
 .miniChartDiv {
   position: relative;
   align: left;
@@ -199,23 +213,28 @@ input:focus {
 .inputClass:hover {
   box-shadow: 0 0 3px 3px #161616;
 }
-.companyTitle {
-  color: white;
+div.react-stockchart {
+  max-width: 960px;
+  display: inline-block;
 }
 .companyDiv {
   font-family: Helvetica, sans-serif;
   margin-bottom: 50px;
-  margin-left: 10%;
+  width: 400px;
+  display: inline-block;
+  /* margin-left: 10%; */
 }
 
+.companyTitle {
+  color: white;
+}
 .about {
-  /* flex-direction: column; */
   justify-content: space-around;
   margin-top: 5em;
   min-height: 13em;
   font-family: Helvetica, sans-serif;
-  margin-left: 10em;
-  width: 40em;
+
+  width: 100%;
   color: white;
   margin-right: 5%;
   /* border: 1px solid; */
@@ -236,125 +255,35 @@ input:focus {
   text-wrap: ;
   /* justify-content: space-between; */
 }
-.innerCompany {
-  margin-left: 3em;
+.CompanyDetail {
   display: flex;
   margin-top: 1.4em;
-  margin-left: 10em;
   flex-wrap: wrap;
   /* align-content: space-between; */
-  width: 40em;
+  width: 90%;
+  margin: auto;
   min-height: 20em;
   box-shadow: 0 0 3px 3px #161616;
   /* flex-direction: row; */
 }
-.ceoWord {
+.companDiv h4 {
+  color: white;
+  margin-top: 1em;
+  /* margin-left: 2em; */
+}
+.companyDiv p {
   font-size: 16px;
   font-weight: bold;
-  margin-left: 2em;
+  /* margin-left: 2em; */
   margin-top: 2em;
   /* margin-left: 20%; */
 }
-.ceo {
+.detail-section {
   color: white;
-  margin-left: 2em;
+  /* margin-left: 0; */
   width: 12em;
-  margin-left: 1.5em;
-}
-.ceoName {
-  color: white;
-  margin-top: 1em;
-  margin-left: 2em;
-}
-.PE {
-  color: white;
-  margin-top: 2em;
-  width: 12em;
-}
-.peWords {
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  font-size: 16px;
-  margin-left: 2em;
-}
-.peNum {
-  font-size: 16px;
-  margin-top: 1em;
-  margin-left: 2em;
-}
-.yearweekhigh {
-  margin-top: 2em;
-  width: 12em;
-  color: white;
-  margin-left: 2em;
-}
-.yearhighName {
-  font-size: 16px;
-  font-weight: bold;
-  font-size: 16px;
-  color: white;
-  margin-left: 2em;
-}
-.yearhighNum {
-  margin-top: 1em;
-  margin-left: 2em;
 }
 
-.yearweeklow {
-  color: white;
-  margin-left: 1.5em;
-  width: 12em;
-}
-.yearlowName {
-  font-size: 16px;
-  font-weight: bold;
-  font-size: 16px;
-  color: white;
-  margin-top: 1em;
-  margin-left: 2em;
-}
-
-.yearlowNum {
-  margin-top: 1em;
-  margin-left: 2em;
-}
-
-.marketCap {
-  color: white;
-  width: 12em;
-}
-.marketCapWords {
-  font-size: 16px;
-  font-weight: bold;
-  font-size: 16px;
-  color: white;
-  margin-top: 1em;
-  margin-left: 2em;
-}
-.marketCapNum {
-  margin-top: 1em;
-  margin-left: 2em;
-}
-
-.volume {
-  color: white;
-  margin-top: 1em;
-  width: 12em;
-  margin-left: 2em;
-}
-.volumeWords {
-  font-size: 16px;
-  font-weight: bold;
-  font-size: 16px;
-  color: white;
-  /* margin-top: 1em; */
-  margin-left: 2em;
-}
-.volumeNum {
-  margin-top: 1em;
-  margin-left: 2em;
-}
 .stockPageButton {
   background-image: linear-gradient(#bf00ff, black);
   box-shadow: 0 0 4px 2px #bf00ff;
@@ -371,6 +300,9 @@ input:focus {
   flex: grid;
   border-width: 2px 5px 2px 3px;
 }
+news-render {
+  display: inline-block;
+}
 .newsDiv {
   position: absolute;
   width: 55em;
@@ -386,7 +318,7 @@ a {
   margin: 1em;
   font-family: Helvetica, sans-serif;
   box-shadow: 0 0 3px 3px #161616;
-  width: 55em;
+  width: 600px;
   height: 13em;
   overflow: hidden;
   /* flex: grid; */
@@ -407,9 +339,9 @@ a {
 
 .headline {
   flex-wrap: wrap;
-  width: 40em;
-  margin-right: 5%;
-  margin-top: 4%;
+  width: 300px;
+  margin-left: 15px;
+  margin-top: 0;
 }
 
 .titleDiv {
@@ -437,6 +369,17 @@ a {
   width: 15em;
   text-align: right;
 }
+
+.renderNews span {
+  font-size: 16px;
+  margin-top: 5em;
+  width: 15em;
+  text-align: right;
+}
+.renderNews img {
+  width: 150px;
+  height: 150px;
+}
 .frontPage {
   /* float: left; */
   display: flex;
@@ -452,8 +395,6 @@ a {
 }
 .frontimageDiv {
   display: flex;
-  /* height: 920px;
-  width: 430px; */
 }
 .imageInfoRow {
   display: flex;

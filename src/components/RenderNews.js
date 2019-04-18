@@ -22,13 +22,9 @@ class RenderNews extends Component {
               </div>
             ) : null}
             <div className="headline">
-              <div className="sourceDiv">{this.props.news.source.name}</div>
-              <div className="titleDiv">{this.props.news.title}</div>
-            </div>
-            <div className="newsInfo">
-              <div className="publishDate">
-                {Moment(this.props.news.time).calendar()}
-              </div>
+              <h4>{this.props.news.source.name}</h4>
+              <span>{Moment(this.props.news.time).calendar()}</span>
+              <p>{this.props.news.title}</p>
             </div>
           </div>
         ) : null}

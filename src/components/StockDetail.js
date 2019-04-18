@@ -1,11 +1,11 @@
 import React from "react";
 import StockNews from "./StockNews";
 import { connect } from "react-redux";
-import ChartComponent from "../chartfolder/index.js";
+import ChartComponent from "../chartComponents/index.js";
 import { Link } from "react-router-dom";
 import StockAlgo from "./StockAlgo";
 import Numeral from "numeral";
-import MiniChart from "../chartfolder/MiniIndex";
+import MiniChart from "../chartComponents/MiniIndex";
 import CompanyInfo from "./CompanyInfo";
 class StockDetail extends React.Component {
   render() {
@@ -33,15 +33,17 @@ class StockDetail extends React.Component {
         ) : (
           "getting data..."
         )}
-        <div className="chartDiv">
-          <ChartComponent symbol={symbol} />
-          <div className="miniChartDiv">
-            <MiniChart symbol={symbol} />
+        <div className="chart-company-div">
+          {stock ? <CompanyInfo stock={stock} /> : null}
+          <div className="chartDiv">
+            <ChartComponent symbol={symbol} />
+            <div className="miniChartDiv">
+              <MiniChart symbol={symbol} />
+            </div>
           </div>
         </div>
         {stock ? (
-          <div>
-            <CompanyInfo stock={stock} />
+          <div className="news-render">
             <h2 className="StockNewsWords">{symbol} News</h2>
             <StockNews stock={stock} />
           </div>
