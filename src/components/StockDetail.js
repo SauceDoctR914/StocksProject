@@ -34,18 +34,18 @@ class StockDetail extends React.Component {
           "getting data..."
         )}
         <div className="chart-company-div">
-          {stock ? <CompanyInfo stock={stock} /> : null}
           <div className="chartDiv">
             <ChartComponent symbol={symbol} />
             <div className="miniChartDiv">
               <MiniChart symbol={symbol} />
             </div>
           </div>
+          {stock ? <CompanyInfo stock={stock} /> : null}
         </div>
         {stock ? (
           <div className="news-render">
-            <h2 className="StockNewsWords">{symbol} News</h2>
             <StockNews stock={stock} />
+            <h2 className="StockNewsWords">{symbol} News</h2>
           </div>
         ) : (
           "loading news.."
