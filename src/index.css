@@ -95,17 +95,14 @@ svg {
 #searchnstock {
   position: sticky;
   top: 0;
-  margin-left: 1em;
-  width: 65em;
-  /* align-items: flex-end; */
+  margin-left: 20px;
+  width: 610px;
 }
 .StockContainer {
-  /* align-items: flex-end; */
-  margin-top: 1em;
-  margin-left: 0em;
-  /* left: 55em; */
-  width: 37em;
-  height: 65em;
+  margin-top: 15px;
+  margin-left: 0;
+  width: 600px;
+  height: 650px;
   overflow-y: scroll;
   text-align: center;
 }
@@ -261,7 +258,7 @@ div.react-stockchart {
 }
 .CompanyDetail {
   display: flex;
-  margin-top: 1.4em;
+  margin-top: 25px;
   flex-wrap: wrap;
   /* align-content: space-between; */
   width: 90%;
