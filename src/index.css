@@ -1,12 +1,12 @@
-html,
-body {
+html {
   height: 100%;
   width: 100%;
   margin: 0px;
   padding: 0px;
-
   background-color: #212121;
-  /* background-image: linear-gradient(to right, #00ff00 , black); */
+}
+body {
+  overflow-x: hidden;
 }
 /* // #00ff00
 // #bf00ff */
@@ -14,7 +14,6 @@ body {
   display: row;
   width: 100vw;
   height: 100%;
-  overflow-x: hidden;
 }
 #titledate {
   width: 500px;
@@ -70,20 +69,11 @@ body {
 
 .stocksectornews {
   display: flex;
-  width: 100vw;
+  width: 1680px;
   align-items: flex-start;
-  margin: 0 5% 0 5%;
+  margin: auto;
 }
-/* .frontPage {
-  margin: 0%;
-  font-family: Helvetica, sans-serif;
-  box-shadow: 0 0 3px 3px #161616;
-  width: 40%;
-  max-height: 25%;
-  min-height: 15em;
-  text-align: center;
-  color: white;
-} */
+
 #search {
   margin-left: 8em;
   /* align-items: center; */
@@ -162,24 +152,7 @@ svg {
   font-weight: bold;
   box-shadow: 0 0 1px 1px #ff0000;
 }
-.chart-company-div {
-  display: flex;
-}
-.chartDiv {
-  display: inline-block;
-  margin-left: 10%;
-  width: 60%;
-  height: 50%;
-}
-.chartHolder {
-  display: block;
-}
 
-.miniChartDiv {
-  position: relative;
-  align: left;
-  /* background: #303030; */
-}
 .formClass {
   position: sticky;
   border-radius: 4px;
@@ -198,12 +171,12 @@ input:focus {
 .inputClass {
   width: 300px;
   height: 27px;
+  margin-top: 35px;
   background-color: #292828;
   border-style: outset;
   border-color: #171718;
   color: #00ff00;
   font: sans-serif;
-
   border-radius: 8px;
   font-size: 18px;
   text-align: center;
@@ -211,19 +184,38 @@ input:focus {
 .inputClass:hover {
   box-shadow: 0 0 3px 3px #161616;
 }
+.chart-company-div {
+  display: flex;
+  height: 100%;
+}
+.chartDiv {
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: 10px;
+  width: 800px;
+  height: 1000px;
+}
+.chartHolder {
+  display: block;
+}
+
+.miniChartDiv {
+  position: relative;
+  align: left;
+  /* background: #303030; */
+}
+
 div.react-stockchart {
   max-width: 960px;
   display: inline-block;
 }
 .companyDiv {
   font-family: Helvetica, sans-serif;
-  margin-bottom: 50px;
   width: 400px;
-  position: fixed;
-  right: 0;
+  position: sticky;
   top: 0;
-  display: inline-block;
-  /* margin-left: 10%; */
+  /* display: inline-block; */
+  margin-left: 100px;
 }
 
 .companyTitle {
@@ -231,8 +223,9 @@ div.react-stockchart {
 }
 .about {
   justify-content: space-around;
-  margin-top: 5em;
-  min-height: 13em;
+  margin-top: 80px;
+  min-height: 200px;
+  margin-bottom: 30px;
   font-family: Helvetica, sans-serif;
 
   width: 100%;
@@ -270,18 +263,14 @@ div.react-stockchart {
 .companDiv h4 {
   color: white;
   margin-top: 1em;
-  /* margin-left: 2em; */
 }
 .companyDiv p {
   font-size: 16px;
   font-weight: bold;
-  /* margin-left: 2em; */
   margin-top: 20px;
-  /* margin-left: 20%; */
 }
 .detail-section {
   color: white;
-  /* margin-left: 0; */
   width: 400px;
   margin-top: 25px;
 }
@@ -302,27 +291,31 @@ div.react-stockchart {
   flex: grid;
   border-width: 2px 5px 2px 3px;
 }
-news-render {
+.news-render {
   display: inline-block;
+  position: relative;
+  margin-right: 50px;
 }
 .newsDiv {
-  position: absolute;
+  /* position: absolute; */
   width: 850px;
   height: 100%;
   margin-left: 10%;
+  margin-right: 50px;
 }
 a {
   width: 55em;
 }
 .renderNews {
-  position: relative;
+  /* position: relative; */
   display: flex;
-  margin: 1em;
+  margin-top: 15px;
+  margin-right: 50px;
   font-family: Helvetica, sans-serif;
   box-shadow: 0 0 3px 3px #161616;
-  width: 100%;
-  height: 13em;
-  overflow: hidden;
+  width: 90%;
+  height: 210px;
+  /* overflow: hidden; */
   /* flex: grid; */
   color: white;
 }
@@ -330,11 +323,7 @@ a {
   box-shadow: 0 0 5px 5px #0d0d0d;
   background-color: #212121;
 }
-.images {
-  height: 12.7em;
-  margin: 1%;
-  width: 15em;
-}
+
 .imageDiv {
   align-self: flex-start;
 }
@@ -379,8 +368,8 @@ a {
   text-align: right;
 }
 .renderNews img {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 210px;
 }
 .frontPage {
   /* float: left; */
@@ -485,7 +474,7 @@ a {
   margin-left: 0.3%;
 }
 .StockNewsWords {
-  margin-top: 2em;
+  margin-top: 10px;
 
   /* padding-left: 17em;
   margin-left: 10%; */
@@ -507,7 +496,7 @@ a {
   color: white;
   margin: 0 auto;
   margin-bottom: 5%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 @-webkit-keyframes ticker {
@@ -547,7 +536,7 @@ a {
   display: flex;
   bottom: 0;
   width: 10vw;
-  overflow: hidden;
+  /* overflow: hidden; */
   height: 10em;
   background-color: rgba(#000, 0.9);
   padding-left: 100%;

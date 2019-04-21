@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import StockCard from "./StockCard";
+import "../styleSheets/StockContainer.css";
 class StockContainer extends Component {
   // setInterval(() => this.props.fetchStocks(), 10000000000000000000)
 
