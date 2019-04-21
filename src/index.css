@@ -186,7 +186,7 @@ input:focus {
 }
 .chart-company-div {
   display: flex;
-  height: 100%;
+  height: 900px;
 }
 .chartDiv {
   display: inline-block;
@@ -213,9 +213,11 @@ div.react-stockchart {
   font-family: Helvetica, sans-serif;
   width: 400px;
   position: sticky;
+  height: 900px;
   top: 0;
-  /* display: inline-block; */
+  display: inline-block;
   margin-left: 100px;
+  /* margin-left: 10%; */
 }
 
 .companyTitle {

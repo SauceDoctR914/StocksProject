@@ -40,8 +40,8 @@ class StockDetail extends React.Component {
               <MiniChart symbol={symbol} />
             </div>
           </div>
-          {stock ? <CompanyInfo stock={stock} /> : null}
         </div>
+        {stock ? <CompanyInfo stock={stock} /> : null}
         {stock ? (
           <div className="news-render">
             <h2 className="StockNewsWords">{symbol} News</h2>
