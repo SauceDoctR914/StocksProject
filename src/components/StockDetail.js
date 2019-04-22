@@ -39,9 +39,9 @@ class StockDetail extends React.Component {
             <div className="miniChartDiv">
               <MiniChart symbol={symbol} />
             </div>
+            {stock ? <CompanyInfo stock={stock} /> : null}
           </div>
         </div>
-        {stock ? <CompanyInfo stock={stock} /> : null}
         {stock ? (
           <div className="news-render">
             <h2 className="StockNewsWords">{symbol} News</h2>
