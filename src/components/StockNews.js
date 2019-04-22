@@ -8,19 +8,12 @@ class StockNews extends React.Component {
     let stockName = this.props.stock.quote.companyName.split(" ")[0];
     if (stockName) {
       fetch(
-        `https://www.accunewsapp.com/api/v1/articles/?keyword=${stockName}&apiKey=6e75924676fedef09899d849df0d2947120eb7ec&limit=10`
+        `Xhttps://stocknewsapi.com//api/v1?tickers=${stockName}&items=5&fallback=true&token=lsi19hzmc509wbvziykvr7wrbjw4f9tiq6dcshjm`
       )
         .then(res => res.json())
-        .then(res => Object.values(res))
-        .then(respArray => respArray[1])
-        .then(news =>
+        .then(res =>
           this.setState({
-            news: Object.values(
-              news.reduce((c, e) => {
-                if (!c[e.title]) c[e.title] = e;
-                return c;
-              }, {})
-            )
+            news: res.data
           })
         )
         .catch(err => console.log(err));

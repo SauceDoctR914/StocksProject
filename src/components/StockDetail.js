@@ -33,23 +33,25 @@ class StockDetail extends React.Component {
         ) : (
           "getting data..."
         )}
-        <div className="chart-company-div">
-          <div className="chartDiv">
-            <ChartComponent symbol={symbol} />
+        <div className="chart-news-info">
+          <div className="chart-company-div">
+            <div className="chartDiv">
+              <ChartComponent symbol={symbol} />
+            </div>
             <div className="miniChartDiv">
               <MiniChart symbol={symbol} />
             </div>
-            {stock ? <CompanyInfo stock={stock} /> : null}
+            {stock ? (
+              <div className="news-render">
+                <h2 className="StockNewsWords">{symbol} News</h2>
+                <StockNews stock={stock} />
+              </div>
+            ) : (
+              "loading news.."
+            )}
           </div>
+          {stock ? <CompanyInfo stock={stock} /> : null}
         </div>
-        {stock ? (
-          <div className="news-render">
-            <h2 className="StockNewsWords">{symbol} News</h2>
-            <StockNews stock={stock} />
-          </div>
-        ) : (
-          "loading news.."
-        )}
       </div>
     );
   }

@@ -186,18 +186,13 @@ input:focus {
 }
 .chart-company-div {
   display: flex;
-  height: 900px;
-  width: 700px;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  width: 900px;
 }
 .chartDiv {
   display: inline-block;
-  margin-left: 10%;
-  margin-right: 10px;
-  width: 800px;
-  height: 1000px;
-}
-.chartHolder {
-  display: block;
 }
 
 .miniChartDiv {
@@ -210,14 +205,18 @@ div.react-stockchart {
   max-width: 960px;
   display: inline-block;
 }
+.chart-news-info {
+  display: flex;
+  flex-direction: row;
+}
 .companyDiv {
   font-family: Helvetica, sans-serif;
   width: 400px;
   position: sticky;
   height: 900px;
   top: 0;
-  display: inline-block;
   margin-left: 100px;
+  /* display: inline-block; *
   /* margin-left: 10%; */
 }
 
@@ -230,7 +229,6 @@ div.react-stockchart {
   min-height: 200px;
   margin-bottom: 30px;
   font-family: Helvetica, sans-serif;
-
   width: 100%;
   color: white;
   margin-right: 5%;
@@ -239,8 +237,8 @@ div.react-stockchart {
 }
 .aboutWord {
   font-size: 24px;
-  padding-top: 1em;
-  margin-left: 1em;
+  padding-top: 10px;
+  margin-left: 10px;
   text-align: center;
   font-weight: bold;
 }
@@ -390,6 +388,9 @@ a {
 .frontimageDiv {
   display: flex;
 }
+.infoDiv {
+  width: 800px;
+}
 .imageInfoRow {
   display: flex;
 }
@@ -429,11 +430,11 @@ a {
 }
 
 .back {
-  width: 8%;
-  height: 6%;
+  width: 204px;
+  height: 20px;
   font-weight: bold;
-  margin-left: 0.3%;
-  margin-bottom: 0.5%;
+  margin-left: 8px;
+  margin-bottom: 5px;
   background-color: #bf00ff;
   border-color: #bf00ff;
   border-radius: 5px;
@@ -447,11 +448,14 @@ a {
 }
 .detailTop {
 }
-
+.algo-div {
+  margin-left: 8px;
+  width: 204px;
+}
 .red {
   color: black;
-  width: 8%;
-  height: 6%;
+  width: 100%;
+  height: 20px;
   background-color: #e60000;
   border-radius: 5px;
   font-weight: bold;
@@ -464,16 +468,16 @@ a {
 }
 .yellow {
   background: #a6a6a6;
-  width: 8%;
-  height: 6%;
+  width: 100%;
+  height: 20px;
   border-radius: 5px;
   margin-left: 0.3%;
 }
 .green {
   background-color: #53ff1a;
   border-radius: 5px;
-  width: 8%;
-  height: 6%;
+  width: 100%;
+  height: 20px;
   margin-left: 0.3%;
 }
 .StockNewsWords {

@@ -5,25 +5,25 @@ class RenderNews extends Component {
   render() {
     return (
       <a
-        href={this.props.news.link}
+        href={this.props.news.news_url}
         rel="noopener noreferrer"
         target="_blank"
         style={{ textDecoration: "none" }}
       >
-        {this.props.news.image !== null ? (
+        {this.props.news.image_url !== null ? (
           <div className="renderNews">
-            {this.props.news.image ? (
+            {this.props.news.image_url ? (
               <div className="imageDiv">
                 <img
                   className="images"
                   alt="News"
-                  src={this.props.news.image}
+                  src={this.props.news.image_url}
                 />
               </div>
             ) : null}
             <div className="headline">
-              <h4>{this.props.news.source.name}</h4>
-              <span>{Moment(this.props.news.time).calendar()}</span>
+              <h4>{this.props.news.source_name}</h4>
+              <span>{Moment(this.props.news.date).calendar()}</span>
               <p>{this.props.news.title}</p>
             </div>
           </div>
