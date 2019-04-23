@@ -6,7 +6,7 @@ const CompanyInfo = props => {
   return (
     <div className="companyDiv">
       <div className="about">
-        <h4>ABOUT</h4>
+        <div className="aboutWord">ABOUT</div>
         <div className="companyDescription">{stock.company.description}</div>
       </div>
       <div className="CompanyDetail">
