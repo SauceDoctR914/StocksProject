@@ -37,8 +37,7 @@ class StockDetail extends React.Component {
           <div className="chart-company-div">
             <div className="chartDiv">
               <ChartComponent symbol={symbol} />
-            </div>
-            <div className="miniChartDiv">
+
               <MiniChart symbol={symbol} />
             </div>
             {stock ? (
