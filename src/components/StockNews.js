@@ -1,5 +1,6 @@
 import React from "react";
 import RenderNews from "./RenderNews";
+import "../styleSheets/StockNews.css";
 class StockNews extends React.Component {
   state = {
     news: []
@@ -8,7 +9,7 @@ class StockNews extends React.Component {
     let stockName = this.props.stock.quote.companyName.split(" ")[0];
     if (stockName) {
       fetch(
-        `xhttps://stocknewsapi.com//api/v1?tickers=${stockName}&items=5&fallback=true&token=lsi19hzmc509wbvziykvr7wrbjw4f9tiq6dcshjm`
+        `https://stocknewsapi.com//api/v1?tickers=${stockName}&items=5&fallback=true&token=lsi19hzmc509wbvziykvr7wrbjw4f9tiq6dcshjm`
       )
         .then(res => res.json())
         .then(res =>
@@ -29,7 +30,7 @@ class StockNews extends React.Component {
   render() {
     console.log(this.props.stock.quote.companyName, "gaaavz", this.state.news);
     return (
-      <div className="newsDiv">
+      <div className="news-div">
         {this.state.news ? this.renderNews() : "Loading data.."}
       </div>
     );

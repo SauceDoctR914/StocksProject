@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import Moment from "moment";
-
+import "../styleSheets/FrontPageNews.css";
 const FrontPageNews = props => {
   const { news } = props;
   return (
@@ -12,19 +12,17 @@ const FrontPageNews = props => {
       style={{ textDecoration: "none" }}
     >
       {news && news.urlToImage !== null ? (
-        <div className="frontNews">
-          <div className="renderNews">
+        <div className="front-news">
+          <div className="render-news">
             {news.urlToImage ? (
-              <div className="imageDiv">
-                <img className="images" alt="News" src={news.urlToImage} />
-              </div>
+              <img className="images" alt="News" src={news.urlToImage} />
             ) : null}
             <div className="headline">
-              <div className="sourceDiv">{news.source.name}</div>
-              <div className="titleDiv">{news.title}</div>
+              <div className="source-div">{news.source.name}</div>
+              <div className="news-desc">{news.title}</div>
             </div>
-            <div className="newsInfo">
-              <div className="publishDate">
+            <div className="news-info">
+              <div className="publish-date">
                 {Moment(news.publishedAt).calendar()}
               </div>
             </div>
