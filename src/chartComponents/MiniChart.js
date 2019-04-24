@@ -30,7 +30,7 @@ import { fitWidth } from "react-stockcharts/lib/helper";
 
 const macdAppearance = {
   stroke: {
-    macd: "#0000ff",
+    macd: "#00ff00",
     signal: "#00ff00"
   },
   fill: {
@@ -153,9 +153,13 @@ class CandleStickChartWithMACDIndicator extends React.Component {
           <LineSeries
             yAccessor={ema26.accessor()}
             stroke={ema26.stroke()}
+            stroke="#bf00ff"
+          />
+          <LineSeries
+            yAccessor={ema12.accessor()}
+            stroke={ema12.stroke()}
             stroke="#FFFFFF"
           />
-          <LineSeries yAccessor={ema12.accessor()} stroke={ema12.stroke()} />
           <CurrentCoordinate
             yAccessor={ema26.accessor()}
             fill={ema26.stroke()}
@@ -185,7 +189,7 @@ class CandleStickChartWithMACDIndicator extends React.Component {
               {
                 yAccessor: ema26.accessor(),
                 type: "EMA",
-                stroke: "#ff8533",
+                stroke: "#bf00ff",
                 windowSize: ema26.options().windowSize
               },
               {

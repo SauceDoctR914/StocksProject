@@ -200,6 +200,10 @@ input:focus {
 }
 .chartHolder {
 }
+/* .react-stockcharts-tooltip-label g {
+  margin: 5% !important;
+  color: red !important;
+} */
 
 div.react-stockchart {
   max-width: 1100px;
@@ -440,9 +444,13 @@ a {
 }
 
 .react-stockcharts-tooltip tspan {
-  /* fill: #00ff00; */
-  font-size: 14px;
+  fill: #00ff00;
+  font-size: 13.5px;
   font-weight: bold;
+  text-shadow: 0 0 4px 2px #bf00ff;
+  color: #00ff00 !important;
+  stroke: #bf00ff;
+  border: bold;
 }
 .back {
   font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
@@ -490,8 +498,17 @@ a {
   border: none;
   margin-left: 0;
 }
-.red:hover {
+.red:after {
+  content: "High Risk";
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+.red:hover:after {
   content: "Recommendation";
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
 }
 .yellow {
   background: #a6a6a6;
