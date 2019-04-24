@@ -22,14 +22,13 @@
   height: 20px;
   background-color: #222222;
   color: #fff;
-
   box-shadow: 0 0 4px 2px #0d0d0d;
   border: none;
   font-weight: bold;
   margin-left: 0;
   margin-bottom: 5px;
   position: absolute;
-  top: 5px;
+  top: 8px;
   right: 0;
   margin-right: 1%;
   /* background-color: #bf00ff;

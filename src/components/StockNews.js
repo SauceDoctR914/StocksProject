@@ -28,7 +28,6 @@ class StockNews extends React.Component {
     });
   };
   render() {
-    console.log(this.props.stock.quote.companyName, "gaaavz", this.state.news);
     return (
       <div className="news-div">
         {this.state.news ? this.renderNews() : "Loading data.."}
