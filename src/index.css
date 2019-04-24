@@ -307,16 +307,23 @@ div.react-stockchart {
 }
 .newsDiv {
   /* position: absolute; */
-  width: 850px;
+  width: 1050px;
   height: 100%;
-  margin-left: 10%;
   margin-right: 50px;
+}
+#published {
+  height: 100px;
+  width: 500px;
+  margin-left: 300px;
+  margin-top: 80px;
 }
 a {
   width: 850px;
 }
+.newsDiv h4 {
+  font-size: 20px;
+}
 .renderNews {
-  /* position: relative; */
   display: flex;
   margin-top: 15px;
   margin-right: 50px;
@@ -324,8 +331,6 @@ a {
   box-shadow: 0 0 3px 3px #161616;
   width: 90%;
   height: 210px;
-  /* overflow: hidden; */
-  /* flex: grid; */
   color: white;
 }
 .renderNews:hover {
@@ -339,7 +344,7 @@ a {
 
 .headline {
   flex-wrap: wrap;
-  width: 300px;
+  width: 600px;
   margin-left: 15px;
   margin-top: 0;
 }
@@ -454,7 +459,7 @@ a {
 }
 .back {
   font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
-  width: 257px;
+  width: 273px;
   height: 20px;
   font-weight: bold;
   margin-left: 0;
@@ -476,7 +481,7 @@ a {
 .price {
   margin-top: 9px;
   font-size: 26px;
-  width: 114px;
+  width: 130px;
   color: white;
 }
 .algo-div {

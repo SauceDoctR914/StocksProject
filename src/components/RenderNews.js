@@ -23,9 +23,9 @@ class RenderNews extends Component {
             ) : null}
             <div className="headline">
               <h4>{this.props.news.source_name}</h4>
-              <span>{Moment(this.props.news.date).calendar()}</span>
               <p>{this.props.news.title}</p>
             </div>
+            <div id="published">{Moment(this.props.news.date).calendar()}</div>
           </div>
         ) : null}
       </a>
