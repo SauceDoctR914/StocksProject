@@ -15,7 +15,7 @@
   box-shadow: 0 0 1px 2px #090909;
   margin: 7px;
   width: 500px;
-  height: 35px;
+  height: 40px;
   color: #e5e5e5;
   font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
   text-align: left;
@@ -45,7 +45,7 @@
   box-shadow: 0 0 1px 1px #008000;
   border-radius: 3px;
   font-weight: bold;
-  margin-right: 24px;
+  margin-right: 10px;
   margin-bottom: 32px;
   width: 65px;
   height: 25px;
@@ -58,7 +58,7 @@
   color: white;
   opacity: 0.86;
   border-radius: 3px;
-  margin-right: 24px;
+  margin-right: 10px;
   margin-bottom: 32px;
   width: 65px;
   height: 25px;

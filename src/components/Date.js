@@ -4,7 +4,7 @@ class Date extends Component {
   componentDidMount() {
     let intervalId = setInterval(() => {
       this.setState({
-        currentTime: Moment().format("hh:mm:ss")
+        currentTime: Moment().format("hh:mm:ss A")
       });
     }, 1000);
     this.setState({ intervalId: intervalId });
@@ -21,7 +21,7 @@ class Date extends Component {
     return (
       <div className="dateTime">
         <div className="date">{Moment().format("dddd, MMMM Do YYYY")}</div>
-        <div className="thetime">{this.state.currentTime} PM</div>
+        <div className="thetime">{this.state.currentTime}</div>
       </div>
     );
   }
