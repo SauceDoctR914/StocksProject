@@ -1,6 +1,6 @@
 import React from "react";
 import Numeral from "numeral";
-
+import "../styleSheets/CompanyInfo.css";
 const CompanyInfo = props => {
   const { stock } = props;
   return (

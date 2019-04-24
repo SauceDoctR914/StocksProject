@@ -8,7 +8,7 @@ class StockNews extends React.Component {
     let stockName = this.props.stock.quote.companyName.split(" ")[0];
     if (stockName) {
       fetch(
-        `https://stocknewsapi.com//api/v1?tickers=${stockName}&items=5&fallback=true&token=lsi19hzmc509wbvziykvr7wrbjw4f9tiq6dcshjm`
+        `xhttps://stocknewsapi.com//api/v1?tickers=${stockName}&items=5&fallback=true&token=lsi19hzmc509wbvziykvr7wrbjw4f9tiq6dcshjm`
       )
         .then(res => res.json())
         .then(res =>
