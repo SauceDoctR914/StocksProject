@@ -4,7 +4,7 @@
   position: sticky;
   height: 900px;
   top: 0;
-  margin-left: 60px;
+  margin-left: 25px;
 }
 
 .companyTitle {
@@ -30,7 +30,7 @@
 .companyDescription {
   margin-top: 10px;
   padding-right: 9px;
-  font-size: 18px;
+  font-size: 17px;
   margin-left: 13.5px;
   text-wrap: ;
 }
@@ -49,7 +49,7 @@
   text-align: center;
 }
 .detail-section p {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   margin-top: 20px;
   text-align: center;

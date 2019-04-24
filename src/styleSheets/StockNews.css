@@ -1,6 +1,6 @@
 .news-div {
   /* position: absolute; */
-  width: 850px;
+  width: 800px;
   height: 100%;
   margin-right: 50px;
 }
@@ -45,7 +45,7 @@
   display: inline-block;
   position: relative;
   margin-right: 50px;
-  width: 850px;
+  width: 800px;
 }
 .headline {
   flex-wrap: wrap;

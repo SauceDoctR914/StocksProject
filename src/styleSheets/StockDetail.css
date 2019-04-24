@@ -1,0 +1,157 @@
+#stockdetail {
+  margin: auto;
+  max-width: 1700px;
+}
+
+.react-stockcharts-tooltip tspan {
+  fill: #00ff00;
+  font-size: 13.5px;
+  font-weight: bold;
+  text-shadow: 0 0 4px 2px #bf00ff;
+  color: #00ff00 !important;
+  stroke: #bf00ff;
+  border: bold;
+}
+.detailTop {
+}
+
+.infoDiv {
+  width: 500px;
+}
+.back {
+  font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+  width: 253px;
+  height: 20px;
+  font-weight: bold;
+  margin-left: 0;
+  margin-bottom: 5px;
+  background-color: #bf00ff;
+  border-color: #bf00ff;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.back:hover {
+  box-shadow: 0 0 4px 2px #bf00ff;
+}
+.price-rec {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: row;
+  height: 40px;
+}
+.price {
+  margin-top: 9px;
+  font-size: 22px;
+  width: 130px;
+  color: white;
+}
+.algo-div {
+  margin-left: 8px;
+  width: 115px;
+  margin-bottom: 10px;
+  height: 20px;
+  text-align: center;
+  font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.red {
+  color: black;
+  width: 100%;
+  height: 100%;
+  background-color: #e60000;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 13px;
+  border: none;
+  margin-left: 0;
+}
+.red:after {
+  content: "High Risk";
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+}
+.red:hover:after {
+  content: "Recommendation";
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+}
+.yellow {
+  background: #a6a6a6;
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-left: 0;
+}
+.yellow:after {
+  content: "Neutral";
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+}
+.yellow:hover:after {
+  content: "Recommendation";
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+}
+.green {
+  background-color: #53ff1a;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+}
+.green:after {
+  content: "Confident Buy";
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+}
+.green:hover:after {
+  content: "Recommendation";
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.StockNewsWords {
+  margin-top: 10px;
+  color: white;
+}
+.StockNewsWords:hover {
+  color: #bf00ff;
+  font-weight: bold;
+}
+.chart-company-div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  width: 830px;
+}
+.chartDiv {
+  display: inline-block;
+  width: 830px;
+}
+.chartHolder {
+}
+
+div.react-stockchart {
+  max-width: 830px;
+  display: inline-block;
+}
+.chart-news-info {
+  display: flex;
+  flex-direction: row;
+}
+
+svg {
+  margin: auto;
+  width: 100% !important;
+}

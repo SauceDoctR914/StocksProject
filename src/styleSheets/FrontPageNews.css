@@ -36,10 +36,10 @@
 .publish-date {
   font-size: 14px;
   margin-top: 80px;
-
   max-width: 250px;
   text-align: right;
 }
+
 .render-news {
   display: flex;
   margin-top: 15px;
@@ -50,6 +50,15 @@
   height: 180px;
   color: white;
 }
+.render-news:hover {
+  box-shadow: 0 0 5px 5px #0d0d0d;
+  background-color: #212121;
+}
+
+.image-div {
+  align-self: flex-start;
+}
+
 .render-news img {
   width: 180px;
   height: 180px;

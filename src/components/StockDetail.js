@@ -7,6 +7,7 @@ import StockAlgo from "./StockAlgo";
 import Numeral from "numeral";
 import MiniChart from "../chartComponents/MiniIndex";
 import CompanyInfo from "./CompanyInfo";
+import "../styleSheets/StockDetail.css";
 class StockDetail extends React.Component {
   render() {
     const stock = this.props.stocks.find(stockObj => {
