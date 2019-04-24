@@ -33,7 +33,7 @@ class StockDetail extends React.Component {
                 />
               </span>
             </div>
-            <Link to="/">
+            <Link onClick={this.forceUpdate} to="/">
               <button className="back">Main Page</button>
             </Link>
           </div>
