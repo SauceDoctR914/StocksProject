@@ -7,13 +7,10 @@
   margin-left: 25px;
 }
 
-.companyTitle {
-  color: white;
-}
 .about {
   justify-content: space-around;
   min-height: 200px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: Helvetica, sans-serif;
   width: 100%;
   color: white;
@@ -21,7 +18,7 @@
   box-shadow: 0 0 3px 3px #161616;
 }
 .aboutWord {
-  font-size: 26px;
+  font-size: 24px;
   padding-top: 10px;
   margin-left: 10px;
   text-align: center;
@@ -30,28 +27,29 @@
 .companyDescription {
   margin-top: 10px;
   padding-right: 9px;
-  font-size: 17px;
+  font-size: 16px;
   margin-left: 13.5px;
   text-wrap: ;
 }
 .CompanyDetail {
   display: flex;
-  margin-top: 25px;
+  margin-top: 20px;
   flex-wrap: wrap;
-  width: 90%;
+  width: 80%;
   margin: auto;
   min-height: 360px;
 }
 .detail-section h4 {
   color: white;
-  font-size: 19px;
+  font-size: 17px;
   margin-top: 10px;
   text-align: center;
+  margin-bottom: 5px;
 }
 .detail-section p {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
 }
 .detail-section {

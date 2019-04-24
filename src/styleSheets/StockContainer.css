@@ -21,7 +21,14 @@
   text-align: left;
   padding-bottom: 8px;
 }
-
+.StockCard:hover {
+  border-style: outset;
+  background-color: #292828;
+  border-color: #0d0d0d;
+  box-shadow: 0 0 4px 2px #0d0d0d;
+  flex: grid;
+  border-width: 2px 5px 2px 3px;
+}
 .symbol {
   font-size: 15px;
   font-weight: bold;
@@ -96,13 +103,4 @@ input:focus {
 }
 .inputClass:hover {
   box-shadow: 0 0 3px 3px #161616;
-}
-
-.StockCard:hover {
-  border-style: outset;
-  background-color: #292828;
-  border-color: #0d0d0d;
-  box-shadow: 0 0 4px 2px #0d0d0d;
-  flex: grid;
-  border-width: 2px 5px 2px 3px;
 }

@@ -18,10 +18,13 @@ class StockDetail extends React.Component {
     }
     return (
       <div id="stockdetail">
+        <Link onClick={this.forceUpdate} to="/">
+          <button className="back">Main Page</button>
+        </Link>
         {stock ? (
-          <div className="infoDiv">
-            <div className="detailTop">
-              <h1 className="companyTitle">{stock.quote.companyName}</h1>
+          <div className="info-div">
+            <div className="detail-top">
+              <h1 className="company-title">{stock.quote.companyName}</h1>
               <span className="price-rec">
                 {" "}
                 <div className="price">
@@ -33,9 +36,6 @@ class StockDetail extends React.Component {
                 />
               </span>
             </div>
-            <Link onClick={this.forceUpdate} to="/">
-              <button className="back">Main Page</button>
-            </Link>
           </div>
         ) : (
           "getting data..."
