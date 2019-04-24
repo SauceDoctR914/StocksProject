@@ -11,6 +11,7 @@ body {
 /* // #00ff00
 // #bf00ff */
 .app {
+  font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
   display: row;
   width: 100vw;
   height: 100%;
@@ -228,7 +229,6 @@ div.react-stockchart {
 }
 .about {
   justify-content: space-around;
-  margin-top: 80px;
   min-height: 200px;
   margin-bottom: 30px;
   font-family: Helvetica, sans-serif;
@@ -436,62 +436,105 @@ a {
   font-size: 18px;
 }
 
-.back {
-  width: 204px;
-  height: 20px;
-  font-weight: bold;
-  margin-left: 8px;
-  margin-bottom: 5px;
-  background-color: #bf00ff;
-  border-color: #bf00ff;
-  border-radius: 5px;
-}
-.back:hover {
-  box-shadow: 0 0 4px 2px #bf00ff;
-}
-.price {
-  font-size: 26px;
-  margin-bottom: 10px;
-  color: white;
-}
 .detailTop {
 }
+
 .react-stockcharts-tooltip tspan {
   /* fill: #00ff00; */
   font-size: 14px;
   font-weight: bold;
 }
+.back {
+  font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+  width: 257px;
+  height: 20px;
+  font-weight: bold;
+  margin-left: 0;
+  margin-bottom: 5px;
+  background-color: #bf00ff;
+  border-color: #bf00ff;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.back:hover {
+  box-shadow: 0 0 4px 2px #bf00ff;
+}
+.price-rec {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: row;
+  height: 40px;
+}
+.price {
+  margin-top: 9px;
+  font-size: 26px;
+  width: 114px;
+  color: white;
+}
 .algo-div {
   margin-left: 8px;
-  width: 204px;
+  width: 135px;
+  margin-bottom: 10px;
+  height: 20px;
+  text-align: center;
+  font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .red {
   color: black;
   width: 100%;
-  height: 20px;
+  height: 100%;
   background-color: #e60000;
   border-radius: 5px;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 15px;
   border: none;
-  margin-left: 0.3%;
+  margin-left: 0;
 }
-.red:focus {
-  outline: none;
+.red:hover {
+  content: "Recommendation";
 }
 .yellow {
   background: #a6a6a6;
   width: 100%;
-  height: 20px;
+  height: 100%;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
   border-radius: 5px;
-  margin-left: 0.3%;
+  margin-left: 0;
+}
+.yellow:after {
+  content: "Neutral";
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+.yellow:hover:after {
+  content: "Recommendation";
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
 }
 .green {
   background-color: #53ff1a;
   border-radius: 5px;
   width: 100%;
-  height: 20px;
-  margin-left: 0.3%;
+  height: 100%;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+.green:after {
+  content: "Confident Buy";
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+.green:hover:after {
+  content: "Recommendation";
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
 }
 .StockNewsWords {
   margin-top: 10px;

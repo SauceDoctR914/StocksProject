@@ -21,14 +21,20 @@ class StockDetail extends React.Component {
           <div className="infoDiv">
             <div className="detailTop">
               <h1 className="companyTitle">{stock.quote.companyName}</h1>
-              <div className="price">
-                $ {Numeral(stock.quote.latestPrice).format("0,0.00")}
-              </div>
+              <span className="price-rec">
+                {" "}
+                <div className="price">
+                  $ {Numeral(stock.quote.latestPrice).format("0,0.00")}
+                </div>
+                <StockAlgo
+                  symbol={this.props.match.params.symbol}
+                  stock={stock}
+                />
+              </span>
             </div>
             <Link to="/">
               <button className="back">Main Page</button>
             </Link>
-            <StockAlgo symbol={this.props.match.params.symbol} stock={stock} />
           </div>
         ) : (
           "getting data..."
