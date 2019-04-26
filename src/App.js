@@ -52,8 +52,8 @@ class App extends Component {
             path="/"
             render={routerProps => (
               <React.Fragment>
-                <div id="titledate">
-                  <h1 className="theTitle">2Stoc</h1>
+                <div className="title-date">
+                  <h1 className="the-title">2Stoc</h1>
                   <div className="time">
                     <Date />
                   </div>

@@ -19,9 +19,9 @@ class Date extends Component {
   };
   render() {
     return (
-      <div className="dateTime">
+      <div className="date-time">
         <div className="date">{Moment().format("dddd, MMMM Do YYYY")}</div>
-        <div className="thetime">{this.state.currentTime}</div>
+        <div className="the-time">{this.state.currentTime}</div>
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React from "react";
 import Numeral from "numeral";
+import "../styleSheets/SectorCard.css";
 const SectorCard = props => {
   const { sectorData } = props;
   let change = sectorData.performance * 100;

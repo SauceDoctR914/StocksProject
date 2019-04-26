@@ -1,7 +1,9 @@
 import { connect } from "react-redux";
 import { fetchSectorData } from "../Redux/action/stockAction";
 import { withRouter } from "react-router-dom";
+import "../styleSheets/SectorInfo.css";
 import SectorCard from "./SectorCard";
+
 import React, { Component } from "react";
 
 class SectorInfo extends Component {

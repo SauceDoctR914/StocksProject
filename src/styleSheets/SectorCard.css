@@ -1,0 +1,40 @@
+.ticker__item {
+  display: inline-block;
+  padding: 0 28px;
+  font-size: 14px;
+  height: 54px;
+  width: 350px;
+  text-align: center;
+  color: white;
+}
+.sector {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  /* margin-left: 9em; */
+}
+.price-change {
+  display: inline-block;
+  margin-left: 14px;
+}
+
+.ticker-positive-change {
+  outline: none;
+  text-shadow: 0 0 3px 4px white;
+  font-weight: bold;
+  margin-right: 24px;
+  margin-bottom: 32px;
+  width: 80px;
+  opacity: 0.86;
+  color: #21ce99;
+}
+.ticker-negative-change {
+  outline: none;
+  color: #fe456a;
+  opacity: 0.86;
+  border-radius: 3px;
+  margin-right: 24px;
+  width: 80px;
+  font-weight: bold;
+  text-shadow: 0 0 1px 1px #000000;
+}

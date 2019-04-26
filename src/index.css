@@ -16,11 +16,11 @@ body {
   width: 100vw;
   height: 100%;
 }
-#titledate {
+.title-date {
   width: 500px;
   margin: auto;
 }
-.theTitle {
+.the-title {
   font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
   text-shadow: 0 1px 0 white, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
     0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
@@ -34,7 +34,7 @@ body {
   font-weight: bold;
   -webkit-background-clip: text;
 }
-.dateTime {
+.date-time {
   /* margin-left: 400px; */
   text-align: center;
   font-family: Helvetica, sans-serif;
@@ -42,7 +42,7 @@ body {
   color: white;
   margin-bottom: 5%;
 }
-.thetime {
+.the-time {
   height: 50px;
   font-size: 25px;
   margin-bottom: 100px;
@@ -64,8 +64,6 @@ body {
 }
 
 .search {
-  /* margin-left: 8em;
-  /* align-items: center; */
 }
 
 .search-stock-card {
@@ -80,52 +78,6 @@ a {
   width: 850px;
 }
 
-.sectorContainer {
-  min-width: 100%;
-  background-color: #292828;
-  height: 4em;
-  display: flex;
-  box-sizing: border-box;
-  align-items: row;
-  font-weight: bold;
-  color: white;
-  margin: 0 auto;
-  margin-bottom: 5%;
-  /* overflow: hidden; */
-}
-
-@-webkit-keyframes ticker {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    visibility: visible;
-  }
-
-  100% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-
-@keyframes ticker {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    visibility: visible;
-  }
-
-  100% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-.ticker:hover {
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
 .ticker-container {
   position: relative;
   display: flex;
@@ -136,66 +88,4 @@ a {
   background-color: rgba(#000, 0.9);
   padding-left: 100%;
   box-sizing: content-box;
-}
-.ticker {
-  position: absolute;
-  display: inline-block;
-  height: 4rem;
-  line-height: 4rem;
-  white-space: nowrap;
-  padding-right: 100%;
-  margin-right: 5%;
-  margin-left: 15em;
-  font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
-  box-sizing: content-box;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-name: ticker;
-  animation-name: ticker;
-  -webkit-animation-duration: 30s;
-  animation-duration: 30s;
-}
-
-.ticker__item {
-  display: inline-block;
-  padding: 0 2rem;
-  font-size: 14px;
-  height: 4em;
-  width: 25em;
-  /* margin-left: 3em; */
-  text-align: center;
-  color: white;
-}
-.sector {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-  /* margin-left: 9em; */
-}
-.price-change {
-  display: inline-block;
-  margin-left: 1em;
-}
-
-.ticker-positive-change {
-  outline: none;
-  text-shadow: 0 0 3px 4px white;
-  font-weight: bold;
-  margin-right: 1.5em;
-  margin-bottom: 2em;
-  width: 5em;
-  opacity: 0.86;
-  color: #21ce99;
-}
-.ticker-negative-change {
-  outline: none;
-  color: #fe456a;
-  opacity: 0.86;
-  border-radius: 3px;
-  margin-right: 1.5em;
-  width: 5em;
-  font-weight: bold;
-  text-shadow: 0 0 1px 1px #000000;
 }
