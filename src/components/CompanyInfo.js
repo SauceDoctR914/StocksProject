@@ -4,12 +4,12 @@ import "../styleSheets/CompanyInfo.css";
 const CompanyInfo = props => {
   const { stock } = props;
   return (
-    <div className="companyDiv">
+    <div className="company-div">
       <div className="about">
-        <div className="aboutWord">ABOUT</div>
-        <div className="companyDescription">{stock.company.description}</div>
+        <div className="about-title">ABOUT</div>
+        <div className="company-description">{stock.company.description}</div>
       </div>
-      <div className="CompanyDetail">
+      <div className="company-detail">
         <div className="detail-section">
           <h4>CEO</h4>
           <p className="ceoName">{stock.company.CEO}</p>

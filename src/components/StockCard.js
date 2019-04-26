@@ -15,16 +15,16 @@ class StockCard extends React.Component {
         to={`/stocks/${this.props.stock.quote.symbol}`}
         style={{ textDecoration: "none" }}
       >
-        <div className="StockCard">
+        <div className="stock-card">
           <div className="symbol">{this.props.stock.quote.symbol}</div>
-          <div className="priceDiv">
+          <div className="price-div">
             ${Numeral(this.props.stock.quote.latestPrice).format("0.00")}
           </div>
-          <div className="changeDiv">
+          <div className="change-div">
             {change > 0 ? (
-              <button className="positiveChange">%{pctChange}</button>
+              <button className="positive-change">%{pctChange}</button>
             ) : (
-              <button className="negativeChange">%{positiveInt}</button>
+              <button className="negative-change">%{positiveInt}</button>
             )}
           </div>
         </div>

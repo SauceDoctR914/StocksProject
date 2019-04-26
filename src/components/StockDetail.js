@@ -17,7 +17,7 @@ class StockDetail extends React.Component {
     if (stock) {
     }
     return (
-      <div id="stockdetail">
+      <div className="stock-detail">
         <Link onClick={this.forceUpdate} to="/">
           <button className="back">Main Page</button>
         </Link>

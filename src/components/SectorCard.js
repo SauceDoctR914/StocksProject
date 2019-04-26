@@ -9,11 +9,11 @@ const SectorCard = props => {
   return (
     <span className="ticker__item">
       <div className="sector">{sectorData.name}</div>
-      <div className="priceChange">
+      <div className="price-change">
         {pctChange > 0 ? (
-          <p className="tickerPositiveChange">%{pctChange}</p>
+          <p className="ticker-positive-change">%{pctChange}</p>
         ) : (
-          <p className="tickerNegativeChange">%{positiveInt}</p>
+          <p className="ticker-negative-change">%{positiveInt}</p>
         )}
       </div>
     </span>

@@ -58,13 +58,13 @@ class App extends Component {
                     <Date />
                   </div>
                 </div>
-                <div className="tickerContainer">
+                <div className="ticker-container">
                   <SectorInfo />
                 </div>
-                <div className="stocksectornews">
+                <div className="stock-sector-news">
                   <FetchNews />
-                  <div id="searchnstock">
-                    <div className="searchDiv">
+                  <div className="search-stock-card">
+                    <div className="search-div">
                       <SearchBar
                         searchChange={this.onSearchChange}
                         searchTerm={this.searchTerm}

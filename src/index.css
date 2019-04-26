@@ -56,19 +56,19 @@ body {
   text-align: center;
 }
 
-.stocksectornews {
+.stock-sector-news {
   display: flex;
   width: 1240px;
   align-items: flex-start;
   margin: auto;
 }
 
-#search {
+.search {
   /* margin-left: 8em;
   /* align-items: center; */
 }
 
-#searchnstock {
+.search-stock-card {
   position: sticky;
   top: 0;
   margin-left: 20px;
@@ -126,7 +126,7 @@ a {
   animation-play-state: paused;
 }
 
-.tickerContainer {
+.ticker-container {
   position: relative;
   display: flex;
   bottom: 0;
@@ -174,12 +174,12 @@ a {
   font-weight: bold;
   /* margin-left: 9em; */
 }
-.priceChange {
+.price-change {
   display: inline-block;
   margin-left: 1em;
 }
 
-.tickerPositiveChange {
+.ticker-positive-change {
   outline: none;
   text-shadow: 0 0 3px 4px white;
   font-weight: bold;
@@ -189,7 +189,7 @@ a {
   opacity: 0.86;
   color: #21ce99;
 }
-.tickerNegativeChange {
+.ticker-negative-change {
   outline: none;
   color: #fe456a;
   opacity: 0.86;

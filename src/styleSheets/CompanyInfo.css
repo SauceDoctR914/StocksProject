@@ -1,4 +1,4 @@
-.companyDiv {
+.company-div {
   font-family: Helvetica, sans-serif;
   width: 400px;
   position: sticky;
@@ -17,21 +17,21 @@
   margin-right: 5%;
   box-shadow: 0 0 3px 3px #161616;
 }
-.aboutWord {
+.about-title {
   font-size: 24px;
   padding-top: 10px;
   margin-left: 10px;
   text-align: center;
   font-weight: bold;
 }
-.companyDescription {
+.company-description {
   margin-top: 10px;
   padding-right: 9px;
   font-size: 16px;
   margin-left: 13.5px;
   text-wrap: ;
 }
-.CompanyDetail {
+.company-detail {
   display: flex;
   margin-top: 20px;
   flex-wrap: wrap;

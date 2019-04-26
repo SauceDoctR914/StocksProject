@@ -6,11 +6,11 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div id="search">
-        <form className="formClass">
-          <div className="inputDiv">
+      <div className="search">
+        <form className="form-class">
+          <div className="input-div">
             <input
-              className="inputClass"
+              className="input-class"
               type="text"
               placeholder="Search TickR"
               value={this.props.searchTerm}
