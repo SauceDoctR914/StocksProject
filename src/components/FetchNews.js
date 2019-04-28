@@ -34,10 +34,3 @@ class FetchNews extends Component {
 }
 
 export default withRouter(FetchNews);
-// {this.state.frontPage !== null && this.state.frontPage ? (
-//   <div className="topNews">
-//     <MainNews frontPage={this.state.frontPage} />
-//   </div>
-// ) : (
-//   "Getting Data..."
-// )}

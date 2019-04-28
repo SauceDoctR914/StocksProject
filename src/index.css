@@ -35,7 +35,6 @@ body {
   -webkit-background-clip: text;
 }
 .date-time {
-  /* margin-left: 400px; */
   text-align: center;
   font-family: Helvetica, sans-serif;
   font-weight: bold;
@@ -64,6 +63,8 @@ body {
 }
 
 .search {
+  /* margin-left: 8em;
+  /* align-items: center; */
 }
 
 .search-stock-card {

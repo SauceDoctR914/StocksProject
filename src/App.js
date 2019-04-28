@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./App.css";
 import SearchBar from "./components/SearchBar";
 import { connect } from "react-redux";
 import { fetchStocks } from "./Redux/action/stockAction";
