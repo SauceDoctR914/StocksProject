@@ -109,8 +109,8 @@ input:focus {
   .StockContainer {
     margin-top: 15px;
     margin-left: 0;
-    width: 600px;
-    height: 650px;
+    width: 95vw;
+    height: 60vh;
     overflow-y: scroll;
     text-align: center;
   }
@@ -122,7 +122,7 @@ input:focus {
     /* margin-left: 16px; */
     box-shadow: 0 0 1px 2px #090909;
     margin: 7px;
-    width: 500px;
+    width: 90%;
     height: 40px;
     color: #e5e5e5;
     font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
