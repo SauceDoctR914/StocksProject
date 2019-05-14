@@ -96,6 +96,7 @@ a {
     font-size: .8em;
     overflow-x: hidden;
     display: flex;
+    width: 100vw;
     justify-content: center;
     flex-direction: column;
   }
