@@ -72,3 +72,70 @@ a {
   box-shadow: 0 0 6px 6px #0d0d0d;
   background-color: #212121;
 }
+
+@media only screen and (min-width: 305px) and (max-width: 405px){
+  #newstitle {
+    font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+    color: white;
+    margin-left: 30px;
+    font-size: 30px;
+  }
+
+  .front-news {
+    margin-right: 50px;
+    width: 80%;
+  }
+  .headline {
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin-left: 10px;
+    margin-top: 0;
+  }
+  .source-div {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex-end;
+    margin-bottom: 5px;
+  }
+  .news-desc {
+    font-size: 12px;
+    max-width: 51%;
+  }
+  .news-info {
+    margin-left: 0;
+    margin-right: 10px;
+    text-align: right;
+    min-width: 40%;
+  }
+  .publish-date {
+    font-size: 14px;
+    margin-top: 12%;
+    max-width: 40%;
+    text-align: right;
+  }
+
+  .render-news {
+    display: flex;
+    margin-top: 15px;
+    margin-right: 0px;
+    font-family: Helvetica, sans-serif;
+    box-shadow: 0 0 3px 3px #161616;
+    width: 100%;
+    height: 180px;
+    color: white;
+  }
+
+  .image-div {
+    align-self: flex-start;
+  }
+
+  .render-news img {
+    width: 20%;
+    height: 20%;
+  }
+
+  a {
+    width: 100%;
+  }
+}
