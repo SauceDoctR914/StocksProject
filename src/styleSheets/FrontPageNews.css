@@ -87,21 +87,25 @@ a {
   }
   .headline {
     flex-wrap: wrap;
-    max-width: 90%;
+    max-width: 80%;
     margin-left: 5px;
     margin-top: 0;
+    height: 20px;
   }
   .source-div {
     margin-top: 10px;
     font-size: 16px;
     font-weight: bold;
     display: flex-end;
+    width: 90%;
     margin-bottom: 5px;
   }
   .news-desc {
+    display: inline-block;
     font-size: 12px;
-    max-width: 95%;
+    max-width: 65%;
     margin-top: 20%;
+    margin-right: 0;
   }
   .news-info {
     margin-left: 0;
@@ -122,8 +126,6 @@ a {
     margin-top: 15px;
     margin-right: auto;
     margin-left: auto;
-    font-family: Helvetica, sans-serif;
-    box-shadow: 0 0 3px 3px #161616;
     width: 96vw;
     height: 180px;
     color: white;

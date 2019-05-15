@@ -101,7 +101,15 @@ body {
     font-size: 18px;
   }
   .ticker-container {
-    display: inline-block;
+    height: 7em;
+    padding-left: 90%;
+    box-sizing: content-box;
+    overflow-x: hidden;
+  }
+  .stock-sector-news {
+    width: 100vw;
+    align-items: column;
+    margin: auto;
   }
 
   .search-stock-card {
@@ -109,9 +117,6 @@ body {
     width: 60%;
     text-align: center;
   }
-  .stock-sector-news {
-    flex-direction: column;
-}
 
 .date-time {
   text-align: center;

@@ -38,3 +38,9 @@
   font-weight: bold;
   text-shadow: 0 0 1px 1px #000000;
 }
+@media screen and (min-width: 305px) and (max-width: 405px) {
+  .__item {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
