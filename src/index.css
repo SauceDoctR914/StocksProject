@@ -14,6 +14,7 @@ body {
   font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
   display: row;
   width: 100vw;
+  overflow-x: hidden;
   height: 100%;
 }
 .title-date {
@@ -62,22 +63,18 @@ body {
   margin: auto;
 }
 
-.search {
-  /* margin-left: 8em;
-  /* align-items: center; */
-}
 
 .search-stock-card {
   position: sticky;
   top: 0;
-  margin-left: 20px;
+  margin-left: 0;
   width: 95vw;
   text-align: center;
 }
 
-a {
+/* a {
   width: 850px;
-}
+} */
 
 .ticker-container {
   position: relative;
@@ -112,4 +109,34 @@ a {
     width: 60%;
     text-align: center;
   }
+  .stock-sector-news {
+    flex-direction: column;
+}
+
+.date-time {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5%;
+}
+.the-time {
+  height: 50px;
+  font-size: 20px;
+  margin-bottom: 80px;
+  text-align: center;
+  margin: 0px;
+  color: white;
+}
+.date {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+.title-date {
+  width: 80%;
+  margin: auto;
+}
+.the-title {
+}
 }
