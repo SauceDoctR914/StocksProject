@@ -15,8 +15,8 @@
   animation-timing-function: linear;
   -webkit-animation-name: ticker;
   animation-name: ticker;
-  -webkit-animation-duration: 30s;
-  animation-duration: 30s;
+  -webkit-animation-duration: 930s;
+  animation-duration: 930s;
 }
 
 @-webkit-keyframes ticker {
@@ -51,5 +51,12 @@
   animation-play-state: paused;
 }
 
-@media screen and (min-width: 305px) and (max-width: 405px) {
+@media screen and (min-width: 305px) and (max-width: 905px) {
+  .ticker {
+    padding-right: 95%;
+    margin-left: 20%;
+    max-height: 50px;
+    line-height: 0;
+    overflow: hidden;
+  }
 }

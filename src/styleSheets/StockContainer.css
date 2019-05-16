@@ -109,7 +109,7 @@ input:focus {
   box-shadow: 0 0 3px 3px #161616;
 }
 
-@media screen and (min-width: 305px) and (max-width: 405px) {
+@media screen and (min-width: 305px) and (max-width: 905px) {
   .StockContainer {
     margin-top: 15px;
     margin-left: 0;
@@ -123,8 +123,6 @@ input:focus {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    /* margin-left: 16px; */
-    box-shadow: 0 0 1px 2px #090909;
     margin: 7px;
     width: 90%;
     height: 40px;
@@ -137,7 +135,6 @@ input:focus {
   .symbol {
   }
   .price-div {
-
   }
   .positive-change {
   }
@@ -149,7 +146,6 @@ input:focus {
   }
 
   .form-class {
-
   }
   .input-div {
     align-items: center;

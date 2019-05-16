@@ -73,7 +73,7 @@ a {
   background-color: #212121;
 }
 
-@media only screen and (min-width: 305px) and (max-width: 405px){
+@media only screen and (min-width: 305px) and (max-width: 905px) {
   #newstitle {
     font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
     color: white;
