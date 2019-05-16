@@ -173,3 +173,25 @@ svg {
   margin: auto;
   width: 100% !important;
 }
+
+@media screen and (min-width: 305px) and (max-width: 905px) {
+  .stock-detail {
+    /* display: flex; */
+    width: 100vw;
+    /* flex-direction: column; */
+  }
+  .chart-company-div {
+  }
+  .chart-news-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .chartDiv {
+    width: 90%;
+  }
+  .company-div {
+    /* order: -1; */
+    margin: 20px auto;
+    position: relative;
+  }
+}
