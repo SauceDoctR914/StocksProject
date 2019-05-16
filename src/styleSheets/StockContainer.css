@@ -1,3 +1,11 @@
+.search-stock-card {
+  position: sticky;
+  top: 0;
+  margin-left: 0;
+  width: 95vw;
+  text-align: center;
+}
+
 .StockContainer {
   margin-top: 15px;
   margin-left: 0;
@@ -110,10 +118,17 @@ input:focus {
 }
 
 @media screen and (min-width: 305px) and (max-width: 905px) {
+  .search-stock-card {
+    margin: 0 auto;
+    width: 90vw;
+    text-align: center;
+  }
+
   .StockContainer {
     margin-top: 15px;
     margin-left: 0;
-    width: 95vw;
+    width: 90vw;
+    margin: 15px auto;
     height: 70vh;
     overflow-y: scroll;
     text-align: center;
@@ -123,7 +138,7 @@ input:focus {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 7px;
+    margin: 0 auto;
     width: 90%;
     height: 40px;
     color: #e5e5e5;
