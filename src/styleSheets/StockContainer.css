@@ -19,11 +19,9 @@
   text-align: center;
 }
 .stock-card {
-  /* position: relative; */
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  /* margin-left: 16px; */
   box-shadow: 0 0 1px 2px #090909;
   margin: 7px;
   width: 500px;

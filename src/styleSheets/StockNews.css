@@ -85,4 +85,8 @@
   }
 }
 @media screen and (min-width: 1105px) and (max-width: 1255px) {
+  .renderNews {
+    width: 55vw;
+
+  }
 }
