@@ -125,3 +125,13 @@ body {
   .the-title {
   }
 }
+@media screen and (min-width: 505px) and (max-width: 905px) {
+  .the-title{
+    font-size: 40px;
+}
+}
+@media screen and (min-width: 905px) and (max-width: 1255px) {
+  .the-title{
+    font-size: 50px;
+}
+  }
