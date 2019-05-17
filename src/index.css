@@ -78,7 +78,7 @@ body {
   box-sizing: content-box;
 }
 
-@media screen and (min-width: 305px) and (max-width: 905px) {
+@media screen and (min-width: 305px) and (max-width: 1105px) {
   .app {
     font-size: 0.8em;
     overflow-x: hidden;

@@ -117,7 +117,7 @@ input:focus {
   box-shadow: 0 0 3px 3px #161616;
 }
 
-@media screen and (min-width: 305px) and (max-width: 905px) {
+@media screen and (min-width: 305px) and (max-width: 1105px) {
   .search-stock-card {
     margin: 0 auto;
     width: 90vw;
@@ -134,36 +134,24 @@ input:focus {
     text-align: center;
   }
   .stock-card {
-    /* position: relative; */
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
     margin: 0 auto;
     width: 90%;
     height: 40px;
-    color: #e5e5e5;
-    font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
-    text-align: left;
-    padding-bottom: 8px;
-  }
-
-  .symbol {
-  }
-  .price-div {
-  }
-  .positive-change {
-  }
-  .negative-change {
   }
 
   .search {
-    width: 95vw;
+    width: 90vw;
   }
-
   .form-class {
+    width: 90vw;
   }
   .input-div {
     align-items: center;
+    width: 90vw;
+  }
+  .input-class {
+    width: 30%;
+    margin: 20px auto;
   }
   input:hover::-webkit-input-placeholder {
   }
@@ -171,5 +159,32 @@ input:focus {
     outline: none;
   }
   .input-class {
+  }
+}
+
+@media screen and (min-width: 1105px) and (max-width: 1245px) {
+  .search-stock-card {
+    margin-left: 1%;
+    width: 40vw;
+  }
+  .StockContainer {
+    width: 100%;
+  }
+  .stock-card {
+    width: 95%;
+  }
+  .form-class {
+    width: 70%;
+    margin: 25px auto;
+  }
+  .input-div {
+    width: 100%;
+  }
+  .search-div {
+    width: 100%;
+  }
+  .input-class {
+    width: 40%;
+    margin: 0 auto;
   }
 }
