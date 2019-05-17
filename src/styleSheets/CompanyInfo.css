@@ -1,10 +1,10 @@
 .company-div {
   font-family: Helvetica, sans-serif;
   width: 400px;
-  position: sticky;
+  position: fixed;
   height: 900px;
-  top: 0;
-  margin-left: 25px;
+  top: 10%;
+  right: 5vw;
 }
 
 .about {
@@ -57,4 +57,10 @@
   width: 400px;
   box-shadow: 0 0 3px 3px #161616;
   margin-top: 1px;
+}
+@media only screen and (min-width: 305px) and (max-width: 1105px) {
+  .company-div {
+    margin: 20px auto;
+    position: relative;
+  }
 }

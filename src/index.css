@@ -8,8 +8,6 @@ html {
 body {
   overflow-x: hidden;
 }
-/* // #00ff00
-// #bf00ff */
 .app {
   font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
   display: row;

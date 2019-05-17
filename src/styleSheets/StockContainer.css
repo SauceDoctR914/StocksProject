@@ -1,16 +1,20 @@
 .search-stock-card {
   position: sticky;
   top: 0;
+  right: 60px;
   margin-left: 0;
-  width: 95vw;
+  width: 500px;
   text-align: center;
+}
+.stock-sector-news {
+  position: relative;
 }
 
 .StockContainer {
   margin-top: 15px;
   margin-left: 0;
   width: 600px;
-  height: 650px;
+  height: 850px;
   overflow-y: scroll;
   text-align: center;
 }
@@ -80,18 +84,21 @@
   font-weight: bold;
   box-shadow: 0 0 1px 1px #ff0000;
 }
-.search {
-  /* margin-left: 8em;
-  /* align-items: center; */
+.search-div {
+  width: 100%;
 }
-
+.search {
+  width: 100%;
+}
 .form-class {
   position: sticky;
   border-radius: 4px;
   border-color: #171718;
+  width: 100%;
 }
 .input-div {
   align-items: center;
+  width: 100%;
 }
 input:hover::-webkit-input-placeholder {
   color: white;
@@ -166,6 +173,7 @@ input:focus {
   .search-stock-card {
     margin-left: 1%;
     width: 40vw;
+    right: 0;
   }
   .StockContainer {
     width: 100%;

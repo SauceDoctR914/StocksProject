@@ -193,9 +193,22 @@ svg {
     width: 95vw;
     margin: 0 auto;
   }
-  .company-div {
-    /* order: -1; */
-    margin: 20px auto;
-    position: relative;
+}
+
+@media screen and (min-width: 1105px) and (max-width: 1255px) {
+  .stock-detail {
   }
+  .chart-company-div {
+    width: 57vw;
+  }
+  .chart-news-info {
+    width: 60vw;
+  }
+  .chartDiv {
+    width: 60vw;
+  }
+  /* .company-div {
+    width: 60vw;
+    margin-left: 5%;
+  } */
 }
