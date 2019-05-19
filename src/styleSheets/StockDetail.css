@@ -134,14 +134,7 @@
   font-weight: bold;
 }
 
-.StockNewsWords {
-  margin-top: 10px;
-  color: white;
-}
-.StockNewsWords:hover {
-  color: #bf00ff;
-  font-weight: bold;
-}
+
 .chart-company-div {
   display: flex;
   flex-direction: column;
@@ -175,6 +168,9 @@ svg {
 }
 
 @media screen and (min-width: 305px) and (max-width: 1105px) {
+  .react-stockchart {
+/* font-size: 10px */
+  }
   .stock-detail {
     /* display: flex; */
     width: 100vw;
@@ -190,9 +186,11 @@ svg {
     width: 95vw;
   }
   .chartDiv {
-    width: 95vw;
-    margin: 0 auto;
+    width: 99vw;
+    /* font-size: 10px; */
+    margin: 10px auto;
   }
+
 }
 
 @media screen and (min-width: 1105px) and (max-width: 1255px) {

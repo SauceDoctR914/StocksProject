@@ -62,5 +62,11 @@
   .company-div {
     margin: 20px auto;
     position: relative;
+    /* transform: translateX(55%); */
+  }
+  .about{
+    width: 80%;
+    height: 25%;
+    margin: 10px auto;
   }
 }

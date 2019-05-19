@@ -91,6 +91,7 @@ a {
     width: 96vw;
   }
   .headline {
+    font-size: .8em;
     flex-wrap: wrap;
     max-width: 80%;
     margin-left: 5px;
@@ -98,7 +99,7 @@ a {
     height: 20px;
   }
   .source-div {
-    margin-top: 10px;
+    margin-top: 5%;
     font-size: 16px;
     font-weight: bold;
     display: flex-end;
@@ -107,8 +108,8 @@ a {
   }
   .news-desc {
     display: inline-block;
-    font-size: 14px;
-    max-width: 25vw;
+    font-size: 12px;
+    max-width: 31vw;
     margin-top: 25px;
     margin-right: 0;
   }
@@ -120,7 +121,7 @@ a {
     min-width: 80px;
   }
   .publish-date {
-    font-size: 14px;
+    font-size: .7em;
     margin-top: 70%;
     margin-right: 0%;
     /* max-width: 40%; */
@@ -162,7 +163,6 @@ a {
   .news-desc {
     display: inline-block;
     font-size: 16px;
-    max-width: 25vw;
     margin-top: 45px;
     margin-right: 0;
   }
