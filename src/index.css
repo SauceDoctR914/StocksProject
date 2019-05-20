@@ -7,11 +7,13 @@ html {
 }
 body {
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 .app {
   font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
   display: row;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
   height: 100%;
 }
@@ -60,10 +62,6 @@ body {
   align-items: flex-start;
   margin: auto;
 }
-
-/* a {
-  width: 850px;
-} */
 
 .ticker-container {
   position: relative;
