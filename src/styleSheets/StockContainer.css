@@ -123,10 +123,22 @@ input:focus {
 }
 
 @media screen and (min-width: 305px) and (max-width: 1105px) {
+  .stock-sector-news {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .search-stock-card {
-    margin: 0 auto;
-    width: 90vw;
+    order: -1;
+    position: relative;
+    right: 0%;
+    margin: 15px auto;
+    height: 100%;
     text-align: center;
+    width: 90vw;
+
   }
 
   .StockContainer {
@@ -134,13 +146,13 @@ input:focus {
     margin-left: 0;
     width: 90vw;
     margin: 15px auto;
-    height: 70vh;
+    height: 100%;
     overflow-y: scroll;
     text-align: center;
   }
   .stock-card {
-    margin: 0 auto;
-    width: 90%;
+    margin: 0;
+    width: 90vw;
     height: 40px;
   }
 
@@ -155,7 +167,7 @@ input:focus {
     width: 90vw;
   }
   .input-class {
-    width: 30%;
+    width: 40%;
     margin: 20px auto;
   }
   input:hover::-webkit-input-placeholder {
