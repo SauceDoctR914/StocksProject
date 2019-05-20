@@ -178,6 +178,17 @@ input:focus {
   .input-class {
   }
 }
+@media screen and (min-width: 705px) and (max-width: 1105px) {
+
+.search-stock-card {
+margin: 15px auto;
+height: 85vh;
+}
+.StockContainer {
+  height: 70vh;
+}
+}
+
 
 @media screen and (min-width: 1105px) and (max-width: 1245px) {
   .search-stock-card {
