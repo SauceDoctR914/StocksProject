@@ -32,7 +32,7 @@ class CandleStickChart extends React.Component {
             <XAxis
               axisAt="bottom"
               orient="bottom"
-              ticks={width/80}
+              ticks={width / 80}
               tickStroke="#FFFFFF"
               stroke="#FFFFFF"
             />
