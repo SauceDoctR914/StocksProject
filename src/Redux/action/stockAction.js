@@ -15,7 +15,7 @@ export const fetchStocks = () => {
 export const fetchSectorData = () => {
   return dispatch => {
     return fetch(
-      "https://cloud.iexapis.com/beta/stock/market/sector-performance?token=pk_ce5287b13658456797045a3c1a6c1472"
+      "https://cloud.iexapis.com/v1/stock/market/sector-performance?token=pk_ce5287b13658456797045a3c1a6c1472"
     )
       .then(response => response.json())
       .then(sectorData => dispatch({ type: "GET_SECTORDATA", sectorData }))

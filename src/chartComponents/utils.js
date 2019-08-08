@@ -10,7 +10,7 @@ export function setDate(arg) {
 
 export function getData(symbol) {
   const promiseMSFT = fetch(
-    `https://api.iextrading.com/1.0/stock/${symbol}/chart/3m`
+    `https://cloud.iexapis.com/v1/stock/${symbol}/chart/3m`
   )
     .then(response => response.json())
     .then(res => setDate(res));
