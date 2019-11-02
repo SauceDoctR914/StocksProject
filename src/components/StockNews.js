@@ -5,13 +5,15 @@ class StockNews extends React.Component {
   state = {
     news: []
   };
+
   componentDidMount() {
-    let stockName = this.props.stock.quote.companyName.split(" ")[0];
+    let stockName = this.props.stock.quote.symbol;
+    console.log(stockName, "YOOOO", this.props.stock.quote.symbol)
     if (stockName) {
       fetch(
-        `https://stocknewsapi.com//api/v1?tickers=${stockName}&items=5&fallback=true&token=lsi19hzmc509wbvziykvr7wrbjw4f9tiq6dcshjm`
+        `https://cloud.iexapis.com/stable/stock/${stockName}/news?token=pk_79dabda8e73241bfb303146304847a54`
       )
-        .then(res => res.json())
+        .then(console.log)
         .then(res =>
           this.setState({
             news: res.data

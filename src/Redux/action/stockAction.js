@@ -15,9 +15,8 @@ export const fetchStocks = () => {
 export const fetchSectorData = () => {
   return dispatch => {
     return fetch(
-      "https://cloud.iexapis.com/v1/stock/market/sector-performance?token=pk_c2d0e210f353462f96aecae48a29019f"
-    )
-      .then(response => response.json())
+      "https://cloud.iexapis.com/v1/stock/market/batch?symbols=GOOG")
+      .then(res => res.json())
       .then(sectorData => dispatch({ type: "GET_SECTORDATA", sectorData }))
       .catch(console.error);
   };

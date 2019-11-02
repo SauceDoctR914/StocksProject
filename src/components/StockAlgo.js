@@ -66,9 +66,6 @@ class StockAlgo extends Component {
   //3-0 red
 
   render() {
-    if (this.state.stockRSI && this.state.stockRSI[1]) {
-      console.log(Object.values(this.state.stockRSI[1]));
-    }
     return <div className="algo-div">{this.everythingAlgo()}</div>;
   }
 }
