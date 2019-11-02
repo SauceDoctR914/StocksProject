@@ -13,6 +13,7 @@
   margin-bottom: 20px;
   font-family: Helvetica, sans-serif;
   width: 100%;
+  overflow-y: scroll;
   color: white;
   margin-right: 5%;
   box-shadow: 0 0 3px 3px #161616;
