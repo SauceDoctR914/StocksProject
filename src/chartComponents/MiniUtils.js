@@ -10,9 +10,9 @@ export function setDate(arg) {
 
 export function getData(symbol) {
   const promiseMSFT = fetch(
-    `https://cloud.iexapis.com/v1/stock/${symbol}/chart/6m&token=pk_c2d0e210f353462f96aecae48a29019f`
+    `https://cloud.iexapis.com/v1/stock/${symbol}/chart/6m?token=pk_79dabda8e73241bfb303146304847a54`
   )
-    .then(response => response.json())
+    .then(res => res.json())
     .then(res => setDate(res));
   return promiseMSFT;
 }
