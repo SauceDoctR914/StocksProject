@@ -8,15 +8,15 @@ class StockNews extends React.Component {
 
   componentDidMount() {
     let stockName = this.props.stock.quote.symbol;
-    console.log(stockName, "YOOOO", this.props.stock.quote.symbol)
+    const iex_key = process.env.REACT_APP_IEX_KEY
     if (stockName) {
       fetch(
-        `https://cloud.iexapis.com/stable/stock/${stockName}/news?token=pk_79dabda8e73241bfb303146304847a54`
+        `https://cloud.iexapis.com/stable/stock/${stockName}/news?token=${iex_key}`
       )
-        .then(console.log)
+        .then(res => res.json())
         .then(res =>
           this.setState({
-            news: res.data
+            news: res
           })
         )
         .catch(err => console.log(err));
