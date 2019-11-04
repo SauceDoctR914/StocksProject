@@ -181,18 +181,13 @@ svg {
     width: 100vw;
     margin: 0;
   }
-  svg {
-    /* width: 99vw; */
-  }
-  .react-stockcharts-enable-interaction{
-/* min-width: 95vw; */
-  }
+
+
   .react-stockcharts-crosshair-cursor{
     width: 95vw;
   }
   .chartDiv {
     width: 99vw;
-    /* font-size: 10px; */
     margin: 10px auto;
   }
 
