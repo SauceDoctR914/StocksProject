@@ -35,10 +35,11 @@
 .company-image-div {
   justify-content: flex-start;
   width: 30vw;
+  margin-right: 5px;
 }
 
 .renderNews img {
-  width: 200px;
+  width: 30vw;
   height: 210px;
 }
 .news-render {

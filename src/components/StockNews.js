@@ -9,8 +9,6 @@ class StockNews extends React.Component {
   componentDidMount() {
     let stockName = this.props.stock.quote.symbol;
     const iex_key = process.env.REACT_APP_IEX_KEY
-    console.log(process.env.REACT_APP_IEX_KEY, "logging test", iex_key)
-
     if (stockName) {
       fetch(
         `https://cloud.iexapis.com/stable/stock/${stockName}/news?token=${iex_key}`
