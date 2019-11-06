@@ -14,7 +14,6 @@ class SectorInfo extends Component {
     }, 100000);
   }
   mapData = () => {
-    console.log("GAV GAV", this.props.sectorData)
     return this.props.sectorData.map(sector => {
       return <SectorCard key={sector.name} sectorData={sector} />;
     });

@@ -1,5 +1,4 @@
 .news-div {
-  /* position: absolute; */
   width: 800px;
   height: 100%;
   margin-right: 50px;
@@ -8,7 +7,6 @@
   margin: 0 auto;
   width: 235px;
   color: white;
-  /* display: inline-block; */
 
 }
 .StockNewsWords:hover {
