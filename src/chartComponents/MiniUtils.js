@@ -9,8 +9,9 @@ export function setDate(arg) {
 }
 
 export function getData(symbol) {
+  const iex_key = process.env.REACT_APP_IEX_KEY
   const promiseMSFT = fetch(
-    `https://cloud.iexapis.com/v1/stock/${symbol}/chart/6m?token=pk_79dabda8e73241bfb303146304847a54`
+    `https://cloud.iexapis.com/v1/stock/${symbol}/chart/6m?token=${iex_key}`
   )
     .then(res => res.json())
     .then(res => setDate(res));
