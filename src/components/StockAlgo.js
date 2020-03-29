@@ -22,7 +22,7 @@ class StockAlgo extends Component {
   rsiAlgo = () => {
     let total = 0;
     if (this.state.stockRSI.length > 1) {
-      let stockRSI = Object.values(this.state.stockRSI[1])[1].RSI;
+      let stockRSI = Object.values(this.state.stockRSI[1]).length !== 0 ? Object.values(this.state.stockRSI[1])[1].RSI : 50;
       if (stockRSI <= 70 && stockRSI >= 30) {
         return total + 3;
       } else if (stockRSI > 70) {
@@ -49,7 +49,7 @@ class StockAlgo extends Component {
     }
   };
 
-  everythingAlgo = () => {
+  finalAlgo = () => {
     let result = this.peAlgo() + this.rsiAlgo();
     // smallest possible is zero - 10
     if (result <= 4) {
@@ -66,7 +66,7 @@ class StockAlgo extends Component {
   //3-0 red
 
   render() {
-    return <div className="algo-div">{this.everythingAlgo()}</div>;
+    return <div className="algo-div">{this.finalAlgo()}</div>;
   }
 }
 
