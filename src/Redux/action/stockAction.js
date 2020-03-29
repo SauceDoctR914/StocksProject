@@ -20,12 +20,25 @@ export const fetchStocks = () => {
 export const fetchSectorData = () => {
   return dispatch => {
     return fetch(
-      "https://financialmodellingprep.com/api/sectors-performance?datatype=json")
-      .then(res => res.json())
-      .then(sectotrPerformance => Object.values(sectotrPerformance))
+      "https://www.alphavantage.co/query?function=SECTOR&apikey=6O3PYIBYDLIKW6EZ")
+      .then(res => res.json())        
+      .then(metaData => {let firstObj = Object.keys(metaData)[1]; return metaData[firstObj]})
       .then(sectorData => dispatch({ type: "GET_SECTORDATA", sectorData }))
       .catch(console.error);
   };
 };
 
-
+// export const fetchSectorData = () => {
+//   return async dispatch => {
+//     try {
+//       let response = await fetch(
+//         "https://api.iextrading.com/1.0/stock/market/sector-performance?token=pk_ce5287b13658456797045a3c1a6c1472"
+//       );
+//       let sectorData = await response.json();
+//       console.log(sectorData, 'gavin');
+//       // dispatch({ type: GET_SECTORDATA, sectorData });
+//     } catch (error) {
+//       console.error("Error Fetching SectorData");
+//     }
+//   };
+// };
