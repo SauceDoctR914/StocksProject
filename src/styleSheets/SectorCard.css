@@ -9,9 +9,8 @@
 }
 .sector {
   display: inline-block;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
-  /* margin-left: 9em; */
 }
 .price-change {
   display: inline-block;
@@ -23,10 +22,10 @@
   text-shadow: 0 0 3px 4px white;
   font-weight: bold;
   margin-right: 24px;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
   width: 80px;
   opacity: 0.86;
-  color: #21ce99;
+  color: rgb(33, 206, 153);
 }
 .ticker-negative-change {
   outline: none;
