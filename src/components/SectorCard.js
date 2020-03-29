@@ -2,15 +2,14 @@ import React from "react";
 import Numeral from "numeral";
 import "../styleSheets/SectorCard.css";
 const SectorCard = props => {
-  const { sectorData } = props;
-  let change = sectorData.performance * 100;
-  let pctChange = Numeral(change).format("0.00");
-  let positiveInt = pctChange - pctChange - pctChange;
-  let overallChange = sectorData.Change
+  const { name, sectorData } = props;
+  let pctChange = parseFloat(sectorData[name])
+  let overallChange = parseFloat(sectorData[name].replace(/-/g, ""));
+
 
   return (
     <span className="ticker__item">
-      <div className="sector">{sectorData.Name}</div>
+      <div className="sector">{name}</div>
       <div className="price-change">
         {pctChange > 0 ? (
           <p className="ticker-positive-change">%{overallChange}</p>
