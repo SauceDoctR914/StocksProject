@@ -26,7 +26,7 @@ class FetchNews extends Component {
   render() {
     return (
       <div className="frontNews">
-        <h2 id="newstitle">Business Headlines</h2>
+        <h2 id="newstitle">Business News</h2>
         {this.mapFrontNews()}
       </div>
     );
