@@ -57,27 +57,29 @@
   text-align: left;
 }
 .positive-change {
-  outline: none;
-  background-color: #00b300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(33, 206, 153);
   box-shadow: 0 0 1px 1px #008000;
   border-radius: 3px;
   font-weight: bold;
   margin-right: 10px;
-  margin-bottom: 32px;
-  width: 65px;
+  width: 4rem;
   height: 25px;
   opacity: 0.86;
   color: white;
 }
 .negative-change {
-  background-color: #f52c2c;
-  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fe456a;
   color: white;
   opacity: 0.86;
   border-radius: 3px;
   margin-right: 10px;
-  margin-bottom: 32px;
-  width: 65px;
+  width: 4rem;
   height: 25px;
   font-weight: bold;
   box-shadow: 0 0 1px 1px #ff0000;
@@ -100,7 +102,6 @@
 }
 input:hover::-webkit-input-placeholder {
   color: white;
-  /* box-shadow: 0 0 3px 3px #13001a; */
 }
 input:focus {
   outline: none;
