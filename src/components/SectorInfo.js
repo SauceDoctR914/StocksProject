@@ -14,8 +14,11 @@ class SectorInfo extends Component {
     }, 100000);
   }
   mapData = () => {
-    return this.props.sectorData.map(sector => {
-      return <SectorCard key={sector.name} sectorData={sector} />;
+    const { sectorData } = this.props;
+    let sectorName = Object.keys(sectorData);
+    let sectorChange = Object.values(sectorData);
+    return sectorName.map(name => {
+      return <SectorCard key={name} name={name} sectorData={sectorData} />;
     });
   };
   render() {
