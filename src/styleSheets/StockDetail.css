@@ -19,14 +19,13 @@
 .back {
   font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
   width: 105px;
-  height: 20px;
+  height: 1.5rem;
   background-color: #222222;
   color: #fff;
   box-shadow: 0 0 4px 2px #0d0d0d;
   border: none;
   font-weight: bold;
   margin-left: 0;
-  margin-bottom: 5px;
   position: absolute;
   top: 8px;
   right: 0;
@@ -58,7 +57,7 @@
   margin-left: 8px;
   width: 115px;
   margin-bottom: 10px;
-  height: 20px;
+  height: 1.5rem;
   text-align: center;
   font-family: "DIN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
 }
@@ -70,19 +69,20 @@
   border-radius: 5px;
   font-weight: bold;
   font-size: 13px;
+  line-height: 24px;
   border: none;
   margin-left: 0;
 }
 .red:after {
   content: "High Risk";
   font-size: 13px;
+  line-height: 24px;
   text-align: center;
   font-weight: bold;
-  line-height: 20px;
 }
 .red:hover:after {
   content: "Recommendation";
-  font-size: 13px;
+  font-size: 12px;
   text-align: center;
   font-weight: bold;
 }
@@ -91,6 +91,7 @@
   width: 100%;
   height: 100%;
   font-size: 13px;
+  line-height: 24px;
   text-align: center;
   font-weight: bold;
   border-radius: 5px;
@@ -99,12 +100,14 @@
 .yellow:after {
   content: "Neutral";
   font-size: 13px;
+  line-height: 24px;
   text-align: center;
   font-weight: bold;
 }
 .yellow:hover:after {
   content: "Recommendation";
-  font-size: 13px;
+  font-size: 12px;
+  line-height: 24px;
   text-align: center;
   font-weight: bold;
 }
@@ -114,18 +117,21 @@
   width: 100%;
   height: 100%;
   font-size: 13px;
+  line-height: 24px;
   text-align: center;
   font-weight: bold;
 }
 .green:after {
   content: "Confident Buy";
   font-size: 13px;
+  line-height: 24px;
   text-align: center;
   font-weight: bold;
 }
 .green:hover:after {
   content: "Recommendation";
-  font-size: 13px;
+  font-size: 12px;
+  line-height: 24px;
   text-align: center;
   font-weight: bold;
 }
