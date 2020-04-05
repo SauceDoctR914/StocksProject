@@ -1,5 +1,5 @@
 # 2Stoc
-2Stoc is a note Stock Information App. On the homepage the user can view general world news and the headlining news story, stock prices, stock ticker symbols, percent change, and the current time and date. Individual stock pages show specific information, charts, and news pertaining to that particular stock.
+>2 Stoc is an informative app that displays market news and data to the user. On the homepage the user can view general market news, stock prices, company ticker symbols, daily performance as a precentage, and sector performance as a percentage. Individual company pages show specific information, charts, and news pertaining to that particular stock.
 
 <img width="996" alt="screen shot 2019-03-06 at 7 20 30 pm" src="https://user-images.githubusercontent.com/32119313/53923099-f8584900-4044-11e9-820e-ce36a46f3898.png">
 
@@ -18,7 +18,7 @@ npm start
 
 ## Usage Example
 
-A user can click anywhere on the news boxes on the front page and will be redirected to the financial times news website. On the top of the front page the current time and date is displayed along with the app title. On the right of the page are the stock ticker symbols, along with their current prices and change percentages. The percentage change is listed in green if it is positive, and red for negative. At the top of the column of stock tickers, you can search for a particular stock/company by its symbol. 
+A user can click anywhere on the news boxes on the front page and will be redirected to the Financial Times news website. On the top of the front page the current time and date is displayed along with the app title. On the right of the page are the stock ticker symbols, along with their current prices and change percentages. The percentage change is listed in green if it is positive, and red for negative. At the top of the column of stock tickers, you can search for a particular stock/company by its symbol. 
 
 <img width="914" alt="screen shot 2019-03-06 at 7 13 17 pm" src="https://user-images.githubusercontent.com/32119313/53922993-8da70d80-4044-11e9-90e2-8702e3f021c5.png">
 

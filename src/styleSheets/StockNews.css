@@ -17,6 +17,8 @@
   font-size: 20px;
   padding-left: .75rem;
   padding-right: .75rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .renderNews {
@@ -70,19 +72,21 @@
  .published  {
     min-height: 100px;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    font-size: .8em;
+    font-size: 1rem;
+    padding-right: .75rem;
     text-align: right;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    display: none;
+    box-sizing: border-box;
   }
 
   .story-headline {
     max-width: 100%;
+    align-self: flex-end;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;

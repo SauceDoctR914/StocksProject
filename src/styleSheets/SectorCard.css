@@ -21,8 +21,7 @@
   outline: none;
   text-shadow: 0 0 3px 4px white;
   font-weight: bold;
-  margin-right: 24px;
-  margin-bottom: 2rem;
+  margin-right: 3rem;
   width: 80px;
   opacity: 0.86;
   color: rgb(33, 206, 153);
@@ -37,6 +36,7 @@
   font-weight: bold;
   text-shadow: 0 0 1px 1px #000000;
 }
+
 @media screen and (min-width: 305px) and (max-width: 905px) {
   .ticker-negative-change {
     height: 50px;
@@ -51,7 +51,7 @@
     height: 50px;
   }
   .ticker__item {
-    max-width: 400px;
+    max-width: 406px;
     height: 80px;
   }
 }

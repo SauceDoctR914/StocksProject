@@ -25,8 +25,8 @@ class RenderNews extends Component {
             <div className="news-story">
               <h4>{this.props.news.source}</h4>
               <p class="story-headline">{this.props.news.headline}</p>
-              <div id="published">
-              <p>{Moment(this.props.news.datetime).calendar()}</p>
+              <div className="published">
+              <p>{Moment(this.props.news.datetime).format('h:mm a MMMM Do, YYYY ')}</p>
               </div>
             </div>
           </div>
