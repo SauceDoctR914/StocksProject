@@ -1,5 +1,5 @@
 .company-div {
-  font-family: Helvetica, sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   width: 30%;
   position: fixed;
   height: 900px;
@@ -11,7 +11,7 @@
   justify-content: space-around;
   min-height: 200px;
   margin-bottom: 20px;
-  font-family: Helvetica, sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   width: 100%;
   overflow-y: scroll;
   color: white;

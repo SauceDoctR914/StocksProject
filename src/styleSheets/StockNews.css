@@ -8,8 +8,9 @@
   margin: 0 auto;
   width: 235px;
   color: white;
-
+  font-family: "Montserrat", sans-serif;
 }
+
 .StockNewsWords:hover {
   color: #bf00ff;
   font-weight: bold;
@@ -27,7 +28,7 @@
   flex-direction: row;
   margin-top: 15px;
   margin-right: 50px;
-  font-family: Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   box-shadow: 0 0 3px 3px #161616;
   width: 100%;
   height: 210px;
