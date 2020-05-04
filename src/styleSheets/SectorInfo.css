@@ -19,6 +19,16 @@
   animation-duration: 30s;
 }
 
+.ticker-container {
+  position: relative;
+  display: flex;
+  bottom: 0;
+  width: 10vw;
+  height: 10em;
+  padding-left: 100%;
+  box-sizing: content-box;
+}
+
 @-webkit-keyframes ticker {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -58,5 +68,11 @@
     max-height: 50px;
     line-height: 0;
     overflow: hidden;
+  }
+  .ticker-container {
+    height: 80px;
+    padding-left: 90%;
+    box-sizing: content-box;
+    overflow-x: hidden;
   }
 }

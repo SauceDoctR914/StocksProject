@@ -7,7 +7,6 @@ const stockURL =
 export const fetchStocks = () => {
   return dispatch => {
     return fetch(stockURL)
-      .then(res => console.log(res, "GAVIIIII"))
       .then(res => res.json())
       .then(responseObj => Object.values(responseObj))
       .then(stocks => dispatch({ type: "GET_STOCKS", stocks }))
