@@ -11,7 +11,7 @@
     "history": "^4.9.0",
     "intrinio-sdk": "^5.2.0",
     "localized-strings": "^0.2.3",
-    "lodash": "4.17.15",
+    "lodash": "4.17.19",
     "minimatch": "^3.0.4",
     "missing": "0.0.1",
     "moment": "^2.22.2",
