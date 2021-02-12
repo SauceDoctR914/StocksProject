@@ -46,8 +46,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "ember-fastboot-server": "^3.0.0"
-  }
+  ]
 }
