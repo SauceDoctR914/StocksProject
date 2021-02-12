@@ -13,7 +13,6 @@ class FetchNews extends Component {
       .then(res => res.json())
       .then(response => Object.values(response)[2])
       .then(news => {
-        console.log(news, "news")
         let frontPage = news.splice(0, 1)[0];
         this.setState({ frontNews: news, frontPage: frontPage });
       })
