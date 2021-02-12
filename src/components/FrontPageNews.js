@@ -14,12 +14,12 @@ const FrontPageNews = props => {
       {news && news.urlToImage !== null ? (
         <div className="front-news">
           <div className="render-news">
-            {news.urlToImage ? (
-              <img className="images" alt="News" src={news.urlToImage} />
+            {news.image ? (
+              <img className="images" alt="News" src={news.image.thumbnail.contentUrl} />
             ) : null}
             <div className="headline">
-              <div className="source-div">{news.source.name}</div>
-              <div className="news-desc">{news.title}</div>
+              <div className="source-div">{news.provider[0].name}</div>
+              <div className="news-desc">{news.name}</div>
             </div>
             <div className="news-info">
               <div className="publish-date">

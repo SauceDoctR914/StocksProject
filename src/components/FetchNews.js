@@ -1,26 +1,30 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import FrontPageNews from "./FrontPageNews";
+const news_key = process.env.REACT_APP_NEWS_KEY
+
 class FetchNews extends Component {
   state = {
-    frontNews: [],
-    frontPage: null
+    frontNews: []
   };
   componentDidMount() {
-    fetch(
-      "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=b5a13a28236741d8ac279cf07232d1c4"
-    )
+    fetch("https://bing-news-search1.p.rapidapi.com/news?safeSearch=Off&textFormat=Raw", {
+  "method": "GET",
+  "headers": {
+    "x-bingapis-sdk": "true",
+    "x-rapidapi-key": news_key,
+    "x-rapidapi-host": "bing-news-search1.p.rapidapi.com"
+  }
+})
       .then(res => res.json())
-      .then(response => Object.values(response)[2])
       .then(news => {
-        let frontPage = news.splice(0, 1)[0];
-        this.setState({ frontNews: news, frontPage: frontPage });
+        this.setState({ frontNews: news.value});
       })
       .catch(err => console.log(err));
   }
   mapFrontNews = () => {
     return this.state.frontNews.map(newsObj => {
-      return <FrontPageNews key={newsObj.title} news={newsObj} />;
+      return <FrontPageNews key={newsObj.name} news={newsObj} />;
     });
   };
   render() {
