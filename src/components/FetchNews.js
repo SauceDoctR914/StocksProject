@@ -9,13 +9,13 @@ class FetchNews extends Component {
   };
   componentDidMount() {
     fetch("https://bing-news-search1.p.rapidapi.com/news?safeSearch=Off&textFormat=Raw", {
-  "method": "GET",
-  "headers": {
-    "x-bingapis-sdk": "true",
-    "x-rapidapi-key": news_key,
-    "x-rapidapi-host": "bing-news-search1.p.rapidapi.com"
-  }
-})
+      "method": "GET",
+      "headers": {
+        "x-bingapis-sdk": "true",
+        "x-rapidapi-key": news_key,
+        "x-rapidapi-host": "bing-news-search1.p.rapidapi.com"
+      }
+    })
       .then(res => res.json())
       .then(news => {
         this.setState({ frontNews: news.value});
