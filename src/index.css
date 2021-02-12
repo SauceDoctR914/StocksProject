@@ -13,6 +13,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  background-color: #212121;
 }
 .app {
   font-family: 'Roboto', sans-serif;
@@ -20,6 +21,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   height: 100%;
+  background-color: #212121;
 }
 .title-date {
   width: 500px;
