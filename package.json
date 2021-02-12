@@ -10,8 +10,6 @@
     "d3-time-format": "^2.3.0",
     "history": "^4.9.0",
     "intrinio-sdk": "^5.8.0",
-    "localized-strings": "^0.2.3",
-    "lodash": "^4.17.20",
     "minimatch": "^3.0.4",
     "missing": "0.0.1",
     "moment": "^2.29.1",
@@ -22,7 +20,6 @@
     "react": "^16.14.0",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.14.0",
-    "react-localization": "^1.0.15",
     "react-moment": "^0.8.4",
     "react-redux": "^5.1.1",
     "react-router-dom": "^5.2.0",
@@ -31,7 +28,6 @@
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "sax": "^1.2.4",
-    "typescript": "^3.9.9",
     "with-router": "^1.0.1",
     "xml2js": "^0.4.23"
   },
@@ -52,6 +48,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "ember-fastboot-server": "^0.7.3"
+    "ember-fastboot-server": "^3.0.0"
   }
 }

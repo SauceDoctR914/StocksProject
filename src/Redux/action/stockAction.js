@@ -1,5 +1,4 @@
 const iex_key = process.env.REACT_APP_IEX_KEY
-const iex_key_two = process.env.REACT_APP_IEX_KEYTWOk
 const stockURL =
   `https://cloud.iexapis.com/v1/stock/market/batch?symbols=GOOG,AMZN,F,SBUX,TSLA,BABA,GPRO,FB,PYPL,ADBE,PFE,VZ,NKE,QCOM,SNE,NVDA,MU,NFLX,ETSY,MDB,PEP,BA,INTC,AAPL,SPOT,MSFT&types=quote,company&range=1m&last=1&token=${iex_key}`
 
@@ -27,17 +26,3 @@ export const fetchSectorData = () => {
   };
 };
 
-// export const fetchSectorData = () => {
-//   return async dispatch => {
-//     try {
-//       let response = await fetch(
-//         "https://api.iextrading.com/1.0/stock/market/sector-performance?token=pk_ce5287b13658456797045a3c1a6c1472"
-//       );
-//       let sectorData = await response.json();
-//       console.log(sectorData, 'gavin');
-//       // dispatch({ type: GET_SECTORDATA, sectorData });
-//     } catch (error) {
-//       console.error("Error Fetching SectorData");
-//     }
-//   };
-// };

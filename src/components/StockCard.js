@@ -22,9 +22,9 @@ class StockCard extends React.Component {
           </div>
           <div className="change-div">
             {change > 0 ? (
-              <span role="span" className="positive-change">% {pctChange}</span>
+              <span className="positive-change">% {pctChange}</span>
             ) : (
-              <span role="span" className="negative-change">% {positiveInt}</span>
+              <span className="negative-change">% {positiveInt}</span>
             )}
           </div>
         </div>

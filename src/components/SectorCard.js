@@ -1,5 +1,4 @@
 import React from "react";
-import Numeral from "numeral";
 import "../styleSheets/SectorCard.css";
 const SectorCard = props => {
   const { name, sectorData } = props;
